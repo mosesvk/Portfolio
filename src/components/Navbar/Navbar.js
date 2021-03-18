@@ -19,7 +19,7 @@ const Navbar = (props) => {
   const  [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
-    if(window.scrollY > 100) {
+    if(window.scrollY > 90) {
       setScrollNav(true)
     } else {
       setScrollNav(false)

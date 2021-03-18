@@ -96,7 +96,8 @@ export const NavLinks = styled(LinkS)`
   }
 
   &.active {
-    border-bottom: 7px solid #fff3e6;
+    background: #fff3e6;
+    color: #1e212d;
   }
 `
 
