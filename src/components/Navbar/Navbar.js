@@ -38,7 +38,7 @@ const Navbar = (props) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome} >Moses K</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>&lt; Moses K &gt;</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

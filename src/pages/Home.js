@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar/Sidebar'
 import Navbar from '../components/Navbar/Navbar'
 import MainSection from '../components/Main/MainSection'
 import Portfolio from '../components/Portfolio/Portfolio'
+import { PortCardOne, PortCardTwo } from '../components/Portfolio/PortData'
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <MainSection />
-      <Portfolio />
+      <Portfolio {...PortCardOne}/>
     </>
   )
 }

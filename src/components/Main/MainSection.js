@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../ButtonElement";
+import { Button } from "../ButtonElements";
 import {
   MainContainer,
   MainBg,

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {FaTimes, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
-import {Link as LinkR} from 'react-router-dom'
+// import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 
 /* #fff3e6 --> Tan  */
@@ -11,7 +11,7 @@ export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100%;
+  height: 70%;
   background: #1e212d;
   display: grid;
   align-items: center;

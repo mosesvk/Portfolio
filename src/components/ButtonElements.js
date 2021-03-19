@@ -14,17 +14,18 @@ export const Button = styled(Link)`
   color: ${({dark}) => (dark ? '#1e212d' : '#fff')};
   font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
   outline: none;
-  border: none;
+  border: ${({border}) => (border ? '1px solid' : '')};
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all .2s ease-in-out;
-  z-index: 10;
+  z-index: 1;
+  margin: auto 10px;
 
   &:hover {
     transition: all .2s ease-in-out;
-    background: ${({primary}) => (primary ? '#fff3e6' : '#1e212d')};
+    background: ${({primary}) => (primary ? '#fff3e6' : '#d2ae6b')};
     color: #2168eb;
     font-weight: bold;
   }
