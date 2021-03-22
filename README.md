@@ -1,6 +1,7 @@
 # Moses' Portfolio 
 
 #### Hey :wave: I'm Moses
-##### Junior Software Engineer who loves to code projects. Please check out my Portfolio website. 
+##### Junior Software Engineer who loves to code projects. Feel free to check out my work below 
 
-### Live Link
+#### [Check out my Live Portfolio Website](http://mosesvk.com/)
+
