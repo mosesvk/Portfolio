@@ -129,4 +129,8 @@ export const NavBtnLink = styled(LinkR)`
     color: #2168eb;
     font-weight: bold;
   } 
+
+  @media screen and (max-width){
+    
+  }
 `

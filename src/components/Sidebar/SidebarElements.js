@@ -76,12 +76,22 @@ export const SideBtnWrap = styled.div`
 `
 
 export const SideLinkedin = styled(FaLinkedin)`
-  color: #fff;
-  font-size: 75px;
+  color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
+  font-size: 50px;
+
+  &:hover {
+    opacity: .5;
+    background-color: #fff3e6;
+  }
 `
 export const SideGithub = styled(FaGithubSquare)`
-  color: #fff;
-  font-size: 75px;
+  color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
+  font-size: 50px;
+
+  &:hover {
+    opacity: .5;
+    background-color: #fff3e6;
+  }
 `
 // export const SidebarRoute = styled(LinkR)`
 //   border-radius: 50px;

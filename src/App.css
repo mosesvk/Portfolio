@@ -16,15 +16,5 @@ html {
   background-size: cover;
 }
 
-.portOneImg {
-  background: url('images/cfp-cover-1.jpg')
-  no-repeat bottom center fixed;
-  background-size: cover;
-}
 
-.portTwoImg {
-  background: url('images/barz-cover.jpg')
-  no-repeat bottom center fixed;
-  background-size: cover;
-  /* border-radius: 25px; */
-}
+

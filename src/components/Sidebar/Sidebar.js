@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
 import {
   SidebarContainer,
-  Icon, 
+  Icon,
   CloseIcon,
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
   SideLinkedin,
-  SideGithub
-} from './SidebarElements'
-
+  SideGithub,
+} from "./SidebarElements";
+import {
+  NavBtnLink
+} from "../Navbar/navbarElements"
 
 const Sidebar = (props) => {
-  const {toggle, isOpen} = props;
+  const { toggle, isOpen } = props;
 
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -22,13 +24,46 @@ const Sidebar = (props) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="portfolio" onClick={toggle} >PORTFOLIO</SidebarLink>
-          <SidebarLink to="about" onClick={toggle} >ABOUT</SidebarLink>
-          <SidebarLink to="contact" onClick={toggle} >CONTACT</SidebarLink>
+          <SidebarLink
+            to="portfolio"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            PORTFOLIO
+          </SidebarLink>
+          <SidebarLink
+            to="skills"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            SKILLS
+          </SidebarLink>
+          <SidebarLink
+            to="about"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            ABOUT
+          </SidebarLink>
+          <SidebarLink>
+            <NavBtnLink to="contact">Contact Me</NavBtnLink>
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SideLinkedin onClick={toggle}/>
-          <SideGithub onClick={toggle}/>
+          <SideLinkedin onClick={toggle} />
+          <SideGithub onClick={toggle} />
           {/* <SidebarRoute>
             <FaLinkedin />
             <FaGithubSquare />
@@ -36,7 +71,7 @@ const Sidebar = (props) => {
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

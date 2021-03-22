@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad5ae699.chunk.css",
+    "main.js": "/static/js/main.e7c70efc.chunk.js",
+    "main.js.map": "/static/js/main.e7c70efc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5dc9b9a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5dc9b9a6.js.map",
+    "static/js/2.7681bf46.chunk.js": "/static/js/2.7681bf46.chunk.js",
+    "static/js/2.7681bf46.chunk.js.map": "/static/js/2.7681bf46.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ad5ae699.chunk.css.map": "/static/css/main.ad5ae699.chunk.css.map",
+    "static/js/2.7681bf46.chunk.js.LICENSE.txt": "/static/js/2.7681bf46.chunk.js.LICENSE.txt",
+    "static/media/Port-img.c7c9dcdc.jpeg": "/static/media/Port-img.c7c9dcdc.jpeg",
+    "static/media/barz-cover.6dc28c61.jpg": "/static/media/barz-cover.6dc28c61.jpg",
+    "static/media/cfp-cover-1.590788d6.jpg": "/static/media/cfp-cover-1.590788d6.jpg",
+    "static/media/css-3.212d777a.svg": "/static/media/css-3.212d777a.svg",
+    "static/media/git.4bbb24fe.svg": "/static/media/git.4bbb24fe.svg",
+    "static/media/github.e0df113a.svg": "/static/media/github.e0df113a.svg",
+    "static/media/html-5.b24e95f4.svg": "/static/media/html-5.b24e95f4.svg",
+    "static/media/jscript.218515fe.svg": "/static/media/jscript.218515fe.svg",
+    "static/media/App.css": "/static/media/mountain-saltLake.33328b9c.jpg",
+    "static/media/node.3dc364b8.svg": "/static/media/node.3dc364b8.svg",
+    "static/media/react.eb0cb5af.svg": "/static/media/react.eb0cb5af.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5dc9b9a6.js",
+    "static/js/2.7681bf46.chunk.js",
+    "static/css/main.ad5ae699.chunk.css",
+    "static/js/main.e7c70efc.chunk.js"
+  ]
+}

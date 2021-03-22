@@ -6,9 +6,10 @@ import styled from 'styled-components'
 // #d2ae6b --> Caramel 
 
 export const PortContainer = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
+  margin: 0;
 
   @media screen and (max-width: 768px){
     /* padding: 100px 0; */
@@ -23,8 +24,9 @@ export const PortHeader = styled.div`
 
 export const PortText = styled.div`
   /* margin: 55px 0; */
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 800;
+  /* box-shadow: 5px 5px 50px 50px black; */
 `
 
 // export const ColoredLine = ({ color, align }) => (
@@ -48,14 +50,15 @@ export const PortWrap = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-  justify-content: center;
+  /* justify-content: center; */
 `
 
 export const PortRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  /* grid-auto-columns: minmax(auto, 1fr); */
-  align-items: center;
+  justify-content: space-around;
+  grid-auto-columns: minmax(auto, 1fr);
+  width: 100%;
   grid-template-areas: ${({imgStart}) => (imgStart ? `'col1''col2'` : `'col1 col1' 'col2 col2'`)};
 
   @media screen and (max-width: 768px) {
@@ -63,7 +66,7 @@ export const PortRow = styled.div`
   }
 `
 
-export const Column1 = styled.div`
+export const Column = styled.div`
   margin-bottom: 15px;
   padding: 0 0;
   grid-area: col1;
@@ -72,17 +75,23 @@ export const Column1 = styled.div`
   flex-direction: row;
 `
 
-export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2;
-`
+// export const Column2 = styled.div`
+//   margin-bottom: 15px;
+//   padding: 0 15px;
+//   grid-area: col2;
+// `
 
 export const TextWrapper = styled.div`
   max-width: 540px;
   height: 100%;
   padding-top: 0;
-  padding-bottom: 60px
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 480px) {
+    height: 50%;
+    text-align: center;
+
+  }
 `
 
 export const TopLine = styled.p`
@@ -123,11 +132,31 @@ export const ImgWrap = styled.div`
   height: 100%;
   text-align: center;
 
+  &:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+  }
 `
 export const Img = styled.img`
   width: 80%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: ${({circleImg}) => (circleImg ? '50%' : 'none')}
+  height: ${({heightFix}) => (heightFix ? '90%' : '100%')};
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
+  border-radius: ${({circleImg}) => (circleImg ? '50%' : 'none')};
+
+  &:hover {
+    opacity: .5;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 200px;
+    width: 200px;
+    
+    /* position: static; */
+  }
 `
