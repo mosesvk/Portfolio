@@ -78,19 +78,23 @@ export const SideBtnWrap = styled.div`
 export const SideLinkedin = styled(FaLinkedin)`
   color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
   font-size: 50px;
+  cursor: pointer;
 
   &:hover {
     opacity: .5;
     background-color: #fff3e6;
+    /* cursor:pointer; */
   }
 `
 export const SideGithub = styled(FaGithubSquare)`
   color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
   font-size: 50px;
+  cursor: pointer;
 
   &:hover {
     opacity: .5;
     background-color: #fff3e6;
+    /* cursor: pointer; */
   }
 `
 // export const SidebarRoute = styled(LinkR)`
