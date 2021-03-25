@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar'
 import MainSection from '../components/Main/MainSection'
 import Portfolio from '../components/Portfolio/Portfolio'
 import Skills from '../components/Skills/Skills'
+import Footer from '../components/Footer/Footer'
 
 
 const Home = () => {
@@ -21,6 +22,8 @@ const Home = () => {
       <MainSection />
       <Portfolio/>
       <Skills />
+
+      <Footer />
     </>
   )
 }
