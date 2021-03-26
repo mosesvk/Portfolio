@@ -20,12 +20,14 @@ export const PortHeader = styled.div`
   width: 100%;
   padding: 65px 0;
   text-align: center;
+  letter-spacing: -2px;
 `
 
 export const PortText = styled.div`
   /* margin: 55px 0; */
   font-size: 50px;
   font-weight: 800;
+  letter-spacing: 2px;
   /* box-shadow: 5px 5px 50px 50px black; */
 `
 
@@ -107,7 +109,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 1.1.%;
   font-weight: 600;
   color: ${({lightText}) => (lightText ? '#d2ae6b' : '#1e212d')};
@@ -158,5 +160,16 @@ export const Img = styled.img`
     width: 200px;
     
     /* position: static; */
+  }
+`
+
+export const Break =  styled.br`
+  display: none;
+  color: black;
+
+
+  @media screen and (max-width: 480px) {
+    display: static;
+
   }
 `

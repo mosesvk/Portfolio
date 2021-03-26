@@ -35,6 +35,7 @@ export const MainContainer = styled.div`
 
 export const MainBg = styled.div`
   position: absolute;
+  /* background-position: center; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -46,6 +47,8 @@ export const MainBg = styled.div`
 export const ImgBg = styled.img`
   width: 100%;
   height: 100%;
+  /* background-position: center; */
+  position: fixed center;
   -o-object-fit: cover;
   object-fit: cover;
 `

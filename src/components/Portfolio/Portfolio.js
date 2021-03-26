@@ -14,7 +14,8 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img
+  Img, 
+  Break
 } from "./portfolioElements";
 import PortImgOne from '../../images/cfp-cover-1.jpg'
 import PortImgTwo from '../../images/barz-cover.jpg'
@@ -49,6 +50,7 @@ const Portfolio = ({
               <ImgWrap>
                 <Img src={PortImgOne}/>
               </ImgWrap>
+              <Break />
             </Column>
             <Column>
               <TextWrapper>
@@ -63,6 +65,7 @@ const Portfolio = ({
               <ImgWrap>
                 <Img src={PortImgTwo} circleImg="true" heightFix="true"/>
               </ImgWrap>
+              <Break />
             </Column>
             <Column>
               <TextWrapper>
@@ -77,7 +80,7 @@ const Portfolio = ({
                 
                 <Img src={PortImgThree} circleImg="true" heightFix="true"/>
               </ImgWrap>
-
+              <Break />
             </Column>
           </PortRow>
         </PortWrap>

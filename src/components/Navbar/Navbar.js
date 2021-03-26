@@ -10,7 +10,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
+  // NavBtn,
   NavBtnLink,
 } from "./navbarElements";
 
@@ -39,7 +39,7 @@ const Navbar = (props) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="home" onClick={toggleHome}>
+          <NavLogo to="home" onClick={toggleHome} scrollNav={scrollNav}>
             &lt; Moses K &gt;
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -82,8 +82,6 @@ const Navbar = (props) => {
                 ABOUT
               </NavLinks>
             </NavItem>
-          </NavMenu>
-          <NavBtn>
             <NavBtnLink
               to="/contact"
               smooth={true}
@@ -92,9 +90,12 @@ const Navbar = (props) => {
               exact="true"
               offset={-80}
             >
-              Contact Me
+              Get In Touch
             </NavBtnLink>
-          </NavBtn>
+          </NavMenu>
+          {/* <NavBtn> */}
+            
+          {/* </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>

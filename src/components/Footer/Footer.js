@@ -21,7 +21,7 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Moses V. Kaumatule</SocialLogo>
+            <SocialLogo to="/">Copyright &copy; Moses Kaumatule</SocialLogo>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="LinkedIn"
               rel="noopener noreferrer">

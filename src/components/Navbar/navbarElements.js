@@ -38,7 +38,7 @@ export const NavLogo = styled(LinkR)`
   color: #fff3e6; 
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: ${({scrollNav}) => (scrollNav ? '2.25rem' : '2.75rem')};
   font-family: 'Oleo Script Swash Caps', cursive;
   display: flex;
   align-items: center;
@@ -101,14 +101,14 @@ export const NavLinks = styled(LinkS)`
   }
 `
 
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
+// export const NavBtn = styled.nav`
+//   display: flex;
+//   align-items: center;
 
-  @media screen and (max-width: 768px) {
-    display: none
-  }
-`
+//   @media screen and (max-width: 768px) {
+//     display: none
+//   }
+// `
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
@@ -122,6 +122,7 @@ export const NavBtnLink = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  margin-left: 10px;
 
   &:hover {
     transition: all .2s ease-in-out;

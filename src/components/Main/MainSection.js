@@ -24,7 +24,6 @@ const MainSection = () => {
       <MainBg>
         <ImgBg className="main-background" src={ImgBackground} />
       </MainBg>
-
       <MainContent>
         <MainH1>MOSES KAUMATULE</MainH1>
         <MainH2>Software Engineer</MainH2>

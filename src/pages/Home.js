@@ -5,7 +5,7 @@ import MainSection from '../components/Main/MainSection'
 import Portfolio from '../components/Portfolio/Portfolio'
 import Skills from '../components/Skills/Skills'
 import Footer from '../components/Footer/Footer'
-
+import About from '../components/About/About'
 
 const Home = () => {
 
@@ -22,7 +22,7 @@ const Home = () => {
       <MainSection />
       <Portfolio/>
       <Skills />
-
+      <About />
       <Footer />
     </>
   )
