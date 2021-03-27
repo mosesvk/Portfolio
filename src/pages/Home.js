@@ -3,9 +3,10 @@ import Sidebar from '../components/Sidebar/Sidebar'
 import Navbar from '../components/Navbar/Navbar'
 import MainSection from '../components/Main/MainSection'
 import Portfolio from '../components/Portfolio/Portfolio'
-import Skills from '../components/Skills/Skills'
+import Skills from '../components/Experience/Experience'
 import Footer from '../components/Footer/Footer'
 import About from '../components/About/About'
+import Contact from '../components/Contact/Contact'
 
 const Home = () => {
 
@@ -23,6 +24,7 @@ const Home = () => {
       <Portfolio/>
       <Skills />
       <About />
+      <Contact />
       <Footer />
     </>
   )

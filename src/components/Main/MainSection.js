@@ -11,6 +11,7 @@ import {
   ArrowRight,
 } from "./MainElements";
 import ImgBackground from "../../images/mountain-saltLake.jpg";
+// import '../App.css'
 
 const MainSection = () => {
   const [hover, setHover] = useState(false);

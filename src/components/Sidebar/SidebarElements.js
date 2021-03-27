@@ -45,6 +45,7 @@ export const SidebarMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
+  align-items: center;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
@@ -79,6 +80,7 @@ export const SideLinkedin = styled(FaLinkedin)`
   color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
   font-size: 50px;
   cursor: pointer;
+  /* align-items: center; */
 
   &:hover {
     opacity: .5;

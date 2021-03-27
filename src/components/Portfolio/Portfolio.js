@@ -5,6 +5,8 @@ import {
   PortContainer,
   PortHeader,
   PortText,
+  SocialWrap,
+  SocialLink,
   PortWrap,
   PortRow,
   Column,
@@ -20,6 +22,7 @@ import {
 import PortImgOne from '../../images/cfp-cover-1.jpg'
 import PortImgTwo from '../../images/barz-cover.jpg'
 import PortImgThree from '../../images/Port-img.jpeg'
+import Divider from '@material-ui/core/Divider';
 const Portfolio = ({
   lightBg,
   id, 
@@ -32,8 +35,11 @@ const Portfolio = ({
       <PortContainer id="portfolio" lightBg={lightBg}>
         <PortHeader>
           <PortText>PORTFOLIO</PortText>
-          <SideLinkedin iconDark="true"/>
-          <SideGithub iconDark="true"/>
+          <Divider variant="middle"/>
+          <SocialWrap>
+            <SocialLink><SideLinkedin iconDark="true"/></SocialLink>
+            <SocialLink><SideGithub iconDark="true"/></SocialLink>
+          </SocialWrap>
         </PortHeader>
         <PortWrap>
           <PortRow id={id} imgStart={imgStart}>

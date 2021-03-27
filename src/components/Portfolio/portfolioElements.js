@@ -31,17 +31,21 @@ export const PortText = styled.div`
   /* box-shadow: 5px 5px 50px 50px black; */
 `
 
-// export const ColoredLine = ({ color, align }) => (
-//   <hr
-//       style={{
-//           color: color,
-//           backgroundColor: color,
-//           height: 5,
-//           width: 200,
-//           alignContent: align
-//       }}
-//   />
-// );
+export const SocialWrap = styled.div`
+  display: flex; 
+  justify-content: center;
+`
+
+export const SocialLink = styled.a`
+  color: #fff;
+  font-size: 40px;
+  padding: 12px 5px;
+
+  &:hover {
+    color: #f9ddbf;
+  }
+`
+
 
 export const PortWrap = styled.div`
   display: flex;

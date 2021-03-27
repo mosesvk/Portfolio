@@ -47,6 +47,8 @@ export const MainBg = styled.div`
 export const ImgBg = styled.img`
   width: 100%;
   height: 100%;
+  background: no-repeat bottom center fixed;
+  background-size: cover;
   /* background-position: center; */
   position: fixed center;
   -o-object-fit: cover;
@@ -76,7 +78,7 @@ export const MainH1 = styled.h1`
     font-size: 67px
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 840px){
     font-size: 50px;
   }
 
@@ -92,7 +94,7 @@ export const MainH2 = styled.h2`
   margin-bottom: 25px;
   
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 840px){
     font-size: 25px;
   }
 

@@ -68,6 +68,7 @@ export const AboutText = styled.div`
 export const ImgWrap = styled.div`
   padding: 0 12px;
   width: 50%;
+  align-items: center;
 `
 
 export const Img = styled.img`

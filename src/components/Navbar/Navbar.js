@@ -60,14 +60,14 @@ const Navbar = (props) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="skills"
+                to="experience"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
                 offset={-80}
               >
-                SKILLS
+                EXPERIENCE
               </NavLinks>
             </NavItem>
             <NavItem>

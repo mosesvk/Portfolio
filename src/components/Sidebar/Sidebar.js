@@ -44,7 +44,7 @@ const Sidebar = (props) => {
             exact="true"
             offset={-80}
           >
-            SKILLS
+            EXPERIENCE
           </SidebarLink>
           <SidebarLink
             to="about"
@@ -58,12 +58,18 @@ const Sidebar = (props) => {
             ABOUT
           </SidebarLink>
           <SidebarLink>
-            <NavBtnLink to="contact">Contact Me</NavBtnLink>
+            <NavBtnLink to="contact" sidebar="true">GET IN TOUCH</NavBtnLink>
+          </SidebarLink>
+          <SidebarLink>
+            <SideLinkedin onClick={toggle} />
+          </SidebarLink>
+          <SidebarLink>
+            <SideGithub onClick={toggle} />
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SideLinkedin onClick={toggle} />
-          <SideGithub onClick={toggle} />
+          {/* <SideLinkedin onClick={toggle} />
+          <SideGithub onClick={toggle} /> */}
           {/* <SidebarRoute>
             <FaLinkedin />
             <FaGithubSquare />
