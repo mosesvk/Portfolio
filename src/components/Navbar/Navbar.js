@@ -83,7 +83,7 @@ const Navbar = (props) => {
               </NavLinks>
             </NavItem>
             <NavBtnLink
-              to="/contact"
+              to="contact"
               smooth={true}
               duration={500}
               spy={true}

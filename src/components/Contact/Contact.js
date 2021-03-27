@@ -4,6 +4,7 @@ import './Contact.css';
 
 
 const Contact = () => {
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,7 +19,7 @@ const Contact = () => {
 
   return(
     <>
-      <div className="container">
+      <div id="contact" className="container" >
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
