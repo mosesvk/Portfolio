@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
   margin: 0;
-  padding: 100px 15px;
+  padding: 25px 15px 150px;
 
   @media screen and (max-width: 768px){
     padding: 100px 0;
@@ -56,8 +56,9 @@ export const AboutWrap = styled.div`
 export const AboutText = styled.div`
   font-size: 20px;
   text-align: left;
-  padding: 0 45px;
-  width: 50%;
+  padding: 0 25px;
+  /* white-space: nowrap; */
+  width: 60%;
 
   @media screen and (max-width: 480px) {
     width: 100%;
@@ -68,7 +69,7 @@ export const AboutText = styled.div`
 export const ImgWrap = styled.div`
   padding: 0 12px;
   width: 50%;
-  align-items: center;
+  text-align: center;
 `
 
 export const Img = styled.img`

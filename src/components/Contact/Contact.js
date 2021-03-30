@@ -19,17 +19,20 @@ const Contact = () => {
 
   return(
     <>
-      <div id="contact" className="container" >
+      <div className="contact-container" >
+        <div id="contact" className="contact-header">
+          <h1>REACH OUT & LET'S CHAT</h1>
+        </div>
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
-              <input type="text" className="form-control" placeholder="Name" name="name"/>
+              <input type="text" className="form-control" placeholder="Name..." name="name"/>
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
-              <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+              <input type="email" className="form-control" placeholder="Email Address..." name="email"/>
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
-              <input type="text" className="form-control" placeholder="Subject" name="subject"/>
+              <input type="text" className="submit form-control" placeholder="Subject..." name="subject"/>
             </div>
             <div className="col-8 pt-3 mx-auto">
               <input type="Submit" className="btn btn-info" value="Send Message"/>

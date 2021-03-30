@@ -10,6 +10,7 @@ export const PortContainer = styled.div`
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
   margin: 0;
+  /* align-items: center; */
 
   @media screen and (max-width: 768px){
     /* padding: 100px 0; */
@@ -21,6 +22,10 @@ export const PortHeader = styled.div`
   padding: 65px 0;
   text-align: center;
   letter-spacing: -2px;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  /* padding: 0 24px; */
 `
 
 export const PortText = styled.div`
@@ -29,6 +34,16 @@ export const PortText = styled.div`
   font-weight: 800;
   letter-spacing: 2px;
   /* box-shadow: 5px 5px 50px 50px black; */
+`
+
+export const PortP = styled.p`
+  font-size: 1.05rem;
+  color: gray;
+  font-style: italic;
+  letter-spacing: .25px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
 `
 
 export const SocialWrap = styled.div`

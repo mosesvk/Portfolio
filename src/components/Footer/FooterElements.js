@@ -10,18 +10,22 @@ background-color: #1e212d
 `
 
 export const FooterWrap = styled.div`
-  padding: 16px 24px; 
+  padding: 0 24px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1050px;
   margin: 0 auto;
 `
 
 export const SocialMedia = styled.div`
   max-width: 1300px;
-  width: 100%
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 15px;
+  }
 `
 
 export const SocialMediaWrap = styled.div`
@@ -29,7 +33,7 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 16px auto 0 auto;
+  margin: 0 auto 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -58,7 +62,7 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 40px;
-  padding-bottom: 12px;
+  padding-bottom: 18px;
 
   &:hover {
     color: #f9ddbf;

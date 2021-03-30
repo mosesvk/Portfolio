@@ -8,7 +8,7 @@
 
 html {
   /* height: 350vh; */
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 /* .main-background {
@@ -25,5 +25,7 @@ html {
   object-fit: cover;
 } */ 
 
-
+p {
+  line-height: 1.8rem;
+}
 

@@ -5,6 +5,7 @@ import {
   PortContainer,
   PortHeader,
   PortText,
+  PortP,
   SocialWrap,
   SocialLink,
   PortWrap,
@@ -35,6 +36,7 @@ const Portfolio = ({
       <PortContainer id="portfolio" lightBg={lightBg}>
         <PortHeader>
           <PortText>PORTFOLIO</PortText>
+          <PortP>Check out my Github and LinkedIn accounts for my other projects on React and JavaScripts.</PortP>
           <Divider variant="middle"/>
           <SocialWrap>
             <SocialLink><SideLinkedin iconDark="true"/></SocialLink>

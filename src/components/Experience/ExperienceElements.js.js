@@ -8,7 +8,7 @@ import styled from 'styled-components'
 export const ExperienceContainer = styled.div`
   /* height: 100vh; */
   color: #1e212d;
-  background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
+  background: ${({lightBg}) => (lightBg ? 'fff3e69e ' : '#fff')};
   margin: 0;
 
   @media screen and (max-width: 768px){
@@ -18,7 +18,7 @@ export const ExperienceContainer = styled.div`
 
 export const ExperienceHeader = styled.div`
   width: 100%;
-  padding: 65px 0;
+  padding: 65px 0 0 0;
   text-align: center;
   letter-spacing: -2px;
 `
@@ -29,6 +29,13 @@ export const ExperienceHeaderText = styled.div`
   font-weight: 800;
   letter-spacing: 2px;
   /* box-shadow: 5px 5px 50px 50px black; */
+`
+
+export const ExperienceP = styled.p`
+  font-size: 1.05rem;
+  color: gray;
+  font-style: italic;
+  letter-spacing: .25px;
 `
 
 // export const ColoredLine = ({ color, align }) => (
@@ -48,7 +55,7 @@ export const PortWrap = styled.div`
   flex-wrap: wrap;
   z-index: 1;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -60,7 +67,7 @@ export const SkillContainer =styled.div`
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
   margin: 0;
-  padding: 100px 0px;
+  padding: 50px 0 0 0;
 
   @media screen and (max-width: 481px){
     /* padding: 100px 0; */
@@ -73,7 +80,7 @@ export const SkillWrap = styled.div`
   flex-wrap: wrap;
   z-index: 1;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -84,10 +91,21 @@ export const SkillWrap = styled.div`
     /* margin: 15px 45px; */
     padding: 0;
   }
-
 `
 
-export const Skill = styled.img`
-  width: 125px;
-  height: 125px;
+export const Skill = styled.div`
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  /* align-content: center; */
+`
+
+export const SkillImg = styled.img`
+  width: 100px;
+  height: 100px;
 `

@@ -49,6 +49,11 @@ export const NavLogo = styled(LinkR)`
   @media screen and (max-width: 840px) {
     font-size: 2.25rem;
   }
+
+  &:hover {
+    text-decoration: none;
+    color: #fff3e6;
+  }
 `
 export const MobileIcon = styled.div`
   display: none;
