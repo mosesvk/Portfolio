@@ -8,7 +8,7 @@ import styled from 'styled-components'
 export const ExperienceContainer = styled.div`
   /* height: 100vh; */
   color: #1e212d;
-  background: ${({lightBg}) => (lightBg ? 'fff3e69e ' : '#fff')};
+  background: ${({lightBg}) => (lightBg ? '#fff3e69e' : '#fff')};
   margin: 0;
 
   @media screen and (max-width: 768px){
@@ -65,7 +65,7 @@ export const PortWrap = styled.div`
 export const SkillContainer =styled.div`
   /* height: 100vh; */
   color: #1e212d;
-  background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
+  /* background: ${({lightBg}) => (lightBg ? '#fff3e69e' : '#fff')}; */
   margin: 0;
   padding: 50px 0 0 0;
 

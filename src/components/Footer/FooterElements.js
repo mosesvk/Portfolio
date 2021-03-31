@@ -15,7 +15,7 @@ export const FooterWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1050px;
+  max-width: 1000px;
   margin: 0 auto;
 `
 
@@ -62,7 +62,7 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 40px;
-  padding-bottom: 18px;
+  padding: 18px 8px;
 
   &:hover {
     color: #f9ddbf;

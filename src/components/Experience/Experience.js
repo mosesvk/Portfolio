@@ -7,7 +7,11 @@ import nodejs from '../../images/node.svg'
 import sql from '../../images/sql-server.svg'
 import git from '../../images/git.svg'
 import Divider from '@material-ui/core/Divider';
-import {SideLinkedin, SideGithub } from '../Sidebar/SidebarElements'
+// import {SideLinkedin, SideGithub } from '../Sidebar/SidebarElements'
+import {
+  FaLinkedin,
+  FaGithub
+} from 'react-icons/fa'
 import {
   SocialWrap,
   SocialLink
@@ -33,11 +37,11 @@ const Skills = () => {
           <ExperienceP>View my LinkedIn & Github Profile for more information</ExperienceP>
           <Divider variant="middle"/>
           <SocialWrap>
-            <SocialLink><SideLinkedin iconDark="true"/></SocialLink>
-            <SocialLink><SideGithub iconDark="true"/></SocialLink>
+            <SocialLink><FaLinkedin iconDark="true"/></SocialLink>
+            <SocialLink><FaGithub iconDark="true"/></SocialLink>
           </SocialWrap>
         </ExperienceHeader>
-        <SkillContainer>
+        <SkillContainer lightBg="true">
           <SkillWrap>
             <Skill>
               <SkillImg src={react}/>

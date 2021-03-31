@@ -1,9 +1,10 @@
 import React from 'react'
 import {
   FaLinkedin, 
-  FaGithub,
-  FaFacebook,
-  FaYoutube
+  FaGithubSquare,
+  FaFacebookSquare,
+  FaYoutubeSquare,
+  FaInstagram
 } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -29,15 +30,19 @@ const Footer = () => {
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Github"
               rel="noopener noreferrer">
-                <FaGithub />
+                <FaGithubSquare />
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook"
               rel="noopener noreferrer">
-                <FaFacebook />
+                <FaFacebookSquare />
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Youtube"
               rel="noopener noreferrer">
-                <FaYoutube />
+                <FaYoutubeSquare />
+              </SocialIconLink>
+              <SocialIconLink href="/" target="_blank" aria-label="Instagram"
+              rel="noopener noreferrer">
+                <FaInstagram />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

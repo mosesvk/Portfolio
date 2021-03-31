@@ -36,7 +36,7 @@ const Sidebar = (props) => {
             PORTFOLIO
           </SidebarLink>
           <SidebarLink
-            to="skills"
+            to="experience"
             onClick={toggle}
             smooth={true}
             duration={500}

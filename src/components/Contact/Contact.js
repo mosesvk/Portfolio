@@ -20,7 +20,7 @@ const Contact = () => {
   return(
     <>
       <div className="contact-container" >
-        <div id="contact" className="contact-header">
+        <div className="contact-header">
           <h1>REACH OUT & LET'S CHAT</h1>
         </div>
         <form onSubmit={sendEmail}>
@@ -35,7 +35,7 @@ const Contact = () => {
               <input type="text" className="submit form-control" placeholder="Subject..." name="subject"/>
             </div>
             <div className="col-8 pt-3 mx-auto">
-              <input type="Submit" className="btn btn-info" value="Send Message"/>
+              <input type="Submit" className="submitBtn btn btn-info" value="Send Message"/>
             </div>
           </div>
         </form>

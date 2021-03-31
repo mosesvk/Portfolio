@@ -1,5 +1,13 @@
 import React from 'react'
 import {
+  FaFacebook,
+  FaInstagram
+} from 'react-icons/fa';
+import {
+  SocialWrap,
+  SocialLink
+} from '../Portfolio/portfolioElements'
+import {
   AboutContainer,
   AboutHeader,
   AboutHeaderText,
@@ -20,6 +28,16 @@ const About = () => {
         <AboutHeader>
           <AboutHeaderText>WHO IS MOSES?</AboutHeaderText>
           <Divider variant="middle"/>
+          <SocialWrap>
+            <SocialLink href="/" target="_blank" aria-label="LinkedIn"
+              rel="noopener noreferrer">
+              <FaFacebook />
+            </SocialLink>
+            <SocialLink href="/" target="_blank" aria-label="LinkedIn"
+              rel="noopener noreferrer">
+              <FaInstagram />
+            </SocialLink>
+          </SocialWrap>
         </AboutHeader>
         <AboutWrap>
           <AboutText>

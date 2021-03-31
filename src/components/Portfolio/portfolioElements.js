@@ -1,16 +1,14 @@
 import styled from 'styled-components'
 
-/* #fff3e6 --> Tan  */
-/* #2168eb --> Blue  */
-/* #1e212d --> Black  */
-// #d2ae6b --> Caramel 
+
 
 export const PortContainer = styled.div`
-  /* height: 100vh; */
+  height: 100vh;
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
   margin: 0;
   /* align-items: center; */
+
 
   @media screen and (max-width: 768px){
     /* padding: 100px 0; */
@@ -37,7 +35,7 @@ export const PortText = styled.div`
 `
 
 export const PortP = styled.p`
-  font-size: 1.05rem;
+  font-size: 1.0d5rem;
   color: gray;
   font-style: italic;
   letter-spacing: .25px;
@@ -52,13 +50,14 @@ export const SocialWrap = styled.div`
 `
 
 export const SocialLink = styled.a`
-  color: #fff;
+  color: #1e212d;
   font-size: 40px;
   padding: 12px 5px;
 
   &:hover {
-    color: #f9ddbf;
+    opacity: .5;
   }
+
 `
 
 

@@ -50,10 +50,11 @@ const Navbar = (props) => {
               <NavLinks
                 to="portfolio"
                 smooth={true}
-                duration={500}
+                duration={750}
                 spy={true}
                 exact="true"
                 offset={-80}
+                delay={100}
               >
                 PORTFOLIO
               </NavLinks>
@@ -62,10 +63,11 @@ const Navbar = (props) => {
               <NavLinks
                 to="experience"
                 smooth={true}
-                duration={500}
+                duration={750}
                 spy={true}
                 exact="true"
                 offset={-80}
+                delay={100}
               >
                 EXPERIENCE
               </NavLinks>
@@ -74,7 +76,7 @@ const Navbar = (props) => {
               <NavLinks
                 to="about"
                 smooth={true}
-                duration={500}
+                duration={750}
                 spy={true}
                 exact="true"
                 offset={-80}
@@ -85,7 +87,7 @@ const Navbar = (props) => {
             <NavBtnLink
               to="contact"
               smooth={true}
-              duration={500}
+              duration={750}
               spy={true}
               exact="true"
               offset={-80}

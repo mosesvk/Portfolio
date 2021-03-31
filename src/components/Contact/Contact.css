@@ -1,9 +1,13 @@
 .contact-container {
   height: 80vh;
-  background: url("../../images/saltLake.jpg");
+  background: url("../../images/contact.jpeg") top fixed;
   background-size: cover;
   background-color: #fff3e6;
   padding: 10px 24px;
+  /* background-size: 50% auto; */
+  /* background-size: 3em 25%; */
+  /* background-size: auto 6px; */
+  /* background-size: auto auto; */
 }
 
 .contact-header {
@@ -14,11 +18,20 @@
 .contact-header > h1 {
   font-weight: 700;
   font-size: 3.5rem;
-  color: #fff;
+  color: #1e212d;
 }
 
 .submit {
   height: 150px;
+}
+
+.submitBtn {
+  background-color: #fff3e6;
+  color: black;
+}
+
+.submitBtn:hover {
+  background-color: #2168eb;
 }
 
 @media screen and (max-width: 480px){

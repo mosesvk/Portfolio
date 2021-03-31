@@ -75,7 +75,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  /* margin-right: -22px; */
 
   @media screen and (max-width: 840px) {
     display: none
@@ -102,6 +102,7 @@ export const NavLinks = styled(LinkS)`
   &:hover {
     color: #fff3e6;
     font-weight: 800;
+    text-decoration: none;
   }
 
   &.active {

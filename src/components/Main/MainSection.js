@@ -10,7 +10,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./MainElements";
-import ImgBackground from "../../images/mountain-saltLake.jpg";
+import ImgBackground from "../../images/sanFran.jpeg";
 // import '../App.css'
 
 const MainSection = () => {
