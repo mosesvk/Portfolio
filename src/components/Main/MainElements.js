@@ -15,8 +15,12 @@ export const MainContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
+  background: no-repeat bottom center fixed;
+  background-size: cover;
 
   :before{
+    background: no-repeat bottom center fixed;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,6 +40,8 @@ export const MainContainer = styled.div`
 export const MainBg = styled.div`
   position: absolute;
   /* background-position: center; */
+  background: no-repeat bottom center fixed;
+  background-size: cover;
   top: 0;
   right: 0;
   bottom: 0;
@@ -57,9 +63,10 @@ export const ImgBg = styled.img`
 
 export const MainContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  width: 100%;
+  /* max-width: 1200px; */
   position: absolute;
-  top: 35%;
+  top: 32%;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -68,6 +75,7 @@ export const MainContent = styled.div`
 
 export const MainH1 = styled.h1`
   color: #fff3e6 ;
+  background-color: #1e212d6e;
   font-size: 60px;
   text-align: center;
   margin-bottom: 10px;
@@ -89,6 +97,7 @@ export const MainH1 = styled.h1`
 
 export const MainH2 = styled.h2`
   color: #fff3e6;
+  background-color: #1e212d6e;
   font-size: 35px;
   text-align: center; 
   margin-bottom: 25px;

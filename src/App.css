@@ -19,11 +19,11 @@ html {
   height: 100%;
   background: no-repeat bottom center fixed;
   background-size: cover;
-  /* background-position: center; */
-  /* position: fixed center;
+  background-position: center; 
+  position: fixed center;
   -o-object-fit: cover;
   object-fit: cover;
-} */ 
+}  */
 
 p {
   line-height: 1.8rem;

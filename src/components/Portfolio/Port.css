@@ -264,11 +264,13 @@ img::-moz-selection {
   background: 0 0;
 }
 
-body {
+/* body {
   webkit-tap-highlight-color: #1ee2e7;
-}
+} */
 
 .img-responsive {
   width: 100%;
   height: 150px;
 }
+
+@media screen and (max-width: )

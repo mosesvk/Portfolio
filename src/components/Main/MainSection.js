@@ -27,7 +27,7 @@ const MainSection = () => {
       </MainBg>
       <MainContent>
         <MainH1>MOSES KAUMATULE</MainH1>
-        <MainH2>Software Engineer</MainH2>
+        <MainH2>Software Developer</MainH2>
         <Button
           to="portfolio"
           onMouseEnter={onHover}
