@@ -58,7 +58,7 @@ export const NavLogo = styled(LinkR)`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 940px) {
     display: block; 
     position: absolute;
     top: 0; 
@@ -77,7 +77,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   /* margin-right: -22px; */
 
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 940px) {
     display: none
   }
 `
@@ -89,7 +89,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   font-size: 18px;
-  color: #fff;
+  color: ${({darkColor}) => (darkColor ? '#1e212d' : '#fff')};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -100,7 +100,7 @@ export const NavLinks = styled(LinkS)`
   letter-spacing: 1px;
 
   &:hover {
-    color: #fff3e6;
+    color: ${({darkColorHover}) => (darkColorHover ? '#2168eb' : '#fff3e6')};
     font-weight: 800;
     text-decoration: none;
   }
@@ -124,7 +124,7 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: #fff;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 10px 12px;
   color: #1e212d;
   font-size: ${({sidebar}) => (sidebar ? '22px' : '16px')};
   outline: none;
@@ -139,6 +139,7 @@ export const NavBtnLink = styled(LinkR)`
     background: #fff3e6;
     color: #2168eb;
     font-weight: bold;
+    text-decoration: none;
   } 
 
   @media screen and (max-width){

@@ -1,6 +1,6 @@
 .contact-container {
   height: 80vh;
-  background: url("../../images/contact.jpeg") top fixed;
+  background: url("../../images/contact1.jpeg") center;
   background-size: cover;
   background-color: #fff3e6;
   padding: 10px 24px;
@@ -18,7 +18,7 @@
 .contact-header > h1 {
   font-weight: 700;
   font-size: 3.5rem;
-  color: #1e212d;
+  color: #fff;
 }
 
 .submit {
@@ -44,4 +44,14 @@
     margin: 0;
     width: 90%;
   }
+}
+
+.contact-p {
+  font-size: 1.05rem;
+  color: black;
+  font-style: italic;
+  letter-spacing: .25px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
 }

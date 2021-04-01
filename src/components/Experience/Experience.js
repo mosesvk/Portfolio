@@ -6,6 +6,7 @@ import javascript from '../../images/jscript.svg'
 import nodejs from '../../images/node.svg'
 import sql from '../../images/sql-server.svg'
 import git from '../../images/git.svg'
+import sass from '../../images/sass.svg'
 import Divider from '@material-ui/core/Divider';
 // import {SideLinkedin, SideGithub } from '../Sidebar/SidebarElements'
 import {
@@ -70,6 +71,10 @@ const Skills = () => {
             <Skill>                
               <SkillImg src={sql}/>
               Postgre
+            </Skill>            
+            <Skill>                
+              <SkillImg src={sass}/>
+              SASS
             </Skill>            
           </SkillWrap>
         </SkillContainer>

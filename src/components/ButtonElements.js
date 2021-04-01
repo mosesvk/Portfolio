@@ -28,5 +28,6 @@ export const Button = styled(Link)`
     background: ${({primary}) => (primary ? '#fff3e6' : '#d2ae6b')};
     color: #2168eb;
     font-weight: bold;
+    text-decoration: none;
   }
 `
