@@ -94,13 +94,13 @@ export const SkillWrap = styled.div`
 `
 
 export const Skill = styled.div`
-  width: 30%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 24px;
   /* align-content: center; */
 `

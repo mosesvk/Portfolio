@@ -73,8 +73,8 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-  height: 350px;
-  width: 300px;
+  height: 450px;
+  width: 400px;
   border-radius: 20px;
 
   /* @media screen and (max-width: 480px) {
