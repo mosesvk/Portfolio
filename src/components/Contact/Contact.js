@@ -1,6 +1,9 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import './Contact.css';
+import * as emailjs from 'emailjs-com'
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 
 const Contact = () => {
@@ -8,14 +11,16 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_7zm9i28', e.target, 'user_7GyyUHla5NbuBMxzW3Aip')
+    emailjs.sendForm('service_c9a3rqg', 'template_7zm9i28', e.target, 'user_7GyyUHla5NbuBMxzW3Aip')
       .then((result) => {
+          toast("Thank you for sending an email! I will get back to you within 24 hours");
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       }); 
       e.target.reset()
   }
+
 
   return(
     <>

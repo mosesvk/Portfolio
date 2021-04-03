@@ -6,7 +6,7 @@ import styled from 'styled-components'
 // #d2ae6b --> Caramel 
 
 export const ExperienceContainer = styled.div`
-  /* height: 100vh; */
+  height: 100vh;
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e69e' : '#fff')};
   margin: 0;
@@ -54,7 +54,7 @@ export const PortWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
-  width: 100%;
+  height: 100%;
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
