@@ -50,6 +50,10 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: border-left;
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
+  }
 `
 
 export const SocialIcons = styled.div`
@@ -57,6 +61,10 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 `
 
 export const SocialIconLink = styled.a`

@@ -24,7 +24,7 @@ const Contact = () => {
 
   return(
     <>
-      <div id="contact" className="contact-container" >
+      <div id="contact" className="contact-container">
         <div className="contact-header">
           <h1>REACH OUT & LET'S CHAT</h1>
           <p className="contact-p">You can also reach me through LinkedIn</p>
@@ -38,7 +38,10 @@ const Contact = () => {
               <input type="email" className="form-control" placeholder="Email Address..." name="email"/>
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
-              <input type="text" className="submit form-control" placeholder="Subject..." name="subject"/>
+              <input type="text" className="form-control" placeholder="Subject..." name="subject"/>
+            </div>
+            <div className="col-8 form-group pt-2 mx-auto">
+              <input type="text" className="message form-control" placeholder="Message..." name="message"/>
             </div>
             <div className="col-8 pt-3 mx-auto">
               <input type="Submit" className="submitBtn btn btn-info" value="Send Message"/>

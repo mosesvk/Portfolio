@@ -21,7 +21,17 @@
   color: #fff;
 }
 
-.submit {
+.contact-p {
+  font-size: 1.05rem;
+  color: #fff3e6;
+  font-style: italic;
+  letter-spacing: .25px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+}
+
+.message {
   height: 150px;
 }
 
@@ -35,8 +45,18 @@
 }
 
 @media screen and (max-width: 480px){
+  .contact-container {
+    height: auto;
+    padding-bottom: 20px
+  }
+
   .contact-header > h1 {
     font-size: 2.25rem;
+  }
+
+  .contact-header {
+    background-color: #00000091;
+
   }
   
   .col-8 {
@@ -44,14 +64,8 @@
     margin: 0;
     width: 90%;
   }
-}
 
-.contact-p {
-  font-size: 1.05rem;
-  color: black;
-  font-style: italic;
-  letter-spacing: .25px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
+  .pt-5 {
+    padding: 0!important;
+  }
 }

@@ -86,7 +86,6 @@ export const NavItem = styled.li`
   height: 80px;
 `
 
-
 export const NavLinks = styled(LinkS)`
   font-size: 18px;
   color: ${({darkColor}) => (darkColor ? '#1e212d' : '#fff')};
@@ -94,7 +93,8 @@ export const NavLinks = styled(LinkS)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 80%;
+  margin-top: 15px;
   padding: 0 25px;
   cursor: pointer;
   letter-spacing: 1px;
@@ -107,6 +107,8 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     background: #fff3e6;
+    border-radius: 10px;
+    margin-top: 15px;
     color: #1e212d;
   }
 `

@@ -21,7 +21,9 @@ export const Button = styled(Link)`
   align-items: center;
   transition: all .2s ease-in-out;
   z-index: 1;
-  margin: auto 10px;
+  height: ${({eighty}) => (eighty ? '80' : '')}
+  margin: ${({fifteen}) => (fifteen ? '15px 0' : 'auto 10px')}
+  /* margin: auto 10px; */
 
   &:hover {
     transition: all .2s ease-in-out;
