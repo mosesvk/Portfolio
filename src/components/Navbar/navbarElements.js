@@ -27,11 +27,12 @@ export const Nav = styled.div`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 65px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+  align-items: baseline;
 `
 
 export const NavLogo = styled(LinkR)`
@@ -75,6 +76,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  margin: 0px;
+  align-items: baseline;
   /* margin-right: -22px; */
 
   @media screen and (max-width: 970px) {
@@ -93,8 +96,7 @@ export const NavLinks = styled(LinkS)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 80%;
-  margin-top: 15px;
+  height: 35px;
   padding: 0 25px;
   cursor: pointer;
   letter-spacing: 1px;

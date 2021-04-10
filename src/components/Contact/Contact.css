@@ -10,6 +10,7 @@
   /* background-size: auto auto; */
 }
 
+
 .contact-header {
   text-align: center;
   padding-top: 25px;
@@ -44,10 +45,20 @@
   background-color: #2168eb;
 }
 
+@media all and (min-height: 900px){
+  .contact-container {
+    height: 85vh;
+  }
+
+  .contact-header {
+    padding: 50px auto;
+  }
+}
+
 @media screen and (max-width: 480px){
   .contact-container {
     height: auto;
-    padding-bottom: 20px
+    padding-bottom: 20px;
   }
 
   .contact-header > h1 {
