@@ -43,8 +43,14 @@ const Portfolio = ({
           <PortP>Check out my Github and LinkedIn accounts for my other projects on React and JavaScripts.</PortP>
           <Divider variant="middle"/>
           <SocialWrap>
-            <SocialLink colorHover="true"><FaLinkedin iconDark="true"/></SocialLink>
-            <SocialLink colorHover="true"><FaGithub iconDark="true"/></SocialLink>
+            <SocialLink
+            href="https://www.linkedin.com/in/mosesvk/"
+            target="_blank"
+            colorHover="true"><FaLinkedin iconDark="true"/></SocialLink>
+            <SocialLink 
+            href="https://github.com/mosesvk"
+            target="_blank"
+            colorHover="true"><FaGithub iconDark="true"/></SocialLink>
           </SocialWrap>
         </PortHeader>
         <section id="portfolio" className="bg-light-gray">
