@@ -11,7 +11,7 @@ import {
   NavItem,
   NavLinks,
   // NavBtn,
-  NavBtnLink,
+  // NavBtnLink,
 } from "./navbarElements";
 
 const Navbar = (props) => {
