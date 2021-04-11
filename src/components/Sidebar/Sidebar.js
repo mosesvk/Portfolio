@@ -10,9 +10,6 @@ import {
   SideLinkedin,
   SideGithub,
 } from "./SidebarElements";
-import {
-  NavBtnLink
-} from "../Navbar/navbarElements"
 
 const Sidebar = (props) => {
   const { toggle, isOpen } = props;
@@ -57,8 +54,16 @@ const Sidebar = (props) => {
           >
             ABOUT
           </SidebarLink>
-          <SidebarLink>
-            <NavBtnLink to="contact" sidebar="true">GET IN TOUCH</NavBtnLink>
+          <SidebarLink
+            to="contact"
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            CONTACT
           </SidebarLink>
           <SidebarLink>
             <SideLinkedin onClick={toggle} />

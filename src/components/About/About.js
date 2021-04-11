@@ -29,11 +29,17 @@ const About = () => {
           <AboutHeaderText>WHO IS MOSES?</AboutHeaderText>
           <Divider variant="middle"/>
           <SocialWrap>
-            <SocialLink href="/" target="_blank" aria-label="LinkedIn"
+            <SocialLink 
+              href="https://www.facebook.com/profile.php?id=100004199235959"
+              target="_blank"
+              aria-label="LinkedIn"
               rel="noopener noreferrer">
               <FaFacebook />
             </SocialLink>
-            <SocialLink href="/" target="_blank" aria-label="LinkedIn"
+            <SocialLink
+              href="https://www.facebook.com/profile.php?id=100004199235959"
+              target="_blank"
+              aria-label="LinkedIn"
               rel="noopener noreferrer">
               <FaInstagram />
             </SocialLink>

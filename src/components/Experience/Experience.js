@@ -38,8 +38,14 @@ const Skills = () => {
           <ExperienceP>View my LinkedIn & Github Profile for more information</ExperienceP>
           <Divider variant="middle"/>
           <SocialWrap>
-            <SocialLink><FaLinkedin iconDark="true"/></SocialLink>
-            <SocialLink><FaGithub iconDark="true"/></SocialLink>
+            <SocialLink
+            href="https://www.linkedin.com/in/mosesvk/"
+            target="_blank"
+            ><FaLinkedin iconDark="true"/></SocialLink>
+            <SocialLink
+            href="https://github.com/mosesvk"
+            target="_blank"
+            ><FaGithub iconDark="true"/></SocialLink>
           </SocialWrap>
         </ExperienceHeader>
         <SkillContainer lightBg="true">

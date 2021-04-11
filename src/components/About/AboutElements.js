@@ -77,8 +77,8 @@ export const Img = styled.img`
   width: 400px;
   border-radius: 20px;
 
-  /* @media screen and (max-width: 480px) {
-    height: 150px;
-    width: 200px;
-  } */
+  @media screen and (max-width: 480px) {
+    height: 250px;
+    width: 300px;
+  }
 `
