@@ -40,7 +40,7 @@ const Portfolio = ({
       <PortContainer id="portfolio" lightBg={lightBg}>
         <PortHeader>
           <PortText>PORTFOLIO</PortText>
-          <PortP>Check out my Github and LinkedIn accounts for my other projects on React and JavaScripts.</PortP>
+          <PortP>Check out my Github and LinkedIn accounts for other projects</PortP>
           <Divider variant="middle"/>
           <SocialWrap>
             <SocialLink
@@ -94,7 +94,7 @@ const Portfolio = ({
                   <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" className="img-responsive" alt="portImg"/>
                 </a>
                 <div className="portfolio-caption">
-                  <h4>Milovales</h4>
+                  <h4>Powerhouse</h4>
                   <p className="text-muted">Web Development</p>
                 </div>
               </div>

@@ -6,7 +6,7 @@ import styled from 'styled-components'
 // #d2ae6b --> Caramel 
 
 export const AboutContainer = styled.div`
-  /* height: 100vh; */
+  height: 100vh;
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e6 ' : '#fff')};
   margin: 0;
@@ -19,7 +19,7 @@ export const AboutContainer = styled.div`
 
 export const AboutHeader = styled.div`
   width: 100%;
-  padding: 65px 0;
+  padding: 45px 0;
   text-align: center;
   /* align-items: center; */
 
