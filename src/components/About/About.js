@@ -49,7 +49,7 @@ const About = () => {
           <AboutText>
             <p>Born in California, Raised in Utah.
             I love being with my family.
-            I enjoy playing piano and watching anime and Marvel movies. </p>
+            I enjoy playing piano and watching Marvel movies. </p>
             <br/>
             <p>I enjoy learning new ways to build meaningful projects that uplift and improve the lives of people and businesses. </p>
             <br/>
