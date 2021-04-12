@@ -34,6 +34,10 @@ export const AboutHeaderText = styled.div`
   font-weight: 800;
   /* text-align: center; */
   /* box-shadow: 5px 5px 50px 50px black; */
+
+  @media screen and (max-width: 480px) {
+    font-size: 35px;
+  }
 `
 
 export const AboutWrap = styled.div`
@@ -62,6 +66,7 @@ export const AboutText = styled.div`
 
   @media screen and (max-width: 480px) {
     width: 100%;
+    font-size: 18px;
     padding: 15px 0px;
   }
 `
@@ -78,7 +83,6 @@ export const Img = styled.img`
   border-radius: 20px;
 
   @media screen and (max-width: 480px) {
-    height: 250px;
-    width: 300px;
+    display: none;
   }
 `
