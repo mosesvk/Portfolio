@@ -47,7 +47,7 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
 
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 480px) {
     font-size: 2.25rem;
   }
 
