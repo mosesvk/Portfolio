@@ -11,8 +11,9 @@ export const ExperienceContainer = styled.div`
   background: ${({lightBg}) => (lightBg ? '#fff3e69e' : '#fff')};
   margin: 0;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 480px){
     /* padding: 100px 0; */
+    height: 110vh;
   }
 `
 
