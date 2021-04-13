@@ -96,27 +96,7 @@ const Navbar = (props) => {
                 CONTACT
               </NavLinks>
             </NavItem>
-            {/* <NavBtnLink
-              height="eighty"
-              margin="fifteen"
-            >
-              <NavLinks
-                to="contact"
-                smooth={true}
-                duration={750}
-                spy={true}
-                exact="true"
-                offset={-80}
-                darkColor="true"
-                darkColorHover="true"
-              >
-                Get In Touch
-              </NavLinks>
-            </NavBtnLink> */}
           </NavMenu>
-          {/* <NavBtn> */}
-            
-          {/* </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>
