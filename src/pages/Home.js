@@ -11,9 +11,14 @@ import Contact from '../components/Contact/Contact'
 const Home = () => {
 
   const [isOpen, setIsOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
 
   const toggle = () => {
     setIsOpen(!isOpen);
+  }
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen)
   }
 
   return (
@@ -21,7 +26,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <MainSection />
-      <Portfolio/>
+      <Portfolio modalOpen={modalOpen} toggleModal={toggleModal}/>
       <Skills />
       <About />
       <Contact />
