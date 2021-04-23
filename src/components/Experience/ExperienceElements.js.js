@@ -95,7 +95,7 @@ export const SkillWrap = styled.div`
 `
 
 export const Skill = styled.div`
-  width: 32%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,6 +107,6 @@ export const Skill = styled.div`
 `
 
 export const SkillImg = styled.img`
-  width: 100px;
+  width: 90px;
   height: 100px;
 `

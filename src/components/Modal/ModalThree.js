@@ -1,6 +1,6 @@
 import React, {forwardRef, useImperativeHandle, useState} from "react";
 import {createPortal} from "react-dom";
-import "./Modal.scss";
+import "./Modal.css";
 
 const ModalThree = forwardRef((props, ref) => {
   const [display, setDisplay] = useState(false);
