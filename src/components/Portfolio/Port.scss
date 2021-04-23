@@ -1,0 +1,192 @@
+/* #fff3e6 --> Tan  */
+/* #2168eb --> Blue  */
+/* #1e212d --> Black  */
+/* #d2ae6b --> Caramel  */
+
+
+@import '../../variables';
+
+.program-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 3rem 0 7rem;
+  @media (max-width: $laptopSm){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  flex-shrink: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  margin: 25px;
+  border-radius: 5px;
+  width: 400px;
+  height: 35rem;
+  background-color: #f1f1f1;
+  @media (max-width: $phone){
+    width: 310px;
+  }
+}
+
+.card__image {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+  height: 60%;
+  background-position: top;
+}
+
+.blue-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: background-color 0.4s ease;
+  opacity: .55;
+}
+
+.blue-filter:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.card-1-img {
+  background: url('https://img.bleacherreport.net/img/images/photos/003/536/327/hi-res-fce2df9b91fe9f4357907327051dc6a6_crop_exact.jpg?w=1200&h=1200&q=75') center;
+  background-size: cover;
+}
+
+.card-2-img {
+  background: url('https://static.www.nfl.com/image/private/t_editorial_landscape_12_desktop/league/yjnmrc2lnx1b8obxcybm') center;
+  background-size: cover;
+}
+
+.btn-reveal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: $secondaryColor;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.blue-filter:hover .btn-reveal {
+  opacity: 1;
+}
+
+.price-title {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 80%;
+  font-size: 25px;
+}
+
+.card-title-1::after {
+  position: absolute;
+  top: 45px;
+  content: "";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-title-2::after {
+  position: absolute;
+  top: 45px;
+  content: "";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price {
+  width: 20%;
+  font-size: 18px;
+}
+
+.sizes {
+  padding: 3px 10px;
+  width: 100%;
+}
+
+.sizes-text {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sizes-text::after {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  content: "S, M, L, XL";
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.colors {
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.colors__sub-title {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.container-rounded {
+  display: flex;
+  width: 100%;
+}
+
+.rounded {
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.rounded:nth-child(1) {
+  background-color: #000;
+}
+
+.rounded:nth-child(2) {
+  background-color: #9b9b9b;
+}
+
+.rounded:nth-child(3) {
+  background-color: #fff;
+  border: 0.1px solid rgba(0, 0, 0, 0.6);
+}
+
+.rounded:nth-child(4) {
+  background-color: crimson;
+}
+
+.rounded:nth-child(5) {
+  background-color: salmon;
+}

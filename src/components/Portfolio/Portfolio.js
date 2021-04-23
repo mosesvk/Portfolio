@@ -18,7 +18,7 @@ import Divider from '@material-ui/core/Divider';
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
 import ModalThree from '../Modal/ModalThree'
-import './Port.css'
+import './Port.scss'
 
 const Portfolio = (props) => {
   const {lightBg} = props
@@ -39,73 +39,31 @@ const Portfolio = (props) => {
   }
 
   return (
-    <>
-      <PortContainer id="portfolio" lightBg={lightBg}>
-        <PortHeader>
-          <PortText>PORTFOLIO</PortText>
-          <PortP>Check out my Github and LinkedIn accounts for other projects</PortP>
-          <Divider variant="middle"/>
-          <SocialWrap>
-            <SocialLink
-            href="https://www.linkedin.com/in/mosesvk/"
-            target="_blank"
-            colorHover="true"><FaLinkedin iconDark="true"/></SocialLink>
-            <SocialLink 
-            href="https://github.com/mosesvk"
-            target="_blank"
-            colorHover="true"><FaGithub iconDark="true"/></SocialLink>
-          </SocialWrap>
-        </PortHeader>
-        <section id="portfolio" className="bg-light-gray">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 col-sm-6 portfolio-item">
-                <button className="portfolio-link" onclick={openModal}>
-                  <div class="portfolio-hover">
-                    <div className="portfolio-hover-content">
-                      <i className="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img src={portImgOne} className="img-responsive" alt="portImg" onclick={openModal}/>
-                </button>
-                <div className="portfolio-caption">
-                  <h4>Powerhouse Fitness</h4>
-                  <p className="text-muted">Web Development</p>
-                </div>
-              </div>
-              <div className="col-md-4 col-sm-6 portfolio-item">
-                <a href="home" className="portfolio-link" datatoggle="modal" onclick={openModal2}>
-                  <div class="portfolio-hover">
-                    <div className="portfolio-hover-content">
-                      <i className="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" className="img-responsive" alt="portImg"/>
-                </a>
-                <div className="portfolio-caption">
-                  <h4>Barz</h4>
-                  <p className="text-muted">Web Development</p>
-                </div>
-              </div>
-              <div className="col-md-4 col-sm-6 portfolio-item">
-                <a href="home" className="portfolio-link" datatoggle="modal" onclick={openModal3}>
-                  <div class="portfolio-hover">
-                    <div className="portfolio-hover-content">
-                      <i className="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" className="img-responsive" alt="portImg"/>
-                </a>
-                <div className="portfolio-caption">
-                  <h4>Cheefa's Fried Pies</h4>
-                  <p className="text-muted">Web Development</p>
-                </div>
-              </div>
+    <div className='program-container'>
+      <div className='program-wrap'>
+        <div className="card">
+          <div className="card__image">
+            <div className="blue-filter card-1-img">
+              <button className="btn-reveal" onClick={openModal}>See Details</button>
             </div>
           </div>
-        </section>
-        
-        {/* Portfolio Modal 1 */}
+          <div className="price-title">
+            <h2 className="ca rd-title card-title-1">Individual Training</h2>
+            <p className="price">$ 89</p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card__image">
+            <div className="blue-filter card-2-img">
+              <button className="btn-reveal" onClick={openModal2}>See Details</button>
+            </div>
+          </div>
+          <div className="price-title">
+            <h2 className="card-title card-title-2">Group Training</h2>
+            <p className="price">$ 49 per</p>
+          </div>
+
+        </div>
         <Modal ref={modalRef}>
           <button onClick={() => modalRef.current.close()}><FaTimes/></button>
           <h1>Individual Training</h1>
@@ -113,8 +71,6 @@ const Portfolio = (props) => {
             loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
           </p>
         </Modal>
-
-        {/* Portfolio Modal 2  */}
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()}><FaTimes/></button>
           <h1 className="modal-h1">Group Training</h1>
@@ -122,18 +78,8 @@ const Portfolio = (props) => {
             loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
           </p>
         </ModalTwo>
-
-        {/* Portfolio Modal 3  */}
-        <ModalThree ref={modalRef3}>
-          <button onClick={() => modalRef2.current.close()}><FaTimes/></button>
-          <h1 className="modal-h1">Group Training</h1>
-          <p className="modal-p">
-            loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
-          </p>
-        </ModalThree>
-
-      </PortContainer>
-    </>
+      </div>
+    </div>
   );
 };
 
