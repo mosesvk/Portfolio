@@ -12,6 +12,7 @@
   width: 100%;
   justify-content: center;
   padding: 3rem 0 7rem;
+  flex-wrap: wrap;
   @media (max-width: $laptopSm){
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@
   margin: 25px;
   border-radius: 5px;
   width: 400px;
-  height: 35rem;
+  height: 25rem;
   background-color: #f1f1f1;
   @media (max-width: $phone){
     width: 310px;
