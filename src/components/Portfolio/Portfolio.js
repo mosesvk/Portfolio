@@ -13,6 +13,7 @@ import {
   SocialWrap,
   SocialLink,
 } from "./portfolioElements";
+import portImgOne from '../../images/powerhouse.jpg';
 import Divider from '@material-ui/core/Divider';
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
@@ -27,6 +28,7 @@ const Portfolio = (props) => {
   const modalRef3 = useRef();
 
   const openModal = () => {
+    console.log('working????')
     modalRef.current.openModal()
   };
   const openModal2 = () => {
@@ -64,7 +66,7 @@ const Portfolio = (props) => {
                       <i className="fa fa-plus fa-3x"></i>
                     </div>
                   </div>
-                  <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" className="img-responsive" alt="portImg"/>
+                  <img src={portImgOne} className="img-responsive" alt="portImg" onclick={openModal}/>
                 </button>
                 <div className="portfolio-caption">
                   <h4>Powerhouse Fitness</h4>
