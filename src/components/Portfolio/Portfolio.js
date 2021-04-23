@@ -13,15 +13,13 @@ import {
   SocialWrap,
   SocialLink,
 } from "./portfolioElements";
-import portImgOne from '../../images/powerhouse.jpg';
 import Divider from '@material-ui/core/Divider';
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
 import ModalThree from '../Modal/ModalThree'
 import './Port.scss'
 
-const Portfolio = (props) => {
-  const {lightBg} = props
+const Portfolio = () => {
 
   const modalRef = useRef();
   const modalRef2 = useRef();
@@ -48,8 +46,7 @@ const Portfolio = (props) => {
             </div>
           </div>
           <div className="price-title">
-            <h2 className="ca rd-title card-title-1">Individual Training</h2>
-            <p className="price">$ 89</p>
+            <h2 className="ca rd-title card-title-1">POWERHOUSE FITNESS</h2>
           </div>
         </div>
         <div className="card">
@@ -59,8 +56,7 @@ const Portfolio = (props) => {
             </div>
           </div>
           <div className="price-title">
-            <h2 className="card-title card-title-2">Group Training</h2>
-            <p className="price">$ 49 per</p>
+            <h2 className="card-title card-title-2">BARZ</h2>
           </div>
 
         </div>
@@ -78,6 +74,13 @@ const Portfolio = (props) => {
             loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
           </p>
         </ModalTwo>
+        <ModalThree ref={modalRef3}>
+          <button onClick={() => modalRef3.current.close()}><FaTimes/></button>
+          <h1 className="modal-h1">Group Training</h1>
+          <p className="modal-p">
+            loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
+          </p>
+        </ModalThree>
       </div>
     </div>
   );
