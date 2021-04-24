@@ -139,20 +139,16 @@
   margin: 0;
 }
 
-.card-title-1::after {
-  position: absolute;
-  top: 45px;
-  content: "";
-  font-size: 14px;
-  font-weight: 400;
+.card-title-1 {
+  background: linear-gradient(to left, #3a88e2ce, #f0ecec52)
 }
 
-.card-title-2::after {
-  position: absolute;
-  top: 45px;
-  content: "";
-  font-size: 14px;
-  font-weight: 400;
+.card-title-2 {
+
+}
+
+.card-title-2 {
+
 }
 
 .card-buttons {
@@ -173,41 +169,4 @@
   :hover {
     text-decoration: none!important;
   }
-}
-
-
-
-
-.container-rounded {
-  display: flex;
-  width: 100%;
-}
-
-.rounded {
-  margin-right: 5px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.rounded:nth-child(1) {
-  background-color: #000;
-}
-
-.rounded:nth-child(2) {
-  background-color: #9b9b9b;
-}
-
-.rounded:nth-child(3) {
-  background-color: #fff;
-  border: 0.1px solid rgba(0, 0, 0, 0.6);
-}
-
-.rounded:nth-child(4) {
-  background-color: crimson;
-}
-
-.rounded:nth-child(5) {
-  background-color: salmon;
 }

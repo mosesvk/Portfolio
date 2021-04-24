@@ -68,7 +68,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="price-title">
-          <h2 className="card-title card-title-2">BARZ</h2>
+          <h2 className="card-title card-title-3">BARZ</h2>
           <div className="card-buttons">
             <a href='https://github.com/mosesvk/Portfolio'><FaGithubSquare/></a>
             <button>LIVE</button>
