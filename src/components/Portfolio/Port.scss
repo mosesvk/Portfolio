@@ -77,6 +77,12 @@
 .card-2-img {
   background: url('../../images/cfp-web.jpg') center;
   background-size: cover;
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #f68080c0, #f0ececa9),url('../../images/cfp-web.jpg') center;
+    background-size: cover;
+    transition: .5s;
+  }
 }
 
 .btn-reveal-2 {
