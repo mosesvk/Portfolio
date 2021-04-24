@@ -36,7 +36,7 @@ const Portfolio = () => {
       <div className="card">
         <div className="card__image">
           <div className="blue-filter card-1-img">
-            <button className="btn-reveal" onClick={openModal}>See Details</button>
+            <button className="btn-reveal" onClick={openModal}>DETAILS</button>
             <button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button>
             <button className="btn-reveal-3">LIVE</button>
           </div>
@@ -48,7 +48,9 @@ const Portfolio = () => {
       <div className="card">
         <div className="card__image">
           <div className="blue-filter card-2-img">
-            <button className="btn-reveal" onClick={openModal2}>See Details</button>
+            <button className="btn-reveal" onClick={openModal}>DETAILS</button>
+            <button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button>
+            <button className="btn-reveal-3">LIVE</button>
           </div>
         </div>
         <div className="price-title">
