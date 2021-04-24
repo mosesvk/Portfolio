@@ -63,7 +63,7 @@ const Portfolio = () => {
       </div>
       <div className="card">
         <div className="card__image">
-          <div className="blue-filter card-2-img">
+          <div className="blue-filter card-3-img">
             <button className="btn-reveal" onClick={openModal3}>See Details</button>
           </div>
         </div>
