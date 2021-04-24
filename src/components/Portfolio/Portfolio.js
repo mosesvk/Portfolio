@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
 import {
-  FaTimes
+  FaTimes,
+  FaGithubSquare
 } from 'react-icons/fa'
 import Divider from '@material-ui/core/Divider';
 import Modal from '../Modal/Modal'
@@ -40,7 +41,11 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="price-title">
-          <h2 className="ca rd-title card-title-1">POWERHOUSE FITNESS</h2>
+          <h2 className="card-title card-title-1">POWERHOUSE FITNESS</h2>
+          <div className="card-buttons">
+            <a href='https://github.com/mosesvk/Portfolio'><FaGithubSquare/></a>
+            <button>LIVE</button>
+          </div>
         </div>
       </div>
       <div className="card">
