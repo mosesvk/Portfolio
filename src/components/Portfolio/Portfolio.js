@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, {useRef} from "react";
 import {
   FaTimes,
@@ -37,8 +38,8 @@ const Portfolio = () => {
         <div className="card__image">
           <div className="blue-filter card-1-img">
             <button className="btn-reveal" onClick={openModal}>DETAILS</button>
-            <button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button>
-            <button className="btn-reveal-3">LIVE</button>
+            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="http://powerhousefitness.store/" target="_blank"><button className="btn-reveal-3">LIVE</button></a>
           </div>
         </div>
         <div className="price-title">
@@ -48,7 +49,7 @@ const Portfolio = () => {
       <div className="card">
         <div className="card__image">
           <div className="blue-filter card-2-img">
-            <button className="btn-reveal" onClick={openModal}>DETAILS</button>
+            <button className="btn-reveal" onClick={openModal2}>DETAILS</button>
             <button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button>
             <button className="btn-reveal-3">LIVE</button>
           </div>
