@@ -1,8 +1,9 @@
 import React, {useRef} from "react";
 import {
   FaTimes,
-  FaGithubSquare
+  FaGithubSquare,
 } from 'react-icons/fa'
+import {CgWebsite} from 'react-icons/cg'
 import Divider from '@material-ui/core/Divider';
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
@@ -38,14 +39,12 @@ const Portfolio = () => {
         <div className="card__image">
           <div className="blue-filter card-1-img">
             <button className="btn-reveal" onClick={openModal}>See Details</button>
+            <button className="btn-reveal-2">REPO</button>
+            <button className="btn-reveal-3">LIVE</button>
           </div>
         </div>
         <div className="price-title">
           <h2 className="card-title card-title-1">POWERHOUSE FITNESS</h2>
-          <div className="card-buttons">
-            <a href='https://github.com/mosesvk/Portfolio'><FaGithubSquare/></a>
-            <button>LIVE</button>
-          </div>
         </div>
       </div>
       <div className="card">

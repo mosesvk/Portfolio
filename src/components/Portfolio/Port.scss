@@ -66,6 +66,7 @@
 .blue-filter:hover {
   cursor: pointer;
   opacity: .55;
+  transition: .5s;
 }
 
 .card-1-img {
@@ -82,10 +83,26 @@
   position: absolute;
   top: 50%;
   left: 50%;
+}
+.btn-reveal-2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.btn-reveal-3 {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
+
+.btn-reveal,
+.btn-reveal-2,
+.btn-reveal-3 {
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   border: none;
   border-radius: 5px;
   width: 100px;
@@ -110,13 +127,15 @@
   width: 100%;
   flex-direction: column;
   text-align: center;
+  border: 2px solid $dark
 }
 
 .card-title {
-  padding-top: 15px;
+  padding: 25px 0;
   align-items: center;
   width: 100%;
   font-size: 25px;
+  font-weight: 800;
   margin: 0;
 }
 
@@ -137,48 +156,27 @@
 }
 
 .card-buttons {
+  background-color: $dark;
   padding: 10px 0;
   width: 100%;
   display: flex;
   justify-content: center;
+  
 }
 
-.price {
-  width: 20%;
+.card-button-icon {
+  font-size: 28px;
+}
+
+.card-button-text {
   font-size: 18px;
+  :hover {
+    text-decoration: none!important;
+  }
 }
 
-.sizes {
-  padding: 3px 10px;
-  width: 100%;
-}
 
-.sizes-text {
-  position: relative;
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
 
-.sizes-text::after {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  content: "S, M, L, XL";
-  font-size: 16px;
-  font-weight: 100;
-}
-
-.colors {
-  padding: 20px 10px;
-  width: 100%;
-}
-
-.colors__sub-title {
-  margin: 0;
-  padding-bottom: 5px;
-  font-size: 20px;
-}
 
 .container-rounded {
   display: flex;
