@@ -12,7 +12,7 @@ const Portfolio = () => {
 
   const modalRef = useRef();
   const modalRef2 = useRef();
-  const modalRef3 = useRef();
+  // const modalRef3 = useRef();
 
   const openModal = () => {
     console.log('working????')
@@ -21,9 +21,9 @@ const Portfolio = () => {
   const openModal2 = () => {
     modalRef2.current.openModal();
   }
-  const openModal3 = () => {
-    modalRef3.current.openModal();
-  }
+  // const openModal3 = () => {
+  //   modalRef3.current.openModal();
+  // }
 
   return (
     <div className='program-container'>
