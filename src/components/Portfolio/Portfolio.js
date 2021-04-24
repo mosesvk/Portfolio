@@ -26,10 +26,10 @@ const Portfolio = () => {
   }
 
   return (
-    <div className='program-container' 
-    id="portfolio">
-    <div className='program-header'>
+    <div className='program-container'>
+    <div className='program-header' id='portfolio'>
       <h1>PORTFOLIO</h1>
+      <p>Check out my Github for other projects I've worked on.</p>
       <Divider/>
     </div>
     <div className='program-wrap'>
