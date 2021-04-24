@@ -56,6 +56,10 @@ const Portfolio = () => {
         </div>
         <div className="price-title">
           <h2 className="card-title card-title-2">CHEEFA'S FRIED PIES</h2>
+          <div className="card-buttons">
+            <a href='https://github.com/mosesvk/Portfolio'><FaGithubSquare/></a>
+            <button>LIVE</button>
+          </div>
         </div>
       </div>
       <div className="card">
@@ -66,6 +70,10 @@ const Portfolio = () => {
         </div>
         <div className="price-title">
           <h2 className="card-title card-title-2">BARZ</h2>
+          <div className="card-buttons">
+            <a href='https://github.com/mosesvk/Portfolio'><FaGithubSquare/></a>
+            <button>LIVE</button>
+          </div>
         </div>
       </div>
       <Modal ref={modalRef}>
