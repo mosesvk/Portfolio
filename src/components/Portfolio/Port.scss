@@ -68,7 +68,7 @@
   background-size: cover;
   &:hover {
     cursor: pointer;
-    background: linear-gradient(to left, #b1c4dac0, #f0ececa9),url('../../images/powerhousefitness.jpg') center;
+    background: linear-gradient(to left, #3a88e2ce, #f0ececa9),url('../../images/powerhousefitness.jpg') center;
     background-size: cover;
     transition: .5s;
   }
@@ -87,6 +87,7 @@
 
 .btn-reveal-2 {
   position: absolute;
+  // font-size: 28px;
   top: 30%;
   left: 30%;
   left: 50%;
@@ -156,6 +157,11 @@
   opacity: 1;
 }
 
+.btn-reveal-icon {
+  // padding-bottom: 7px;
+  font-size: 32px;
+}
+
 .price-title {
   display: flex;
   width: 100%;
@@ -178,7 +184,7 @@
 }
 
 .card-title-2 {
-
+  background: linear-gradient(to left, #f68080c0, #f0ecec52)
 }
 
 .card-title-2 {

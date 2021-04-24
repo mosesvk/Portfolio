@@ -3,11 +3,9 @@ import {
   FaTimes,
   FaGithubSquare,
 } from 'react-icons/fa'
-import {CgWebsite} from 'react-icons/cg'
 import Divider from '@material-ui/core/Divider';
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
-import ModalThree from '../Modal/ModalThree'
 import './Port.scss'
 
 const Portfolio = () => {
@@ -39,7 +37,7 @@ const Portfolio = () => {
         <div className="card__image">
           <div className="blue-filter card-1-img">
             <button className="btn-reveal" onClick={openModal}>See Details</button>
-            <button className="btn-reveal-2">REPO</button>
+            <button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button>
             <button className="btn-reveal-3">LIVE</button>
           </div>
         </div>
@@ -55,24 +53,6 @@ const Portfolio = () => {
         </div>
         <div className="price-title">
           <h2 className="card-title card-title-2">CHEEFA'S FRIED PIES</h2>
-          <div className="card-buttons">
-            <a href='https://github.com/mosesvk/Portfolio'><FaGithubSquare/></a>
-            <button>LIVE</button>
-          </div>
-        </div>
-      </div>
-      <div className="card">
-        <div className="card__image">
-          <div className="blue-filter card-3-img">
-            <button className="btn-reveal" onClick={openModal3}>See Details</button>
-          </div>
-        </div>
-        <div className="price-title">
-          <h2 className="card-title card-title-3">BARZ</h2>
-          <div className="card-buttons">
-            <a href='https://github.com/mosesvk/Portfolio'><FaGithubSquare/></a>
-            <button>LIVE</button>
-          </div>
         </div>
       </div>
       <Modal ref={modalRef}>
@@ -89,13 +69,6 @@ const Portfolio = () => {
           loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
         </p>
       </ModalTwo>
-      <ModalThree ref={modalRef3}>
-        <button onClick={() => modalRef3.current.close()}><FaTimes/></button>
-        <h1 className="modal-h1">Group Training</h1>
-        <p className="modal-p">
-          loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
-        </p>
-      </ModalThree>
     </div>
   </div>
   );
