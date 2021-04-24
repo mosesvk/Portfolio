@@ -63,15 +63,15 @@
   transition: background-color 0.4s ease;
 }
 
-.blue-filter:hover {
-  cursor: pointer;
-  opacity: .55;
-  transition: .5s;
-}
-
 .card-1-img {
   background: url('../../images/powerhousefitness.jpg');
   background-size: cover;
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #b1c4dac0, #f0ececa9),url('../../images/powerhousefitness.jpg') center;
+    background-size: cover;
+    transition: .5s;
+  }
 }
 
 .card-2-img {
@@ -79,26 +79,11 @@
   background-size: cover;
 }
 
-.btn-reveal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
 .btn-reveal-2 {
   position: absolute;
   top: 30%;
   left: 30%;
-}
-
-.btn-reveal-3 {
-  position: absolute;
-  top: 70%;
-  left: 70%;
-}
-
-.btn-reveal,
-.btn-reveal-2,
-.btn-reveal-3 {
+  left: 50%;
   transform: translate(-50%, -50%);
   // display: flex;
   // justify-content: center;
@@ -114,11 +99,54 @@
   cursor: pointer;
 }
 
-.btn-reveal:hover {
-  background-color: #285d9e;
+.btn-reveal-3 {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: $secondaryColor;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
 }
 
-.blue-filter:hover .btn-reveal {
+.btn-reveal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: $secondaryColor;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-reveal:hover,
+.btn-reveal-2:hover,
+.btn-reveal-3:hover {
+  background-color: #084ca0fd;
+}
+
+.blue-filter:hover .btn-reveal, 
+.blue-filter:hover .btn-reveal-2,
+.blue-filter:hover .btn-reveal-3 {
   opacity: 1;
 }
 
