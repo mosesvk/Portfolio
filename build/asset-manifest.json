@@ -1,32 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.e404be51.chunk.css",
-    "main.js": "/static/js/main.44075ffc.chunk.js",
-    "main.js.map": "/static/js/main.44075ffc.chunk.js.map",
+    "main.css": "/static/css/main.594cf69f.chunk.css",
+    "main.js": "/static/js/main.98424e21.chunk.js",
+    "main.js.map": "/static/js/main.98424e21.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5dc9b9a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.5dc9b9a6.js.map",
-    "static/js/2.d74f9e1f.chunk.js": "/static/js/2.d74f9e1f.chunk.js",
-    "static/js/2.d74f9e1f.chunk.js.map": "/static/js/2.d74f9e1f.chunk.js.map",
+    "static/css/2.39051a21.chunk.css": "/static/css/2.39051a21.chunk.css",
+    "static/js/2.069afb1e.chunk.js": "/static/js/2.069afb1e.chunk.js",
+    "static/js/2.069afb1e.chunk.js.map": "/static/js/2.069afb1e.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e404be51.chunk.css.map": "/static/css/main.e404be51.chunk.css.map",
-    "static/js/2.d74f9e1f.chunk.js.LICENSE.txt": "/static/js/2.d74f9e1f.chunk.js.LICENSE.txt",
-    "static/media/Port-img.c7c9dcdc.jpeg": "/static/media/Port-img.c7c9dcdc.jpeg",
-    "static/media/barz-cover.6dc28c61.jpg": "/static/media/barz-cover.6dc28c61.jpg",
-    "static/media/cfp-cover-1.590788d6.jpg": "/static/media/cfp-cover-1.590788d6.jpg",
+    "static/css/2.39051a21.chunk.css.map": "/static/css/2.39051a21.chunk.css.map",
+    "static/css/main.594cf69f.chunk.css.map": "/static/css/main.594cf69f.chunk.css.map",
+    "static/js/2.069afb1e.chunk.js.LICENSE.txt": "/static/js/2.069afb1e.chunk.js.LICENSE.txt",
+    "static/media/Port.scss": "/static/media/powerhousefitness.95b1132f.jpg",
+    "static/media/Contact.css": "/static/media/contact1.966cca9f.jpeg",
     "static/media/css-3.212d777a.svg": "/static/media/css-3.212d777a.svg",
     "static/media/family-1.e08c135f.JPG": "/static/media/family-1.e08c135f.JPG",
     "static/media/git.4bbb24fe.svg": "/static/media/git.4bbb24fe.svg",
-    "static/media/github.e0df113a.svg": "/static/media/github.e0df113a.svg",
     "static/media/html-5.b24e95f4.svg": "/static/media/html-5.b24e95f4.svg",
     "static/media/jscript.218515fe.svg": "/static/media/jscript.218515fe.svg",
-    "static/media/App.css": "/static/media/mountain-saltLake.33328b9c.jpg",
     "static/media/node.3dc364b8.svg": "/static/media/node.3dc364b8.svg",
-    "static/media/react.eb0cb5af.svg": "/static/media/react.eb0cb5af.svg"
+    "static/media/react.eb0cb5af.svg": "/static/media/react.eb0cb5af.svg",
+    "static/media/sanFran.df081602.jpeg": "/static/media/sanFran.df081602.jpeg",
+    "static/media/sass.e10750ef.svg": "/static/media/sass.e10750ef.svg",
+    "static/media/sql-server.70c6026c.svg": "/static/media/sql-server.70c6026c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5dc9b9a6.js",
-    "static/js/2.d74f9e1f.chunk.js",
-    "static/css/main.e404be51.chunk.css",
-    "static/js/main.44075ffc.chunk.js"
+    "static/css/2.39051a21.chunk.css",
+    "static/js/2.069afb1e.chunk.js",
+    "static/css/main.594cf69f.chunk.css",
+    "static/js/main.98424e21.chunk.js"
   ]
 }
