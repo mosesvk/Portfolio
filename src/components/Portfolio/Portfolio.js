@@ -52,7 +52,7 @@ const Portfolio = () => {
           <div className="card__image">
             <div className="blue-filter card-2-img">
               <button className="btn-reveal" onClick={openModal2}>DETAILS</button>
-              <a href="https://github.com/mosesvk/Portfolio" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+              <a href="https://github.com/mosesvk/Cheefas-fried-pies" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
               <button className="btn-reveal-3" style={{display: 'none'}}>LIVE</button>
             </div>
           </div>
