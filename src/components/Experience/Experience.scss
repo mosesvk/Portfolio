@@ -2,16 +2,23 @@
 
 .experience-wrap {
   display: flex;
-  padding: 50px 150px 100px;
-  @media (max-width: $laptopSm){
-    padding: 0 100x;
+  padding: 50px 250px 200px;
+  @media (max-width: $monitorSm){
+    padding: 50px 150px 200px;
+  }
+  @media (max-width: $laptop){
+    padding: 50px 100px 200px;
+  }
+  @media (max-width: $laptopMd){
+    padding: 0;
     flex-direction: column;
+    align-items: center;
   }
 
   .link-wrap {
     width: 50%;
     text-align: center;
-    @media(max-width: $laptopSm){
+    @media(max-width: $laptopMd){
       width: 100%;
       padding-bottom: 50px;
     }

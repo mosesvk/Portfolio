@@ -14,7 +14,7 @@ export const ExperienceContainer = styled.div`
 
   @media screen and (max-width: 480px){
     /* padding: 100px 0; */
-    height: 110vh;
+    /* height: 110vh; */
     text-align: center;
   }
 `
@@ -72,8 +72,16 @@ export const SkillContainer =styled.div`
   margin: 0;
   /* padding: 50px 0 0 0; */
   width: 50%;
+  text-align: center;
 
-  @media (max-width: 1080px){
+  @media (max-width: 1200px){
+    width: 70%
+  }
+  @media (max-width: 950px){
+    width: 85%;
+    padding-bottom: 50px;
+  }
+  @media (max-width: 750px){
     width: 100%
   }
 `
