@@ -1,0 +1,49 @@
+@import '../../variables';
+
+.experience-wrap {
+  display: flex;
+  padding: 50px 150px 100px;
+  @media (max-width: $laptopSm){
+    padding: 0 100x;
+    flex-direction: column;
+  }
+
+  .link-wrap {
+    width: 50%;
+    text-align: center;
+    @media(max-width: $laptopSm){
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+    a {
+      &:hover {
+        opacity: .5;
+        text-decoration: none;
+      }
+
+      img {
+        border: solid 2px black;
+      }
+
+      .resume-btn {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        height: 40px;
+        background-color: $secondaryColor;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}

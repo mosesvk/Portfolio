@@ -5,8 +5,9 @@ import styled from 'styled-components'
 // #1e212d --> Black  
 // #d2ae6b --> Caramel 
 
+import '../../_variables.scss';
+
 export const ExperienceContainer = styled.div`
-  height: 100vh;
   color: #1e212d;
   background: ${({lightBg}) => (lightBg ? '#fff3e69e' : '#fff')};
   margin: 0;
@@ -14,6 +15,7 @@ export const ExperienceContainer = styled.div`
   @media screen and (max-width: 480px){
     /* padding: 100px 0; */
     height: 110vh;
+    text-align: center;
   }
 `
 
@@ -68,10 +70,11 @@ export const SkillContainer =styled.div`
   color: #1e212d;
   /* background: ${({lightBg}) => (lightBg ? '#fff3e69e' : '#fff')}; */
   margin: 0;
-  padding: 50px 0 0 0;
+  /* padding: 50px 0 0 0; */
+  width: 50%;
 
-  @media screen and (max-width: 481px){
-    /* padding: 100px 0; */
+  @media (max-width: 1080px){
+    width: 100%
   }
 `
 
