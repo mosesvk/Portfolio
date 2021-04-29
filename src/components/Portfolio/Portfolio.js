@@ -3,7 +3,14 @@ import React, {useRef} from "react";
 import {
   FaTimes,
   FaGithubSquare,
+  FaGithub,
+  FaYoutube, 
+  FaLinkedin
 } from 'react-icons/fa'
+import {
+  SocialWrap, 
+  SocialLink
+} from './portfolioElements.js'
 import logo1 from '../../images/powerhouse-logo.jpg'
 import logo2 from '../../images/cfp-cover-1.jpg'
 import Divider from '@material-ui/core/Divider';
@@ -34,6 +41,20 @@ const Portfolio = () => {
         <h1>PORTFOLIO</h1>
         <p>Check out my Github for other projects I've worked on.</p>
         <Divider/>
+        <SocialWrap>
+          <SocialLink
+          href="https://www.linkedin.com/in/mosesvk/"
+          target="_blank"
+          ><FaLinkedin iconDark="true"/></SocialLink>
+          <SocialLink
+          href="https://github.com/mosesvk"
+          target="_blank"
+          ><FaGithub iconDark="true"/></SocialLink>
+          <SocialLink
+          href="https://www.youtube.com/channel/UChlB6LMekxCh917bjumDcCA"
+          target="_blank"
+          ><FaYoutube style={{fontSize: '3rem'}} iconDark="true"/></SocialLink>
+        </SocialWrap>
       </div>
       <div className='program-wrap'>
         <div className="card">
