@@ -12,7 +12,8 @@ import Divider from '@material-ui/core/Divider';
 // import {SideLinkedin, SideGithub } from '../Sidebar/SidebarElements'
 import {
   FaLinkedin,
-  FaGithub
+  FaGithub,
+  FaYoutube
 } from 'react-icons/fa'
 import {
   BsArrow90DegDown
@@ -52,6 +53,10 @@ const Skills = () => {
             href="https://github.com/mosesvk"
             target="_blank"
             ><FaGithub iconDark="true"/></SocialLink>
+            <SocialLink
+            href="https://www.youtube.com/channel/UChlB6LMekxCh917bjumDcCA"
+            target="_blank"
+            ><FaYoutube style={{fontSize: '3rem'}} iconDark="true"/></SocialLink>
           </SocialWrap>
         </ExperienceHeader>
         <div className="experience-wrap">

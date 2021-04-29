@@ -14,6 +14,7 @@ export const AboutContainer = styled.div`
 
   @media screen and (max-width: 768px){
     padding: 50px 0;
+    height: auto;
   }
 `
 
@@ -23,7 +24,7 @@ export const AboutHeader = styled.div`
   text-align: center;
   /* align-items: center; */
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 770px) {
     padding: 15px 0;
   }
 `
@@ -52,7 +53,7 @@ export const AboutWrap = styled.div`
   padding: 0 24px;
   /* justify-content: center; */
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 770px) {
     flex-wrap: wrap;
   }
 `
@@ -64,7 +65,7 @@ export const AboutText = styled.div`
   /* white-space: nowrap; */
   width: 60%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 770px) {
     width: 100%;
     font-size: 18px;
     padding: 15px 0px;
@@ -82,7 +83,7 @@ export const Img = styled.img`
   width: 400px;
   border-radius: 20px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 770px) {
     display: none;
   }
 `

@@ -32,6 +32,10 @@ export const ExperienceHeaderText = styled.div`
   font-weight: 800;
   letter-spacing: 2px;
   /* box-shadow: 5px 5px 50px 50px black; */
+
+  @media (max-width: 450px){
+    font-size: 40px;
+  }
 `
 
 export const ExperienceP = styled.p`
@@ -115,9 +119,20 @@ export const Skill = styled.div`
   font-size: 18px;
   margin-bottom: 24px;
   /* align-content: center; */
+
+  @media (max-width: 481px){
+    width: 22%;
+  }
 `
 
 export const SkillImg = styled.img`
   width: 90px;
   height: 100px;
+
+  @media (max-width: 481px){
+    width: 55px;
+  }
+  @media (max-width: 400px){
+    width: 45px;
+  }
 `
