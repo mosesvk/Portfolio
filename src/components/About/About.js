@@ -1,7 +1,7 @@
 import React from 'react'
 import {
-  FaFacebook,
-  FaInstagram
+  FaFacebookSquare,
+  FaYoutube
 } from 'react-icons/fa';
 import {
   SocialWrap,
@@ -27,21 +27,20 @@ const About = () => {
       <AboutContainer id="about">
         <AboutHeader>
           <AboutHeaderText>WHO IS MOSES?</AboutHeaderText>
+          <p style={{fontStyle:"italic"}}>Kaumatule  (cow - mah - too - leh)</p>
           <Divider variant="middle"/>
           <SocialWrap>
+            <SocialLink
+              href="https://www.youtube.com/channel/UChlB6LMekxCh917bjumDcCA"
+              target="_blank"
+              rel="noopener noreferrer">
+              <FaYoutube style={{fontSize:"3rem"}}/>
+            </SocialLink>
             <SocialLink 
               href="https://www.facebook.com/profile.php?id=100004199235959"
               target="_blank"
-              aria-label="LinkedIn"
               rel="noopener noreferrer">
-              <FaFacebook />
-            </SocialLink>
-            <SocialLink
-              href="https://www.facebook.com/profile.php?id=100004199235959"
-              target="_blank"
-              aria-label="LinkedIn"
-              rel="noopener noreferrer">
-              <FaInstagram />
+              <FaFacebookSquare />
             </SocialLink>
           </SocialWrap>
         </AboutHeader>
