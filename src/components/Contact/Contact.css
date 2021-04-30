@@ -17,12 +17,12 @@
 
 .contact-header > h1 {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #fff;
 }
 
 .contact-p {
-  font-size: 1.05rem;
+  font-size: 1.55rem;
   color: #fff3e6;
   font-style: italic;
   letter-spacing: .25px;
@@ -83,10 +83,11 @@
 }
 
 /* ----------- iPad Pro ----------- */
-/* Portrait and Landscape */
+/* Portrait */
 @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 
+  and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .contact-header {
       padding-top: 200px;
