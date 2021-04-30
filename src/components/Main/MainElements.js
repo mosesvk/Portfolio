@@ -101,7 +101,8 @@ export const MainH2 = styled.h2`
   font-size: 35px;
   text-align: center; 
   margin-bottom: 25px;
-  
+  font-style: italic;
+  letter-spacing: 1px;
 
   @media screen and (max-width: 840px){
     font-size: 25px;

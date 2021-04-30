@@ -17,6 +17,10 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1050px){
+    max-width: auto;
+  }
 `
 
 export const SocialMedia = styled.div`
@@ -35,8 +39,10 @@ export const SocialMediaWrap = styled.div`
   max-width: 1100px;
   margin: 0 auto 0 auto;
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 1050px) {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 
@@ -51,8 +57,13 @@ export const SocialLogo = styled(Link)`
   margin-bottom: 16px;
   font-weight: border-left;
 
-  @media screen and (max-width: 480px) {
-    margin: 0;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 1050px) {
+    margin: 10px 0 0;
   }
 `
 
@@ -62,17 +73,22 @@ export const SocialIcons = styled.div`
   align-items: center;
   width: 240px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1050px) {
     justify-content: center;
+    width: 100%;
   }
 `
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: #bcbfc9;
   font-size: 40px;
   padding: 18px 8px;
 
   &:hover {
-    color: #f9ddbf;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 1050px) {
+    padding: 5px 10px 5px;
   }
 `

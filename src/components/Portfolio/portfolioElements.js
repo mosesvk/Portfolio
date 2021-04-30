@@ -50,12 +50,13 @@ export const SocialWrap = styled.div`
 `
 
 export const SocialLink = styled.a`
-  color: #1e212d;
+  color: #0e0f10;
   font-size: 40px;
   padding: 12px 5px;
 
   &:hover {
-    opacity: .5;
+    opacity: .55;
+    color: #0e0f10;
   }
 
 `
