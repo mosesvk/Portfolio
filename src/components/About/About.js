@@ -11,6 +11,7 @@ import {
   AboutContainer,
   AboutHeader,
   AboutHeaderText,
+  AboutHeaderP,
   AboutWrap,
   AboutText,
   ImgWrap,
@@ -27,7 +28,7 @@ const About = () => {
       <AboutContainer id="about">
         <AboutHeader>
           <AboutHeaderText>WHO IS MOSES?</AboutHeaderText>
-          <p style={{fontStyle:"italic"}}>Kaumatule  (cow - mah - too - leh)</p>
+          <AboutHeaderP>Kaumatule  (cow - mah - too - leh)</AboutHeaderP>
           <Divider variant="middle"/>
           <SocialWrap>
             <SocialLink

@@ -27,7 +27,7 @@ const Contact = () => {
       <div id="contact" className="contact-container">
         <div className="contact-header">
           <h1>REACH OUT & LET'S CHAT</h1>
-          <p className="contact-p">You can also reach me through LinkedIn</p>
+          <p className="contact-p">Also, Feel free to reach me through LinkedIn</p>
         </div>
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">

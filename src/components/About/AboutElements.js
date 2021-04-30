@@ -48,6 +48,24 @@ export const AboutHeaderText = styled.div`
   @media screen and (max-width: 480px) {
     font-size: 35px;
   }
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5){
+    font-size: 5rem;
+  }
+`
+
+export const AboutHeaderP = styled.p`
+  font-style: italic;
+  color: gray;
+
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5){
+    font-size: 2rem;
+  }
 `
 
 export const AboutWrap = styled.div`

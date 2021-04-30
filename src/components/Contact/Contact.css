@@ -89,13 +89,13 @@
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .contact-header {
-      padding-top: 300px;
+      padding-top: 200px;
     }
     .contact-header > h1 {
       font-weight: 700;
-      font-size: 4rem;
+      font-size: 7rem;
     }
     .contact-p {
-      font-size: 1.55rem;
+      font-size: 2.25rem;
     }
 }

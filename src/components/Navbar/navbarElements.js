@@ -100,6 +100,12 @@ export const NavLinks = styled(LinkS)`
   padding: 0 25px;
   cursor: pointer;
   letter-spacing: 1px;
+  @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 1.5){
+      font-size: 22px;
+    }
 
   &:hover {
     color: ${({darkColorHover}) => (darkColorHover ? '#2168eb' : '#fff3e6')};
@@ -113,6 +119,7 @@ export const NavLinks = styled(LinkS)`
     margin-top: 15px;
     color: #1e212d;
   }
+
 `
 
 // export const NavBtn = styled.nav`

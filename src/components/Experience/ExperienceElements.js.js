@@ -36,6 +36,12 @@ export const ExperienceHeaderText = styled.div`
   @media (max-width: 450px){
     font-size: 40px;
   }
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5){
+    font-size: 80px;
+  }
 `
 
 export const ExperienceP = styled.p`
@@ -43,6 +49,13 @@ export const ExperienceP = styled.p`
   color: gray;
   font-style: italic;
   letter-spacing: .25px;
+
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5){
+    font-size: 1.75rem;
+  }
 `
 
 // export const ColoredLine = ({ color, align }) => (
@@ -87,6 +100,12 @@ export const SkillContainer =styled.div`
   }
   @media (max-width: 750px){
     width: 100%
+  }
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5){
+    padding: 55px 0 150px;
   }
 `
 

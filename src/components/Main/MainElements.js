@@ -93,6 +93,12 @@ export const MainH1 = styled.h1`
   @media screen and (max-width: 590px ){
     font-size: 35px;
   }
+  @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 1.5){
+      font-size: 85px;
+    }
 `
 
 export const MainH2 = styled.h2`
@@ -111,6 +117,12 @@ export const MainH2 = styled.h2`
   @media screen and (max-width: 480px ){
     font-size: 20px;
   }
+  @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 1.5){
+      font-size: 45px;
+    }
 `
 
 export const ArrowForward = styled(MdArrowForward)`
