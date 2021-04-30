@@ -1,5 +1,5 @@
 .contact-container {
-  height: 80vh;
+  height: 87vh;
   background: url("../../images/contact1.jpeg") center;
   background-size: cover;
   background-color: #fff3e6;
@@ -44,7 +44,7 @@
   background-color: #2168eb;
 }
 
-@media all and (min-height: 900px){
+@media all and (max-width: 900px){
   .contact-container {
     height: auto;
     padding-bottom: 50px;
@@ -80,4 +80,22 @@
   .pt-5 {
     padding: 0!important;
   }
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .contact-header {
+      padding-top: 300px;
+    }
+    .contact-header > h1 {
+      font-weight: 700;
+      font-size: 4rem;
+    }
+    .contact-p {
+      font-size: 1.55rem;
+    }
 }

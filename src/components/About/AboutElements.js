@@ -16,6 +16,15 @@ export const AboutContainer = styled.div`
     padding: 50px 0;
     height: auto;
   }
+
+  /* ----------- iPad Pro ----------- */
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+      height: auto;
+  }
 `
 
 export const AboutHeader = styled.div`
