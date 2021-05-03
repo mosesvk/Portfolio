@@ -13,16 +13,17 @@ import {
 } from './portfolioElements.js'
 import logo1 from '../../images/powerhouse-logo.jpg'
 import logo2 from '../../images/cfp-cover-1.jpg'
-import Divider from '@material-ui/core/Divider';
+import Divider from '@material-ui/core/Divider'
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
+import ModalThree from '../Modal/ModalThree'
 import './Port.scss'
 
 const Portfolio = () => {
 
   const modalRef = useRef();
   const modalRef2 = useRef();
-  // const modalRef3 = useRef();
+  const modalRef3 = useRef();
 
   const openModal = () => {
     console.log('working????')
@@ -31,9 +32,9 @@ const Portfolio = () => {
   const openModal2 = () => {
     modalRef2.current.openModal();
   }
-  // const openModal3 = () => {
-  //   modalRef3.current.openModal();
-  // }
+  const openModal3 = () => {
+    modalRef3.current.openModal();
+  }
 
   return (
     <div className='program-container' id='portfolio'>
@@ -81,28 +82,51 @@ const Portfolio = () => {
             <h2 className="card-title card-title-2">CHEEFA'S FRIED PIES</h2>
           </div>
         </div>
-      <Modal ref={modalRef}>
-        <button onClick={() => modalRef.current.close()} className="modal-button"><FaTimes/></button>
-        {/* <h1>POWERHOUSE FITNESS</h1> */}
-        <div className='img-div'>
-          <img src={logo1} alt=''/>
+        <div className="card">
+          <div className="card__image">
+            <div className="blue-filter card-3-img">
+              <button className="btn-reveal" onClick={openModal3}>DETAILS</button>
+              <a href="https://github.com/DevMountain-tetris-friends/tetris-friends" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+              <button className="btn-reveal-3" style={{display: 'none'}}>LIVE</button>
+            </div>
+          </div>
+          <div className="price-title">
+            <h2 className="card-title card-title-3">TETRIS FRIENDS</h2>
+          </div>
         </div>
-        <p>
-          loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
-        </p>
-      </Modal>
-      <ModalTwo ref={modalRef2}>
-        <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
-        {/* <h1 className="modal-h1">Group Training</h1> */}
-        <div className='img-div'>
-          <img src={logo2} alt=''/>
-        </div>
-        <p className="modal-p">
-          loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
-        </p>
-      </ModalTwo>
+        <Modal ref={modalRef}>
+          <button onClick={() => modalRef.current.close()} className="modal-button"><FaTimes/></button>
+          {/* <h1>POWERHOUSE FITNESS</h1> */}
+          <div className='img-div'>
+            <img src={logo1} alt=''/>
+          </div>
+          <br/>
+          <h3>
+            
+          </h3>
+        </Modal>
+        <ModalTwo ref={modalRef2}>
+          <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
+          {/* <h1 className="modal-h1">Group Training</h1> */}
+          <div className='img-div'>
+            <img src={logo2} alt=''/>
+          </div>
+          <p className="modal-p">
+            loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
+          </p>
+        </ModalTwo>
+        <ModalThree ref={modalRef3}>
+          <button onClick={() => modalRef3.current.close()} className="modal-button"><FaTimes/></button>
+          {/* <h1 className="modal-h1">Group Training</h1> */}
+          <div className='img-div'>
+            <img src={logo2} alt=''/>
+          </div>
+          <p className="modal-p">
+            loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
+          </p>
+        </ModalThree>
+      </div>
     </div>
-  </div>
   );
 };
 
