@@ -1,9 +1,22 @@
 @import '../../_variables';
 
-.modal-h1 {
-  margin: 25px 0;
-  font-size: 22px;
-  border-bottom: solid 1px;
+h6 {
+  margin: 15px 0;
+  border-bottom: solid 1px gray;
+  padding-bottom: 15px;
+  text-align: left;
+  font-size: 1.15rem!important;
+  
+  h4 {
+    // margin-left: 25px;
+    // text-align: left;
+    font-style: italic;
+    // color: gray;
+    margin-bottom: 5px;
+    color: #b75f5f;
+  }
+
+
 }
 
 .modal-p {
@@ -33,6 +46,7 @@
   position: relative;
   top: 50%;
   left: 50%;
+  height: auto;
   transform: translate(-50%, -50%);
   /* min-height: 30%; */
   width: 60%;
@@ -47,10 +61,29 @@
 .img-div {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    .list-tech {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        padding: 5px 5px;
+        list-style-type: none;
+        margin: 5px 5px;
+        background: rgb(206, 202, 202);
+      }
+    }
+  }
 }
 
 img {
-  width: 400px;
+  width: 300px;
   @media (max-width: $tablet){ 
     width: 300px;
   }

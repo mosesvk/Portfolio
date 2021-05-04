@@ -5,7 +5,8 @@ import {
   FaGithubSquare,
   FaGithub,
   FaYoutube, 
-  FaLinkedin
+  FaLinkedin,
+  FaEye
 } from 'react-icons/fa'
 import {
   SocialWrap, 
@@ -63,7 +64,7 @@ const Portfolio = () => {
             <div className="blue-filter card-1-img">
               <button className="btn-reveal" onClick={openModal}>DETAILS</button>
               <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-              <a href="http://powerhousefitness.store/" target="_blank"><button className="btn-reveal-3">LIVE</button></a>
+              <a href="http://powerhousefitness.store/" target="_blank"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
             </div>
           </div>
           <div className="price-title">
@@ -99,11 +100,29 @@ const Portfolio = () => {
           {/* <h1>POWERHOUSE FITNESS</h1> */}
           <div className='img-div'>
             <img src={logo1} alt=''/>
+            <div>
+              <h4>Technologies Used</h4>
+              <ul className="list-tech">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>PostgresSql</li>
+                <li>Postman</li>
+                <li>bcrypt.js</li>
+                <li>Sass</li>
+                <li>React Redux</li>
+              </ul>
+            </div>
           </div>
           <br/>
-          <h3>
-            
-          </h3>
+          <h6>
+            <h4>What is it?</h4>
+            Powerhouse Training is the place for high school and collegiate athletes to improve their skills and abiliies. It is a program specifically for lineman. It is a website that displays different drills, practices, and techniques to enhance skill. 
+          </h6>
+          <div>
+            <h4>CHECK IT OUT!</h4>
+            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye/></button></a>
+          </div>
         </Modal>
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>

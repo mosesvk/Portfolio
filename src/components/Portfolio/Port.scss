@@ -99,11 +99,11 @@
 }
 
 .card-3-img {
-  background: url('../../images/cfp-web.jpg') center;
+  background: url('../../images/tetris-cover.jpg') center;
   background-size: cover;
   &:hover {
     cursor: pointer;
-    background: linear-gradient(to left, #7db97dc0, #f0ececa9),url('../../images/cfp-web.jpg') center;
+    background: linear-gradient(to left, #7db97dc0, #f0ececa9),url('../../images/tetris-cover.jpg') center;
     background-size: cover;
     transition: .5s;
   }
