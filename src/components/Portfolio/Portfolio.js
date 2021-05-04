@@ -14,13 +14,15 @@ import {
 } from './portfolioElements.js'
 import logo1 from '../../images/powerhouse-logo.jpg'
 import logo2 from '../../images/cfp-cover-1.jpg'
+import Youtube from 'react-youtube'
 import Divider from '@material-ui/core/Divider'
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
 import ModalThree from '../Modal/ModalThree'
 import './Port.scss'
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+  const {videoId} = props
 
   const modalRef = useRef();
   const modalRef2 = useRef();
@@ -36,6 +38,19 @@ const Portfolio = () => {
   const openModal3 = () => {
     modalRef3.current.openModal();
   }
+
+  const videoOnReady = (e) => {
+    e.target.pauseVideo()
+  } 
+
+  const opts = {
+    height: '390',
+    width: '640',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    }
+  };
 
   return (
     <div className='program-container' id='portfolio'>
@@ -115,7 +130,7 @@ const Portfolio = () => {
           </div>
           <br/>
           <h6>
-            <h4>What is it?</h4>
+            <h4>ABOUT</h4>
             Powerhouse Training is the place for high school and collegiate athletes to improve their skills and abiliies. It is a program specifically for lineman. It is a website that displays different drills, practices, and techniques to enhance skill. 
           </h6>
           <div>
@@ -123,6 +138,11 @@ const Portfolio = () => {
             <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
             <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye/></button></a>
           </div>
+          <Youtube
+            videoId={videoId}
+            opts={opts}
+            onReady={videoOnReady}
+          />
         </Modal>
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
@@ -152,3 +172,5 @@ const Portfolio = () => {
 export default Portfolio;
 
 
+// https://www.youtube.com/watch?v=wPCkDxDs0fQ
+// https://youtu.be/wPCkDxDs0fQ
