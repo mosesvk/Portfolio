@@ -13,7 +13,7 @@ import {
   SocialLink
 } from './portfolioElements.js'
 import logo1 from '../../images/powerhouse-logo.jpg'
-import logo2 from '../../images/cfp-cover-1.jpg'
+import logo2 from '../../images/CFP-cover.jpg'
 import logo3 from '../../images/tetris-cover.jpg'
 // import Youtube from 'react-youtube'
 import Divider from '@material-ui/core/Divider'
@@ -44,14 +44,14 @@ const Portfolio = () => {
   //   e.target.pauseVideo()
   // } 
 
-  const opts = {
-    height: '390',
-    width: '640',
-    playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
-    }
-  };
+  // const opts = {
+  //   height: '390',
+  //   width: '640',
+  //   playerVars: {
+  //     // https://developers.google.com/youtube/player_parameters
+  //     autoplay: 1,
+  //   }
+  // };
 
   return (
     <div className='program-container' id='portfolio'>
