@@ -40,7 +40,7 @@ export const ExperienceHeaderText = styled.div`
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5){
-    font-size: 80px;
+    font-size: 4rem;
   }
 `
 
@@ -54,7 +54,7 @@ export const ExperienceP = styled.p`
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5){
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 `
 

@@ -52,7 +52,7 @@ export const AboutHeaderText = styled.div`
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5){
-    font-size: 5rem;
+    font-size: 4rem;
   }
 `
 
@@ -64,7 +64,7 @@ export const AboutHeaderP = styled.p`
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5){
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 `
 

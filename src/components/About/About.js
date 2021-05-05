@@ -35,7 +35,7 @@ const About = () => {
               href="https://www.youtube.com/channel/UChlB6LMekxCh917bjumDcCA"
               target="_blank"
               rel="noopener noreferrer">
-              <FaYoutube style={{fontSize:"3rem"}}/>
+              <FaYoutube style={{fontSize:"4rem"}}/>
             </SocialLink>
             <SocialLink 
               href="https://www.facebook.com/profile.php?id=100004199235959"
