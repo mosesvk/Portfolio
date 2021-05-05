@@ -143,6 +143,7 @@ const Portfolio = () => {
             <h4>CHECK IT OUT!</h4>
             <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
             <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+            <a href="https://www.youtube.com/watch?v=wPCkDxDs0fQ" target="_blank"><button >TOUR<FaYoutube className='btn-reveal-icon'/></button></a>
           </div>
         </Modal>
         <ModalTwo ref={modalRef2}>
