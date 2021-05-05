@@ -46,7 +46,8 @@
 
 .card {
   flex-shrink: 0;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  // box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 25px 31px 15px rgb(0 0 0 / 31%);
   margin: 25px;
   border-radius: 5px;
   width: 25rem;
@@ -233,4 +234,49 @@
   :hover {
     text-decoration: none!important;
   }
+}
+
+.modal-scroll {
+  overflow: scroll;
+  height: 200px;
+  // background-color: rgb(238, 238, 238);
+  border: 2px solid black;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+  h4 {
+    padding: 12px 0 0 12px;
+    font-style: italic;
+    color: rgb(177, 67, 67);
+    font-weight: 700;
+  }
+
+  p {
+    padding-left: 12px;
+  }
+}
+
+.modal-buttons {
+  margin-top: 30px;
+  a {
+    font-size: 24px;
+    margin: 0 5px;
+    button {
+      
+      &:hover {
+        background-color: gray
+      }
+    }
+  }
+}
+
+// Always show scroll bars
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(134, 80, 80, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, .5);
 }

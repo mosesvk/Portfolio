@@ -14,15 +14,16 @@ import {
 } from './portfolioElements.js'
 import logo1 from '../../images/powerhouse-logo.jpg'
 import logo2 from '../../images/cfp-cover-1.jpg'
-import Youtube from 'react-youtube'
+import logo3 from '../../images/tetris-cover.jpg'
+// import Youtube from 'react-youtube'
 import Divider from '@material-ui/core/Divider'
 import Modal from '../Modal/Modal'
 import ModalTwo from '../Modal/ModalTwo'
 import ModalThree from '../Modal/ModalThree'
 import './Port.scss'
 
-const Portfolio = (props) => {
-  const {videoId} = props
+const Portfolio = () => {
+  // const {videoId} = props
 
   const modalRef = useRef();
   const modalRef2 = useRef();
@@ -39,9 +40,9 @@ const Portfolio = (props) => {
     modalRef3.current.openModal();
   }
 
-  const videoOnReady = (e) => {
-    e.target.pauseVideo()
-  } 
+  // const videoOnReady = (e) => {
+  //   e.target.pauseVideo()
+  // } 
 
   const opts = {
     height: '390',
@@ -129,40 +130,87 @@ const Portfolio = (props) => {
             </div>
           </div>
           <br/>
-          <h6>
-            <h4>ABOUT</h4>
-            Powerhouse Training is the place for high school and collegiate athletes to improve their skills and abiliies. It is a program specifically for lineman. It is a website that displays different drills, practices, and techniques to enhance skill. 
-          </h6>
-          <div>
+          <div className="modal-scroll">
+            <h4>WHAT IS IT?</h4>
+            <p>            Powerhouse Training is the place for high school and collegiate athletes to improve their skills and abiliies. It is a program specifically for lineman. It is a website that displays different drills, practices, and techniques to enhance skill. 
+            </p>
+            <h4>WHO IS IT FOR?</h4>
+            <p>A friend of mine asked me to make a website for him a couple months ago. His business is growing and needed another way to connect to clients either than through social media.</p>
+            <h4>WHEN & WHERE</h4>
+            <p>The base of the project took 3 weeks during April 2021. This was done while studying at DevMountain. </p>
+          </div>
+          <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
             <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-            <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye/></button></a>
+            <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
           </div>
-          <Youtube
-            videoId={videoId}
-            opts={opts}
-            onReady={videoOnReady}
-          />
         </Modal>
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
-          {/* <h1 className="modal-h1">Group Training</h1> */}
+          {/* <h1>POWERHOUSE FITNESS</h1> */}
           <div className='img-div'>
             <img src={logo2} alt=''/>
+            <div>
+              <h4>Technologies Used</h4>
+              <ul className="list-tech">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>PostgresSql</li>
+                <li>Postman</li>
+                <li>bcrypt.js</li>
+                <li>Sass</li>
+                <li>React Redux</li>
+              </ul>
+            </div>
           </div>
-          <p className="modal-p">
-            loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
-          </p>
+          <br/>
+          <div className="modal-scroll">
+            <h4>WHAT IS IT?</h4>
+            <p></p>
+            <h4>WHO IS IT FOR?</h4>
+            <p></p>
+            <h4>WHEN & WHERE</h4>
+            <p></p>
+          </div>
+          <div className="modal-buttons">
+            <h4>CHECK IT OUT!</h4>
+            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+          </div>
         </ModalTwo>
         <ModalThree ref={modalRef3}>
           <button onClick={() => modalRef3.current.close()} className="modal-button"><FaTimes/></button>
           {/* <h1 className="modal-h1">Group Training</h1> */}
           <div className='img-div'>
-            <img src={logo2} alt=''/>
+            <img src={logo3} alt=''/>
+            <div>
+              <h4>Technologies Used</h4>
+              <ul className="list-tech">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>PostgresSql</li>
+                <li>Postman</li>
+                <li>bcrypt.js</li>
+                <li>Sass</li>
+                <li>React Redux</li>
+              </ul>
+            </div>
           </div>
-          <p className="modal-p">
-            loremNostrud ipsum dolor culpa dolore nulla sunt ullamco laboris ad commodo deserunt. Amet magna sit cillum adipisicing voluptate ullamco duis cupidatat aliqua qui occaecat Lorem et ea. Ipsum amet ullamco voluptate cillum anim in velit quis ea aliquip fugiat nisi exercitation reprehenderit.
-          </p>
+          <br/>
+          <div className="modal-scroll">
+            <h4>WHAT IS IT?</h4>
+            <p>            Powerhouse Training is the place for high school and collegiate athletes to improve their skills and abiliies. It is a program specifically for lineman. It is a website that displays different drills, practices, and techniques to enhance skill. 
+            </p>
+            <h4>WHO IS IT FOR?</h4>
+            <p>A friend of mine asked me to make a website for him a couple months ago. His business is growing and needed another way to connect to clients either than through social media.</p>
+            <h4>WHEN & WHERE</h4>
+            <p>The base of the project took 3 weeks during April 2021. This was done while studying at DevMountain. </p>
+          </div>
+          <div className="modal-buttons">
+            <h4>CHECK IT OUT!</h4>
+            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+          </div>
         </ModalThree>
       </div>
     </div>
