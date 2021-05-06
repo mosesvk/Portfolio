@@ -200,12 +200,12 @@ const Portfolio = () => {
           <br/>
           <div className="modal-scroll">
             <h4>WHAT IS IT?</h4>
-            <p>            Powerhouse Training is the place for high school and collegiate athletes to improve their skills and abiliies. It is a program specifically for lineman. It is a website that displays different drills, practices, and techniques to enhance skill. 
+            <p>Tetris Friends is a game-based website where "gamers" can interact with eachother and play tetris. Each "gamer" can also see where their highest score ranks among other "gamers" 
             </p>
             <h4>WHO IS IT FOR?</h4>
-            <p>A friend of mine asked me to make a website for him a couple months ago. His business is growing and needed another way to connect to clients either than through social media.</p>
+            <p></p>
             <h4>WHEN & WHERE</h4>
-            <p>The base of the project took 3 weeks during April 2021. This was done while studying at DevMountain. </p>
+            <p>The base of the project took 3 weeks during May 2021. This was done while studying at DevMountain. </p>
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>

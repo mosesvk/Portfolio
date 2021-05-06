@@ -55,13 +55,15 @@ h6 {
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   z-index: 101;
   padding: 40px;
+  @media (max-width: $tablet){
+    height: 80%;
+    width: 100%;
+  }
   // iphone 6-8
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
     height: 80%;
     width: 100%;
   }
-
-
   //iphone +
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { 
     height: 80%;
@@ -90,8 +92,10 @@ h6 {
   div {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
     @media (max-width: $laptopSm){
       margin-top: 25px;
+      margin-left: 0;
       padding-top: 12px;
       background: #e0dada;
     }
