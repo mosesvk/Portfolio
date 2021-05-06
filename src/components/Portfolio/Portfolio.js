@@ -71,7 +71,7 @@ const Portfolio = () => {
           <SocialLink
           href="https://www.youtube.com/channel/UChlB6LMekxCh917bjumDcCA"
           target="_blank"
-          ><FaYoutube style={{fontSize: '4rem'}} iconDark="true"/></SocialLink>
+          ><FaYoutube style={{fontSize: '3rem'}} iconDark="true"/></SocialLink>
         </SocialWrap>
       </div>
       <div className='program-wrap'>
