@@ -141,6 +141,7 @@ export const Skill = styled.div`
 
   @media (max-width: 481px){
     width: 22%;
+    font-size: 15px;
   }
 `
 

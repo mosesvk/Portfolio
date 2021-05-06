@@ -55,6 +55,25 @@ h6 {
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   z-index: 101;
   padding: 40px;
+  // iphone 6-8
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+    height: 80%;
+    width: 100%;
+  }
+
+
+  //iphone +
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { 
+    height: 80%;
+    width: 100%;
+  }
+  //iphonex
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+    height: 80%;
+    width: 100%;
+  }
+
+
 
 }
 
@@ -63,20 +82,54 @@ h6 {
   text-align: center;
   display: flex;
   flex-direction: row;
+  @media (max-width: $laptopSm){
+    flex-direction: column;
+    align-items: center;
+  }
 
   div {
     display: flex;
     flex-direction: column;
+    @media (max-width: $laptopSm){
+      margin-top: 25px;
+      padding-top: 12px;
+      background: #e0dada;
+    }
+
+    h4 {
+      @media (max-width: $laptopSm){
+        font-weight: 700;
+      }
+    }
 
     .list-tech {
       display: flex;
       flex-wrap: wrap;
+      @media (max-width: $laptopSm){
+        text-align: center;
+        align-items: center;
+        padding: 0 100px;
+      }
+      @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+        padding: 0
+      }
+      //iphone +
+      @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { 
+        padding: 0;
+      }
+      @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+        padding: 0;
+      }
 
       li {
         padding: 5px 5px;
         list-style-type: none;
         margin: 5px 5px;
         background: rgb(206, 202, 202);
+        @media (max-width: $tabletLg){
+          padding: 0;
+        }
+        
       }
     }
   }
@@ -86,6 +139,17 @@ img {
   width: 50%;
   @media (max-width: $tablet){ 
     width: 300px;
+  }
+  //iphone 6-8
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+    width: 200px;
+  }
+  //iphone +
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { 
+    width: 200px;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+    width: 200px;
   }
 }
 
