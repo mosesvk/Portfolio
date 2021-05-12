@@ -71,7 +71,7 @@ const Portfolio = () => {
           <SocialLink
           href="https://www.youtube.com/channel/UChlB6LMekxCh917bjumDcCA"
           target="_blank"
-          ><FaYoutube style={{fontSize: '4rem'}} iconDark="true"/></SocialLink>
+          ><FaYoutube iconDark="true"/></SocialLink>
         </SocialWrap>
       </div>
       <div className='program-wrap'>
@@ -175,7 +175,7 @@ const Portfolio = () => {
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
-            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button>REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
             <a href="http://powerhousefitness.store/" target="_blank" style={{display: 'none'}}><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
           </div>
         </ModalTwo>

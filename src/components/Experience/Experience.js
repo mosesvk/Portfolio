@@ -56,7 +56,7 @@ const Skills = () => {
             <SocialLink
             href="https://www.youtube.com/channel/UChlB6LMekxCh917bjumDcCA"
             target="_blank"
-            ><FaYoutube style={{fontSize: '4rem'}} iconDark="true"/></SocialLink>
+            ><FaYoutube iconDark="true"/></SocialLink>
           </SocialWrap>
         </ExperienceHeader>
         <div className="experience-wrap">
