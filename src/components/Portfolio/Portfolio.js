@@ -148,6 +148,7 @@ const Portfolio = () => {
         </Modal>
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
+          <h2 style={{color:'red', textAlign:'center'}}>Website will be up Soon</h2>
           {/* <h1>POWERHOUSE FITNESS</h1> */}
           <div className='img-div'>
             <img src={logo2} alt=''/>
@@ -167,11 +168,11 @@ const Portfolio = () => {
           <br/>
           <div className="modal-scroll">
             <h4>WHAT IS IT?</h4>
-            <p></p>
+            <p>Have a sweet tooth? Cheefa's Fried Pies will do the trick. Every week, there are different flavors from nutella banana to pizza fried pies.</p>
             <h4>WHO IS IT FOR?</h4>
-            <p></p>
+            <p>This is a family business of which I wanted to help and create a website for.</p>
             <h4>WHEN & WHERE</h4>
-            <p></p>
+            <p>I created this website on my free time throughout the 3 months I was studying at Devmountain.</p>
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
@@ -181,6 +182,7 @@ const Portfolio = () => {
         </ModalTwo>
         <ModalThree ref={modalRef3}>
           <button onClick={() => modalRef3.current.close()} className="modal-button"><FaTimes/></button>
+          <h2 style={{color:'red', textAlign:'center'}}>Website will be up Soon</h2>
           {/* <h1 className="modal-h1">Group Training</h1> */}
           <div className='img-div'>
             <img src={logo3} alt=''/>
