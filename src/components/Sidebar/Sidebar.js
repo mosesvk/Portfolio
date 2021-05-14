@@ -9,10 +9,20 @@ import {
   SideBtnWrap,
   SideLinkedin,
   SideGithub,
+  SidebarDiv,
+  SideFacebook,
+  SideYoutube
 } from "./SidebarElements";
+import {NavLogo} from '../Navbar/navbarElements'
+import { animateScroll as scroll } from "react-scroll";
 
 const Sidebar = (props) => {
-  const { toggle, isOpen } = props;
+  const { toggle, isOpen, scrollNav } = props;
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
 
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -20,6 +30,9 @@ const Sidebar = (props) => {
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
+        <NavLogo to="home" onClick={toggleHome} scrollNav={scrollNav}>
+            &lt; Moses K &gt;
+        </NavLogo>
         <SidebarMenu>
           <SidebarLink
             to="portfolio"
@@ -65,12 +78,20 @@ const Sidebar = (props) => {
           >
             CONTACT
           </SidebarLink>
-          <SidebarLink>
-            <SideLinkedin onClick={toggle} />
-          </SidebarLink>
-          <SidebarLink>
-            <SideGithub onClick={toggle} />
-          </SidebarLink>
+          <SidebarDiv>
+              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
+                <SideLinkedin/>
+              </a>
+              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
+                <SideGithub/>
+              </a>
+              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
+                <SideYoutube/>
+              </a>
+              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
+                <SideFacebook/>
+              </a>
+          </SidebarDiv>
         </SidebarMenu>
         <SideBtnWrap>
           {/* <SideLinkedin onClick={toggle} />

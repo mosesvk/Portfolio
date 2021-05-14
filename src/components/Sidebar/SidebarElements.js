@@ -1,5 +1,11 @@
 import styled from 'styled-components'
-import {FaTimes, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+import {
+  FaTimes, 
+  FaLinkedin, 
+  FaGithubSquare,
+  FaYoutube,
+  FaFacebook
+} from 'react-icons/fa'
 // import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 
@@ -46,6 +52,7 @@ export const SidebarMenu = styled.ul`
   grid-template-rows: repeat(6, 80px);
   text-align: center;
   align-items: center;
+  padding-top: 70px;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
@@ -63,6 +70,7 @@ export const SidebarLink = styled(LinkS)`
   text-decoration: none;
   color: #fff; 
   cursor: pointer;
+  border-bottom: 1px solid white;
 
   &:hover {
     color: #fff3e6;
@@ -81,10 +89,17 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `
 
+export const SidebarDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
+
 export const SideLinkedin = styled(FaLinkedin)`
   color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
-  font-size: 50px;
+  font-size: 35px;
   cursor: pointer;
+  margin: 0 5px;
   /* align-items: center; */
 
   &:hover {
@@ -95,8 +110,35 @@ export const SideLinkedin = styled(FaLinkedin)`
 `
 export const SideGithub = styled(FaGithubSquare)`
   color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
-  font-size: 50px;
+  font-size: 35px;
   cursor: pointer;
+  margin: 0 5px;
+
+  &:hover {
+    opacity: .5;
+    background-color: #fff3e6;
+    /* cursor: pointer; */
+  }
+`
+
+export const SideYoutube = styled(FaYoutube)`
+  color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 5px;
+
+  &:hover {
+    opacity: .5;
+    background-color: #fff3e6;
+    /* cursor: pointer; */
+  }
+`
+
+export const SideFacebook = styled(FaFacebook)`
+  color: ${({iconDark}) => (iconDark ? '#1e212d' : '#fff')};
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 5px;
 
   &:hover {
     opacity: .5;

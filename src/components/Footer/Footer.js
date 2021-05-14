@@ -40,10 +40,10 @@ const Footer = () => {
               rel="noopener noreferrer">
                 <FaYoutubeSquare />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram"
+              {/* <SocialIconLink href="/" target="_blank" aria-label="Instagram"
               rel="noopener noreferrer">
                 <FaInstagram />
-              </SocialIconLink>
+              </SocialIconLink> */}
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
