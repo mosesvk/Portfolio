@@ -11,7 +11,7 @@ import sass from '../../images/sass.svg'
 import python from '../../images/python.png'
 import django from '../../images/django-40.png'
 import bootstrap from '../../images/bootstrap.png'
-import typescript from '../../images/typescript.png'
+import typescript from '../../images/typescript-144.png'
 import Divider from '@material-ui/core/Divider';
 // import {SideLinkedin, SideGithub } from '../Sidebar/SidebarElements'
 import {
