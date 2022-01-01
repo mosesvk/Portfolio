@@ -8,6 +8,10 @@ import nodejs from '../../images/node.svg'
 import sql from '../../images/sql-server.svg'
 import git from '../../images/git.svg'
 import sass from '../../images/sass.svg'
+import python from '../../images/python.png'
+import django from '../../images/django-40.png'
+import bootstrap from '../../images/bootstrap.png'
+import typescript from '../../images/typescript.png'
 import Divider from '@material-ui/core/Divider';
 // import {SideLinkedin, SideGithub } from '../Sidebar/SidebarElements'
 import {
@@ -99,6 +103,22 @@ const Skills = () => {
               <Skill>                
                 <SkillImg src={sass}/>
                 SASS
+              </Skill> 
+              <Skill>                
+                <SkillImg src={python}/>
+                Python
+              </Skill>     
+              <Skill>                
+                <SkillImg src={django}/>
+                Django
+              </Skill>     
+              <Skill>                
+                <SkillImg src={bootstrap}/>
+                Bootstrap
+              </Skill>  
+              <Skill>                
+                <SkillImg src={typescript}/>
+                Typescript
               </Skill>            
             </SkillWrap>
           </SkillContainer>
