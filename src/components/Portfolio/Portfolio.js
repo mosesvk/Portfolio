@@ -74,6 +74,7 @@ const Portfolio = () => {
         </SocialWrap>
       </div>
       <div className='program-wrap'>
+      
         <div className="card">
           <div className="card__image">
             <div className="blue-filter card-1-img">
@@ -86,6 +87,7 @@ const Portfolio = () => {
             <h2 className="card-title card-title-1">POWERHOUSE FITNESS</h2>
           </div>
         </div>
+
         <div className="card">
           <div className="card__image">
             <div className="blue-filter card-2-img">
@@ -98,6 +100,7 @@ const Portfolio = () => {
             <h2 className="card-title card-title-2">CHEEFA'S FRIED PIES</h2>
           </div>
         </div>
+
         <div className="card">
           <div className="card__image">
             <div className="blue-filter card-3-img">
@@ -110,6 +113,7 @@ const Portfolio = () => {
             <h2 className="card-title card-title-3">TETRIS FRIENDS</h2>
           </div>
         </div>
+
         <Modal ref={modalRef}>
           <button onClick={() => modalRef.current.close()} className="modal-button"><FaTimes/></button>
           {/* <h1>POWERHOUSE FITNESS</h1> */}
@@ -147,7 +151,6 @@ const Portfolio = () => {
         </Modal>
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
-          <h2 style={{color:'red', textAlign:'center'}}>Website will be up Soon</h2>
           {/* <h1>POWERHOUSE FITNESS</h1> */}
           <div className='img-div'>
             <img src={logo2} alt=''/>
@@ -170,13 +173,11 @@ const Portfolio = () => {
             <p>Have a sweet tooth? Cheefa's Fried Pies will do the trick. Every week, there are different flavors from nutella banana to pizza fried pies.</p>
             <h4>WHO IS IT FOR?</h4>
             <p>This is a family business of which I wanted to help and create a website for.</p>
-            <h4>WHEN & WHERE</h4>
-            <p>I created this website on my free time throughout the 3 months I was studying at Devmountain.</p>
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
             <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button>REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-            <a href="http://powerhousefitness.store/" target="_blank" style={{display: 'none'}}><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+            <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank" style={{display: 'none'}}><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
           </div>
         </ModalTwo>
         <ModalThree ref={modalRef3}>
