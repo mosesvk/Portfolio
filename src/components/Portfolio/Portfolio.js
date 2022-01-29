@@ -147,11 +147,13 @@ const Portfolio = () => {
               <ul className="list-tech">
                 <li>React</li>
                 <li>Node.js</li>
-                <li>PostgresSql</li>
+                <li>Express</li>
+                <li>MongoDB</li>
                 <li>Postman</li>
                 <li>bcrypt.js</li>
                 <li>Sass</li>
                 <li>React Redux</li>
+                <li>Heroku</li>
               </ul>
             </div>
           </div>
