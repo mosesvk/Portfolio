@@ -91,7 +91,7 @@ const Portfolio = () => {
             <div className="blue-filter card-2-img">
               <button className="btn-reveal" onClick={openModal2}>DETAILS</button>
               <a href="https://github.com/mosesvk/Cheefas-fried-pies" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-              <button className="btn-reveal-3" style={{display: 'none'}}>LIVE</button>
+              <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
             </div>
           </div>
           <div className="price-title">
