@@ -39,19 +39,6 @@ const Portfolio = () => {
     modalRef3.current.openModal();
   }
 
-  // const videoOnReady = (e) => {
-  //   e.target.pauseVideo()
-  // } 
-
-  // const opts = {
-  //   height: '390',
-  //   width: '640',
-  //   playerVars: {
-  //     // https://developers.google.com/youtube/player_parameters
-  //     autoplay: 1,
-  //   }
-  // };
-
   return (
     <div className='program-container' id='portfolio'>
       <div className='program-header'>
@@ -74,13 +61,13 @@ const Portfolio = () => {
         </SocialWrap>
       </div>
       <div className='program-wrap'>
-      
+
         <div className="card">
           <div className="card__image">
             <div className="blue-filter card-1-img">
               <button className="btn-reveal" onClick={openModal}>DETAILS</button>
-              <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-              <a href="http://powerhousefitness.store/" target="_blank"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
+              <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank" rel="noreferrer"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+              <a href="http://powerhousefitness.store/" target="_blank" rel="noreferrer"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
             </div>
           </div>
           <div className="price-title">
@@ -92,8 +79,8 @@ const Portfolio = () => {
           <div className="card__image">
             <div className="blue-filter card-2-img">
               <button className="btn-reveal" onClick={openModal2}>DETAILS</button>
-              <a href="https://github.com/mosesvk/Cheefas-fried-pies" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-              <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
+              <a href="https://github.com/mosesvk/Cheefas-fried-pies" target="_blank" rel="noreferrer"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+              <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank" rel="noreferrer"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
             </div>
           </div>
           <div className="price-title">
@@ -105,7 +92,7 @@ const Portfolio = () => {
           <div className="card__image">
             <div className="blue-filter card-3-img">
               <button className="btn-reveal" onClick={openModal3}>DETAILS</button>
-              <a href="https://github.com/DevMountain-tetris-friends/tetris-friends" target="_blank"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+              <a href="https://github.com/DevMountain-tetris-friends/tetris-friends" target="_blank" rel="noreferrer"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
               <button className="btn-reveal-3" style={{display: 'none'}}>LIVE</button>
             </div>
           </div>
@@ -144,11 +131,12 @@ const Portfolio = () => {
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
-            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-            <a href="http://powerhousefitness.store/" target="_blank"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
-            <a href="https://www.youtube.com/watch?v=wPCkDxDs0fQ" target="_blank"><button >TOUR<FaYoutube className='btn-reveal-icon'/></button></a>
+            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank" rel="noreferrer"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="http://powerhousefitness.store/" target="_blank" rel="noreferrer"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+            <a href="https://www.youtube.com/watch?v=wPCkDxDs0fQ" target="_blank" rel="noreferrer"><button >TOUR<FaYoutube className='btn-reveal-icon'/></button></a>
           </div>
         </Modal>
+
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
           {/* <h1>POWERHOUSE FITNESS</h1> */}
@@ -176,8 +164,8 @@ const Portfolio = () => {
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
-            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button>REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-            <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank" style={{display: 'none'}}><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+            <a href="https://github.com/mosesvk/cheefas-fried-pies" target="_blank" rel="noreferrer"><button>REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank" rel="noreferrer"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
           </div>
         </ModalTwo>
         <ModalThree ref={modalRef3}>
@@ -211,8 +199,8 @@ const Portfolio = () => {
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
-            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-            <a href="http://powerhousefitness.store/" target="_blank" style={{display: 'none'}}><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+            <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank" rel="noreferrer"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
+            <a href="http://powerhousefitness.store/" target="_blank" style={{display: 'none'}} rel="noreferrer"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
           </div>
         </ModalThree>
       </div>
