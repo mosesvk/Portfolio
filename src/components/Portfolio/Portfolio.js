@@ -67,7 +67,7 @@ const Portfolio = () => {
             <div className="blue-filter card-1-img">
               <button className="btn-reveal" onClick={openModal}>DETAILS</button>
               <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank" rel="noreferrer"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-              <a href="http://powerhousefitness.store/" target="_blank" rel="noreferrer"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
+              {/* <a href="http://powerhousefitness.store/" target="_blank" rel="noreferrer"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a> */}
             </div>
           </div>
           <div className="price-title">
@@ -139,7 +139,8 @@ const Portfolio = () => {
 
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
-          {/* <h1>POWERHOUSE FITNESS</h1> */}
+          <h2 style={{color:'red', textAlign:'center'}}>Website under Maintenance. You can still check out the tour on Youtube</h2>
+          <h1>POWERHOUSE FITNESS</h1>
           <div className='img-div'>
             <img src={logo2} alt=''/>
             <div>
@@ -167,7 +168,7 @@ const Portfolio = () => {
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
             <a href="https://github.com/mosesvk/cheefas-fried-pies" target="_blank" rel="noreferrer"><button>REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-            <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank" rel="noreferrer"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+            {/* <a href="https://cheefasfriedpies.herokuapp.com/" target="_blank" rel="noreferrer"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a> */}
           </div>
         </ModalTwo>
         <ModalThree ref={modalRef3}>
