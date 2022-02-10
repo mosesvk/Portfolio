@@ -103,7 +103,7 @@ const Portfolio = () => {
 
         <Modal ref={modalRef}>
           <button onClick={() => modalRef.current.close()} className="modal-button"><FaTimes/></button>
-          <h4 style={{color:'red', textAlign:'center'}}>Website under Maintenance. You can still check out the tour on Youtube</h4>
+          {/* <h4 style={{color:'red', textAlign:'center'}}>Website under Maintenance. You can still check out the tour on Youtube</h4> */}
           {/* <h1>POWERHOUSE FITNESS</h1> */}
           <div className='img-div'>
             <img src={logo1} alt=''/>
@@ -198,7 +198,7 @@ const Portfolio = () => {
             <h4>WHO IS IT FOR?</h4>
             <p></p>
             <h4>WHEN & WHERE</h4>
-            <p>The base of the project took 3 weeks during May 2021. This was done while studying at DevMountain. </p>
+            <p>The base of the project took 3 weeks during May 2021. This was done while studying at DevMountain.</p>
           </div>
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
