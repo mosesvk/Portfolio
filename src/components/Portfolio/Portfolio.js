@@ -67,7 +67,7 @@ const Portfolio = () => {
             <div className="blue-filter card-1-img">
               <button className="btn-reveal" onClick={openModal}>DETAILS</button>
               <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank" rel="noreferrer"><button className="btn-reveal-2">REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-              {/* <a href="http://powerhousefitness.store/" target="_blank" rel="noreferrer"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a> */}
+              <a href="https://powerhouse-fitness.herokuapp.com/" target="_blank" rel="noreferrer"><button className="btn-reveal-3">LIVE <FaEye className='btn-reveal-icon'/></button></a>
             </div>
           </div>
           <div className="price-title">
@@ -133,7 +133,7 @@ const Portfolio = () => {
           <div className="modal-buttons">
             <h4>CHECK IT OUT!</h4>
             <a href="https://github.com/mosesvk/Powerhouse_fitness" target="_blank" rel="noreferrer"><button >REPO <FaGithubSquare className='btn-reveal-icon'/></button></a>
-            <a href="http://powerhousefitness.store/" target="_blank" rel="noreferrer"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
+            <a href="https://powerhouse-fitness.herokuapp.com/" target="_blank" rel="noreferrer"><button >LIVE<FaEye className='btn-reveal-icon'/></button></a>
             <a href="https://www.youtube.com/watch?v=wPCkDxDs0fQ" target="_blank" rel="noreferrer"><button >TOUR<FaYoutube className='btn-reveal-icon'/></button></a>
           </div>
         </Modal>
