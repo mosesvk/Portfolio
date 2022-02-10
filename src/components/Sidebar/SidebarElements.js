@@ -70,11 +70,12 @@ export const SidebarLink = styled(LinkS)`
   text-decoration: none;
   color: #fff; 
   cursor: pointer;
+  width: fit-content;
+  padding: 0 5px;
   /* border-bottom: 1px solid white; */
 
   &:hover {
     color: #fff3e6;
-    font-weight: 800;
     transition: .2s ease-in-out;
     text-decoration: none;
     background: #fff3e6;
@@ -104,7 +105,6 @@ export const SideLinkedin = styled(FaLinkedin)`
 
   &:hover {
     opacity: .5;
-    background-color: #fff3e6;
     /* cursor:pointer; */
   }
 `
@@ -116,7 +116,6 @@ export const SideGithub = styled(FaGithubSquare)`
 
   &:hover {
     opacity: .5;
-    background-color: #fff3e6;
     /* cursor: pointer; */
   }
 `
@@ -129,7 +128,6 @@ export const SideYoutube = styled(FaYoutube)`
 
   &:hover {
     opacity: .5;
-    background-color: #fff3e6;
     /* cursor: pointer; */
   }
 `
@@ -142,7 +140,6 @@ export const SideFacebook = styled(FaFacebook)`
 
   &:hover {
     opacity: .5;
-    background-color: #fff3e6;
     /* cursor: pointer; */
   }
 `

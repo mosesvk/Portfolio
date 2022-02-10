@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   SidebarContainer,
   Icon,
@@ -11,10 +11,10 @@ import {
   SideGithub,
   SidebarDiv,
   SideFacebook,
-  SideYoutube
-} from "./SidebarElements";
-import {NavLogo} from '../Navbar/navbarElements'
-import { animateScroll as scroll } from "react-scroll";
+  SideYoutube,
+} from './SidebarElements';
+import { NavLogo } from '../Navbar/navbarElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Sidebar = (props) => {
   const { toggle, isOpen, scrollNav } = props;
@@ -23,74 +23,101 @@ const Sidebar = (props) => {
     scroll.scrollToTop();
   };
 
-
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
-        <NavLogo to="home" onClick={toggleHome} scrollNav={scrollNav}>
-            &lt; Moses K &gt;
+        <NavLogo to='home' onClick={toggleHome} scrollNav={scrollNav}>
+          &lt; Moses K &gt;
         </NavLogo>
         <SidebarMenu>
-          <SidebarLink
-            to="portfolio"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            PORTFOLIO
-          </SidebarLink>
-          <SidebarLink
-            to="experience"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            EXPERIENCE
-          </SidebarLink>
-          <SidebarLink
-            to="about"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            ABOUT
-          </SidebarLink>
-          <SidebarLink
-            to="contact"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            CONTACT
-          </SidebarLink>
+          <li className='d-flex justify-content-center'>
+            <SidebarLink
+              to='portfolio'
+              onClick={toggle}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              PORTFOLIO
+            </SidebarLink>
+          </li>
+          <li className='d-flex justify-content-center'>
+            <SidebarLink
+              to='experience'
+              onClick={toggle}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              EXPERIENCE
+            </SidebarLink>
+          </li>
+          <li className='d-flex justify-content-center'>
+            <SidebarLink
+              to='about'
+              onClick={toggle}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              ABOUT
+            </SidebarLink>
+          </li>
+          <li className='d-flex justify-content-center'>
+            <SidebarLink
+              to='contact'
+              onClick={toggle}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              CONTACT
+            </SidebarLink>
+          </li>
           <SidebarDiv>
-              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
-                <SideLinkedin/>
-              </a>
-              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
-                <SideGithub/>
-              </a>
-              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
-                <SideYoutube/>
-              </a>
-              <a href='https://www.linkedin.com/in/mosesvk/' target='_blank' rel="noreferrer" onClick={toggle} >
-                <SideFacebook/>
-              </a>
+            <a
+              href='https://www.linkedin.com/in/mosesvk/'
+              target='_blank'
+              rel='noreferrer'
+              onClick={toggle}
+            >
+              <SideLinkedin />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/mosesvk/'
+              target='_blank'
+              rel='noreferrer'
+              onClick={toggle}
+            >
+              <SideGithub />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/mosesvk/'
+              target='_blank'
+              rel='noreferrer'
+              onClick={toggle}
+            >
+              <SideYoutube />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/mosesvk/'
+              target='_blank'
+              rel='noreferrer'
+              onClick={toggle}
+            >
+              <SideFacebook />
+            </a>
           </SidebarDiv>
         </SidebarMenu>
         <SideBtnWrap>
