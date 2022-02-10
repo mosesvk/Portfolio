@@ -140,7 +140,7 @@ const Portfolio = () => {
 
         <ModalTwo ref={modalRef2}>
           <button onClick={() => modalRef2.current.close()} className="modal-button"><FaTimes/></button>
-          <h1>POWERHOUSE FITNESS</h1>
+          <h1>CHEEFA'S FRIED PIES</h1>
           <div className='img-div'>
             <img src={logo2} alt=''/>
             <div>
