@@ -107,6 +107,17 @@
   }
 }
 
+.card-4-img {
+  background: url('../../images/zillow.png') center;
+  background-size: cover;
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #a08dcec0, #f0ececa9),url('../../images/zillow.png') center;
+    background-size: cover;
+    transition: .5s;
+  }
+}
+
 .btn-reveal-2 {
   position: absolute;
   // font-size: 28px;
@@ -213,6 +224,10 @@
 
 .card-title-3 {
   background: linear-gradient(to left, #7db97dc0, #f0ecec52)
+}
+
+.card-title-4 {
+  background: linear-gradient(to left, #a08dcec0, #f0ecec52)
 }
 
 .card-buttons {

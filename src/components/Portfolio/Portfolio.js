@@ -17,11 +17,13 @@ import {
 import logo1 from '../../images/powerhouse-logo.jpg';
 import logo2 from '../../images/CFP-cover.jpg';
 import logo3 from '../../images/tetris-cover.jpg';
+import logo4 from '../../images/zillow.png';
 // import Youtube from 'react-youtube'
 import Divider from '@material-ui/core/Divider';
 import Modal from '../Modal/Modal';
 import ModalTwo from '../Modal/ModalTwo';
 import ModalThree from '../Modal/ModalThree';
+import ModalFour from '../Modal/ModalFour.js';
 import './Port.scss';
 
 const Portfolio = () => {
@@ -30,6 +32,7 @@ const Portfolio = () => {
   const modalRef = useRef();
   const modalRef2 = useRef();
   const modalRef3 = useRef();
+  const modalRef4 = useRef();
 
   const openModal = () => {
     console.log('working????');
@@ -40,6 +43,9 @@ const Portfolio = () => {
   };
   const openModal3 = () => {
     modalRef3.current.openModal();
+  };
+    const openModal4 = () => {
+    modalRef4.current.openModal();
   };
 
   return (
@@ -151,6 +157,37 @@ const Portfolio = () => {
           </div>
           <div className='price-title'>
             <h2 className='card-title card-title-3'>TETRIS FRIENDS</h2>
+          </div>
+        </div>
+
+        <div className='card'>
+          <div className='card__image'>
+            <div className='blue-filter card-4-img'>
+              <button className='btn-reveal' onClick={openModal4}>
+                DETAILS
+              </button>
+              <a
+                href='https://github.com/mosesvk/zilloww'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <button className='btn-reveal-2'>
+                  REPO <FaGithubSquare className='btn-reveal-icon' />
+                </button>
+              </a>
+              <a
+                href='https://zilloww.vercel.app/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <button className='btn-reveal-3'>
+                  LIVE <FaEye className='btn-reveal-icon' />
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className='price-title'>
+            <h2 className='card-title card-title-4'>ZILLOWW</h2>
           </div>
         </div>
 
@@ -315,6 +352,7 @@ const Portfolio = () => {
             </p>
           </div>
         </ModalTwo>
+
         <ModalThree ref={modalRef3}>
           <ExitButton
             onClick={() => modalRef3.current.close()}
@@ -394,6 +432,72 @@ const Portfolio = () => {
             </p>
           </div>
         </ModalThree>
+
+        <ModalFour ref={modalRef4}>
+          <ExitButton
+            onClick={() => modalRef4.current.close()}
+            className='modal-button'
+          >
+            <FaTimes />
+          </ExitButton>
+          {/* <h2 style={{ color: 'red', textAlign: 'center' }}>
+            Website will be up Soon
+          </h2> */}
+          <h1 className="modal-h1">Zilloww Rental Site</h1>
+          <div className='img-div'>
+            <img src={logo4} alt='' />
+            <div>
+              <h4>Technologies Used</h4>
+              <ul className='list-tech'>
+                <li>React JS</li>
+                <li>Next JS</li>
+                <li>Chakra UI</li>
+                <li>Material UI</li>
+                <li>CSS</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+          </div>
+          <ModalLinkDiv>
+            <div className='d-flex justify-content-center'>
+              <h4>CHECK IT OUT!</h4>
+            </div>
+            <div className='d-flex justify-content-center'>
+              <a
+                href='https://github.com/mosesvk/zilloww'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <ModalLink className='pinkHover'>
+                  REPO <FaGithubSquare className='btn-reveal-icon' />
+                </ModalLink>
+              </a>
+              <a
+                href='https://zilloww.vercel.app/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <ModalLink className='pinkHover'>
+                  LIVE
+                  <FaEye className='btn-reveal-icon' />
+                </ModalLink>
+              </a>
+            </div>
+          </ModalLinkDiv>
+          <br />
+          <div className='modal-scroll'>
+            <h4>WHAT IS IT?</h4>
+            <p>
+              Zillow is a Real Estate app that uses Rapid API to take in different homes for sale and allows you to search different properties using a high end search configuration, similar to those used by rentler.com or zillow.com
+            </p>
+            <h4>WHO IS IT FOR?</h4>
+            <p></p>
+            <h4>WHEN & WHERE</h4>
+            <p>
+              Side Project completed in the Spring of 2022
+            </p>
+          </div>
+        </ModalFour>
       </div>
     </div>
   );
