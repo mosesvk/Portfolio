@@ -8,8 +8,8 @@ import nodejs from '../../images/node.svg'
 import sql from '../../images/sql-server.svg'
 import git from '../../images/git.svg'
 import sass from '../../images/sass.svg'
-import python from '../../images/python-144.png'
-import django from '../../images/django-192.png'
+import next from '../../images/next.png'
+import mui from '../../images/material-ui.svg'
 import bootstrap from '../../images/bootstrap-144.png'
 import typescript from '../../images/typescript-144.png'
 import Divider from '@material-ui/core/Divider';
@@ -103,14 +103,14 @@ const Skills = () => {
               <Skill>                
                 <SkillImg src={sass}/>
                 SASS
-              </Skill> 
+              </Skill>    
               <Skill>                
-                <SkillImg src={python}/>
-                Python
+                <SkillImg src={next}/>
+                Next JS
               </Skill>     
               <Skill>                
-                <SkillImg src={django}/>
-                Django
+                <SkillImg src={mui}/>
+                Material UI
               </Skill>     
               <Skill>                
                 <SkillImg src={bootstrap}/>
