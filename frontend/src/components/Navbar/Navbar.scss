@@ -22,15 +22,22 @@
   align-items: center;
   cursor: pointer;
 
-  img {
-    width: 90px;
-    height: 20px;
+  h2 {
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
+    @media screen and (min-width: 400px) {
+      font-size: 25px;
     }
   }
+
+  // img {
+  //   width: 90px;
+  //   height: 20px;
+
+  //   @media screen and (min-width: 2000px) {
+  //     width: 180px;
+  //     height: 40px;
+  //   }
+  // }
 }
 
 .app__navbar-links {

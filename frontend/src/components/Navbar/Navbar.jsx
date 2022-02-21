@@ -38,7 +38,7 @@ const Navbar = () => {
         className='app__navbar-logo'
         onClick={toggleHome}
         style={{
-        color: 'papayawhip'
+        color: '#fff3e6'
       }}
       >
         <h2>&lt; Moses K &gt;</h2>

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Montserrat:wght@500;700;900&family=Titillium+Web:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap');
+
+// font-family: 'Fugaz One', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Titillium Web', sans-serif;
+
 #home {
   position: relative;
   background: url('../../assets/sanFran.jpeg') center no-repeat;
@@ -49,8 +55,8 @@
   margin: 0 2rem;
 
   @media screen and (max-width: 1200px) {
-    width: 100%;
-    margin-right: 0rem;
+    // width: 100%;
+    // margin-right: 0rem;
   }
 }
 
@@ -60,16 +66,28 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
+  background-color: #1e212d6e;
+  padding: 5px 15px;
+  text-align: center;
 
   .header-h1 {
     font-family: 'Montserrat', sans-serif;
     color: #fff3e6 ;
-    background-color: #1e212d6e;
     font-size: 60px;
     text-align: center;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+
+    @media screen and (max-width: 550px) {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: white;
+      font-family: 'Titillium Web', sans-serif;
+    }
   }
 
   .badge-cmp,
