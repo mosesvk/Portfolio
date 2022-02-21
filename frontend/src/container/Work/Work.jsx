@@ -14,8 +14,10 @@ const Work = () => {
 
   useEffect(() => {
     const query = '*[_type == "works"]';
-
+    console.log('hit')
     client.fetch(query).then((data) => {
+      console.log(data)
+      console.log('hit inside')
       setWorks(data);
       setFilterWork(data);
     });
@@ -39,7 +41,7 @@ const Work = () => {
   return (
     <>
       <h2 className='head-text'>
-        My Creative <span>Portfolio</span> Section
+        My <span>Portfolio</span> Section
       </h2>
 
       <div className='app__work-filter'>

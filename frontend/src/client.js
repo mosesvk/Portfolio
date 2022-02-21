@@ -12,3 +12,5 @@ export const client = sanityClient({
 const builder = imageUrlBuilder(client);
 
 export const urlFor = (source) => builder.image(source);
+
+// Remember you are able to get this info through cd to the backend and run the command 'sanity manage'
