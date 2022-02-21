@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
+import { animateScroll as scroll } from "react-scroll";
 
 import { AppWrap } from '../../wrapper/wrapper';
 import { images } from '../../constants/constants';
@@ -17,7 +18,7 @@ const scaleVariants = {
 };
 
 const Header = () => {
-  
+
 
   return (
     <div className='app__header app__flex'>

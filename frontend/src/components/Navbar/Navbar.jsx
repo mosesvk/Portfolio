@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import { animateScroll as scroll } from "react-scroll";
 
 import { images } from '../../constants/constants';
 import './Navbar.scss';
@@ -8,9 +9,27 @@ import './Navbar.scss';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY > 90) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
-    <nav className="app__navbar">
-      <div className="app__navbar-logo">
+    <nav className="app__navbar" scrollNav={scrollNav}>
+      <div className="app__navbar-logo" onClick={toggleHome} scrollNav={scrollNav}>
         <h2>&lt; Moses K &gt;</h2>
       </div>
       <ul className="app__navbar-links">
