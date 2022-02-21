@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from 'react-scroll';
 
 import { images } from '../../constants/constants';
 import './Navbar.scss';
@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener('scroll', changeNav);
   }, []);
 
   const toggleHome = () => {
@@ -28,20 +28,31 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="app__navbar" scrollNav={scrollNav}>
-      <div className="app__navbar-logo" onClick={toggleHome} scrollNav={scrollNav}>
+    <nav
+      className='app__navbar'
+      style={{
+        background: scrollNav ? '#1e212d' : 'transparent'
+      }}
+    >
+      <div
+        className='app__navbar-logo'
+        onClick={toggleHome}
+        style={{
+        color: 'papayawhip'
+      }}
+      >
         <h2>&lt; Moses K &gt;</h2>
       </div>
-      <ul className="app__navbar-links">
+      <ul className='app__navbar-links'>
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-          <li className="app__flex p-text" key={`link-${item}`}>
+          <li className='app__flex p-tex`t' key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
       </ul>
 
-      <div className="app__navbar-menu">
+      <div className='app__navbar-menu'>
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (

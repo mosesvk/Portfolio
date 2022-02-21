@@ -14,10 +14,8 @@ const Work = () => {
 
   useEffect(() => {
     const query = '*[_type == "works"]';
-    console.log('hit')
     client.fetch(query).then((data) => {
-      console.log(data)
-      console.log('hit inside')
+
       setWorks(data);
       setFilterWork(data);
     });
