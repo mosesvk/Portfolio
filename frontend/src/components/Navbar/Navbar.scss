@@ -22,13 +22,19 @@
   align-items: center;
   cursor: pointer;
 
-  h2 {
-    color: papayawhip;
-    
-    @media screen and (min-width: 400px) {
-      font-size: 25px;
+  a {
+    text-decoration: none;
+
+    h2 {
+      color: papayawhip;
+  
+      @media screen and (min-width: 400px) {
+        font-size: 25px;
+      }
     }
   }
+
+
 
   // img {
   //   width: 90px;
