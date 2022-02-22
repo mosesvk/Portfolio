@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from 'react-scroll';
 
 import { AppWrap } from '../../wrapper/wrapper';
 import { images } from '../../constants/constants';
@@ -18,8 +18,6 @@ const scaleVariants = {
 };
 
 const Header = () => {
-
-
   return (
     <div className='app__header app__flex'>
       <motion.div
@@ -32,12 +30,22 @@ const Header = () => {
             <h1 className='header-h1'>MOSES KAUMATULE</h1>
             <p className='header-p'>Software Engineer</p>
           </div>
-
           {/* <div className="tag-cmp app__flex">
           <p className="p-text">Frontend Engineer</p>
           <p className="p-text">Freelancer</p>
         </div> */}
         </div>
+        <motion.button
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.25 },
+          }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <a href='#about' style={{textDecoration: 'none', color: 'black'}}>
+            <p>SEE MORE</p>
+          </a>
+        </motion.button>
       </motion.div>
 
       {/* <motion.div

@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 50%;
 
   margin: 0 2rem;
@@ -57,6 +57,15 @@
   @media screen and (max-width: 1200px) {
     // width: 100%;
     // margin-right: 0rem;
+  }
+
+  button {
+    background: var(--primary-color);
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding:10px 15px;
+    cursor: pointer
   }
 }
 
@@ -91,18 +100,6 @@
   }
 
 
-  span {
-    font-size: 2.5rem;
-
-    @media screen and (min-width: 2000px) {
-      font-size: 5rem;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
 }
 
 .app__header-circles {

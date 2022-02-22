@@ -13,7 +13,7 @@
   position: fixed;
   z-index: 2;
 
-  transition: .75s;
+  transition: 0.75s;
 }
 
 .app__navbar-logo {
@@ -23,7 +23,8 @@
   cursor: pointer;
 
   h2 {
-
+    color: papayawhip;
+    
     @media screen and (min-width: 400px) {
       font-size: 25px;
     }
@@ -82,7 +83,8 @@
       }
     }
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       div {
         background: var(--secondary-color);
       }
@@ -108,7 +110,6 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-
   svg {
     width: 70%;
     height: 70%;
@@ -125,21 +126,25 @@
 
     padding: 1rem;
 
-    width: 80%;
+    width: 50%;
     height: 100vh;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    
-    background: url('../../assets/bgWhite.png');
+
+    // background: url('../../assets/bgWhite.png');
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
 
     /* top box shadow */
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+
+    @media screen and (max-width: 500px) {
+      width: 80%;
+    }
 
     svg {
       width: 35px;
@@ -157,22 +162,23 @@
 
       display: flex;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
 
       li {
         margin: 1rem;
 
-        a {
+        .side-links {
           color: var(--gray-color);
           text-decoration: none;
           font-size: 1rem;
           text-transform: uppercase;
-          font-weight: 500;
-
+          font-weight: 800;
+        
           transition: all 0.3s ease-in-out;
-
-          &:hover, &.active {
+        
+          &:hover,
+          &.active {
             color: var(--secondary-color);
           }
         }
@@ -188,3 +194,5 @@
     display: none;
   }
 }
+
+
