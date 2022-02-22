@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
+import SocialMedia from '../../components/SocialMedia';
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -41,6 +42,7 @@ const Work = () => {
       <h2 className='head-text'>
         My <span>Portfolio</span> Section
       </h2>
+      <SocialMedia />
 
       <div className='app__work-filter'>
         {['UI/UX', 'Full Stack', 'All'].map((item, index) => (

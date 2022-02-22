@@ -105,7 +105,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 
   padding: 1rem;
 
@@ -122,20 +122,29 @@
     align-items: center;
 
     transition: all 0.3s ease-in-out;
+    margin: 0 .5rem;
 
     svg {
-      width: 15px;
-      height: 15px;
+      width: 25px;
+      height: 20px;
       color: var(--gray-color);
     }
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: #a3c0b18a;
       border-color: var(--secondary-color);
+      cursor: pointer;
 
-      svg {
-        color: var(--white-color);
+      #github {
+        color: black;
       }
+      #linkedin {
+        color: #0966C2
+      }
+      #facebook {
+        color: #087CEB
+      }
+
     }
 
     @media screen and (min-width: 2000px) {
