@@ -75,6 +75,10 @@ const Footer = () => {
           </h3>
         </div>
       )}
+      <div className="copyright">
+          <p className="p-text">&copy; 2022 Moses K.</p>
+          <p className="p-text">All rights reserved</p>
+        </div>
     </>
   );
 };

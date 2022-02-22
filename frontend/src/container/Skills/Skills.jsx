@@ -56,6 +56,7 @@ const Skills = () => {
           // animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
           className='app__work-portfolio'
+          id='resume'
         >
           <div className='app__work-item app__flex'>
             <div className='app__work-img app__flex'>
