@@ -5,4 +5,5 @@
             <rect id="Rectangle" transform="translate(339.184484, 339.184484) rotate(-45.000000) translate(-339.184484, -339.184484) " x="142.184484" y="142.184484" width="394" height="394" rx="33"></rect>
         </g>
     </g>
+    <rect fill='white'/>
 </svg>
