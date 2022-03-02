@@ -23,10 +23,11 @@ const About = () => {
       transition={{ duration: 1.0, delayChildren: 1.5 }}
       className='app_about-div'
     >
-      <h2 className='head-text'>
-        About <span>Me</span>
-      </h2>
-
+      <div className='app_about-head'>
+        <h2 className='head-text'>
+          About <span>Me</span>
+        </h2>
+      </div>
       <div className='app__profiles'>
         {abouts.map((about, index) => (
           <motion.div

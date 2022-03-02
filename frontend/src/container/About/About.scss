@@ -11,6 +11,10 @@
   @media (min-width: 900px) {
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+  .app_about-head {
+    padding-right: 5rem;
   }
 
   .app__profiles {
