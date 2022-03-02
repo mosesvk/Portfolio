@@ -21,6 +21,7 @@ const About = () => {
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 1.0, delayChildren: 1.5 }}
+      className='app_about-div'
     >
       <h2 className='head-text'>
         About <span>Me</span>
