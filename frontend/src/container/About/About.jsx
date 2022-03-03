@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper/wrapper';
 import { urlFor, client } from '../../client';
 
-import decoDiamond from '../../assets/decorations/frame-deco.png'
-import decoSquare from '../../assets/decorations/square-deco-primary.svg'
+// import decoDiamond from '../../assets/decorations/frame-deco.png'
+// import decoSquare from '../../assets/decorations/square-deco-primary.svg'
 import './About.scss';
 
 const About = () => {
@@ -26,8 +26,8 @@ const About = () => {
       className='app_about-div'
     >
       <div className='app_about-head'>
-        <img src={decoDiamond} alt='deco-diamond' className='deco' />
-        <img src={decoSquare} alt='deco-square' className='deco' />
+        {/* <img src={decoDiamond} alt='deco-diamond' className='deco' />
+        <img src={decoSquare} alt='deco-square' className='deco' /> */}
         <h2 className='head-text'>
           About <span>Me</span>
         </h2>

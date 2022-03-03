@@ -14,16 +14,29 @@
   .app_about-head {
     padding-right: 5rem;
 
+    @media (max-width: 900px) {
+      padding: 0
+    }
+
     .deco {
       opacity: 0.45;
+
+      @media (max-width: 960px){
+        display: none;
+      }
     }
     .head-text {
-      position: relative;
-      bottom: 20rem;
-      color: white;
-      span {
-        color: white;
-      }
+      margin: none;
+      // @media (min-width: 960px){
+      //   position: relative;
+      //   bottom: 20rem;
+      //   color: white;
+      // }
+      // span {     
+      //   @media (min-width: 960px) {
+      //     color: white
+      //   }
+      // }
     }
   }
 
@@ -62,7 +75,5 @@
 }
 
 .deco {
-  @media (max-width: 860px){
-    display: none;
-  }
+
 }

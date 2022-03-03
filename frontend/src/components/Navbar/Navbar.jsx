@@ -92,6 +92,7 @@ const Navbar = () => {
               exit={{
                 width: 0,
               }}
+              transition={{duration: .25}}
             >
               <motion.div
                 className='container'
