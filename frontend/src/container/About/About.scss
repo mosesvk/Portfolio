@@ -14,7 +14,7 @@
   .app_about-head {
     padding-right: 5rem;
 
-    img {
+    .deco {
       opacity: 0.45;
     }
     .head-text {
@@ -58,5 +58,11 @@
     img {
       height: 320px;
     }
+  }
+}
+
+.deco {
+  @media (max-width: 860px){
+    display: none;
   }
 }
