@@ -13,6 +13,18 @@
   }
   .app_about-head {
     padding-right: 5rem;
+
+    img {
+      opacity: 0.45;
+    }
+    .head-text {
+      position: relative;
+      bottom: 20rem;
+      color: white;
+      span {
+        color: white;
+      }
+    }
   }
 
   .app__profiles {
@@ -21,12 +33,8 @@
     align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 2rem;
-  
-  
   }
 }
-
-
 
 .app__profile-item {
   width: 190px;
@@ -52,4 +60,3 @@
     }
   }
 }
-
