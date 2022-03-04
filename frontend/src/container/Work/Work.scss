@@ -158,6 +158,10 @@
 svg {
   width: 50%;
   height: 50%;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
 }
 
 .app__social-div {

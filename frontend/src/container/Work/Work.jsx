@@ -88,17 +88,15 @@ const Work = () => {
 
               <div className='app__work-content app__flex'>
                 <h4 className='bold-text'>{work.title}</h4>
-                <p className='p-text italic' style={{ marginTop: 10 }} >
+                <p className='p-text italic' style={{ marginTop: 10 }}>
                   {work.description}
                 </p>
 
-                <div
-                  className='app__social-div d-flex'
-                >
-                  <a href={work.projectLink} target='_blank' rel='noreferrer' >
+                <div className='app__social-div d-flex'>
+                  <a href={work.projectLink} target='_blank' rel='noreferrer'>
                     <motion.div
-                      whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
+                      whileInView={{ scale: 1 }}
+                      whileHover={{ scale: [1, 1.5] }}
                       transition={{ duration: 0.25 }}
                       className='app__flex'
                     >
@@ -107,12 +105,13 @@ const Work = () => {
                   </a>
                   <a href={work.codeLink} target='_blank' rel='noreferrer'>
                     <motion.div
-                      whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
+                      whileInView={{ scale: 1 }}
+                      whileHover={{ scale: [1, 1.35] }}
                       transition={{ duration: 0.25 }}
+                      whileTap={{ scale: 0.8 }}
                       className='app__flex'
                     >
-                      <AiFillGithub className='github'/>
+                      <AiFillGithub className='github' />
                     </motion.div>
                   </a>
                 </div>
