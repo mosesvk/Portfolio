@@ -1,22 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
 import { urlFor, client } from '../../client';
-import './Work.scss';
 import SocialMedia from '../../components/SocialMedia';
+import Modal from '../../components/Modal/Modal';
+
+import './Work.scss';
 
 const Work = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const close = () => setModalOpen(false);
+  const open = () => setModalOpen(true);
 
   useEffect(() => {
     const query = '*[_type == "works"]';
     client.fetch(query).then((data) => {
-
       setWorks(data);
       setFilterWork(data);
     });
@@ -43,7 +48,6 @@ const Work = () => {
         My <span>Portfolio</span> Section
       </h2>
       <SocialMedia />
-
       <div className='app__work-filter'>
         {['UI/UX', 'Full Stack', 'All'].map((item, index) => (
           <div
@@ -57,7 +61,6 @@ const Work = () => {
           </div>
         ))}
       </div>
-
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
@@ -69,7 +72,6 @@ const Work = () => {
             <div className='app__work-item app__flex' key={index}>
               <div className='app__work-img app__flex'>
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
-
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
                   transition={{
@@ -78,15 +80,29 @@ const Work = () => {
                     staggerChildren: 0.5,
                   }}
                   className='app__work-hover app__flex'
+                  onClick={() => (modalOpen ? close() : open())}
                 >
-                  <a href={work.projectLink} target='_blank' rel='noreferrer'>
+                  INFO
+                </motion.div>
+              </div>
+
+              <div className='app__work-content app__flex'>
+                <h4 className='bold-text'>{work.title}</h4>
+                <p className='p-text italic' style={{ marginTop: 10 }} >
+                  {work.description}
+                </p>
+
+                <div
+                  className='app__social-div d-flex'
+                >
+                  <a href={work.projectLink} target='_blank' rel='noreferrer' >
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.9] }}
                       transition={{ duration: 0.25 }}
                       className='app__flex'
                     >
-                      <AiFillEye />
+                      <AiFillEye className='eye' />
                     </motion.div>
                   </a>
                   <a href={work.codeLink} target='_blank' rel='noreferrer'>
@@ -96,17 +112,10 @@ const Work = () => {
                       transition={{ duration: 0.25 }}
                       className='app__flex'
                     >
-                      <AiFillGithub />
+                      <AiFillGithub className='github'/>
                     </motion.div>
                   </a>
-                </motion.div>
-              </div>
-
-              <div className='app__work-content app__flex'>
-                <h4 className='bold-text'>{work.title}</h4>
-                <p className='p-text' style={{ marginTop: 10 }}>
-                  {work.description}
-                </p>
+                </div>
 
                 <div className='app__work-tag app__flex'>
                   <p className='p-text'>{work.tags[0]}</p>
@@ -115,6 +124,19 @@ const Work = () => {
             </div>
           ))}
       </motion.div>
+      <AnimatePresence
+        // Disable any initial animations on children that
+        // are present when the component is first rendered
+        initial={false}
+        // Only render one component at a time.
+        // The exiting component will finish its exit
+        // animation before entering component is rendered
+        exitBeforeEnter={true}
+        // Fires when all exiting nodes have completed animating out
+        onExitComplete={() => null}
+      >
+        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+      </AnimatePresence>{' '}
     </>
   );
 };

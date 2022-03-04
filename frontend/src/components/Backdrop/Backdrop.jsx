@@ -15,3 +15,5 @@ const Backdrop = ({ children, onClick }) => {
     </motion.div>
   );
 };
+
+export default Backdrop

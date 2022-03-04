@@ -126,11 +126,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
 
-    svg {
-      width: 50%;
-      height: 50%;
-      color: var(--white-color);
-    }
+
   }
 }
 
@@ -158,3 +154,33 @@
     top: -25px;
   }
 }
+
+svg {
+  width: 50%;
+  height: 50%;
+}
+
+.app__social-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-top: 15px;
+
+  a {
+
+    .app__flex {
+      width: 3.5rem;
+    }
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.eye, .github {
+  color: black;
+}
+
