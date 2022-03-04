@@ -4,8 +4,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { animateScroll as scroll } from 'react-scroll';
 import SocialMedia from '../../components/SocialMedia';
 import { images } from '../../constants/constants';
-import './Navbar.scss';
+import Divider from '@mui/material/Divider';
 import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
+
+import './Navbar.scss';
 
 const itemVariants = {
   closed: {
@@ -22,7 +24,6 @@ const sideVariants = {
   // },
   open: {
     transition: {
-      staggerChildren: 0.2,
       staggerDirection: 1,
     },
   },
@@ -92,7 +93,7 @@ const Navbar = () => {
               exit={{
                 width: 0,
               }}
-              transition={{duration: .25}}
+              transition={{ duration: 0.1 }}
             >
               <motion.div
                 className='container'
@@ -120,6 +121,7 @@ const Navbar = () => {
                       </li>
                     )
                   )}
+                  <Divider />
                   <li>
                     <motion.a
                       href={`https://www.linkedin.com/in/mosesvk/`}
