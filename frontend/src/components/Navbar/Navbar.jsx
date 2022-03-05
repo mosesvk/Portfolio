@@ -121,7 +121,7 @@ const Navbar = () => {
                       </li>
                     )
                   )}
-                  <Divider />
+                  <Divider variant='middle'/>
                   <li>
                     <motion.a
                       href={`https://www.linkedin.com/in/mosesvk/`}
