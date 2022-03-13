@@ -1,23 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { AiFillEye, AiFillGithub, AiOutlineConsoleSql } from 'react-icons/ai';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
 import { urlFor, client } from '../../client';
 import SocialMedia from '../../components/SocialMedia';
-import Modal from '../../components/Modal/Modal';
+import Popup from '../../components/Modal/Popup';
 
 import './Work.scss';
 
 const Work = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
+  const [workId, setWorkId] = useState();
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [modalOpen, setModalOpen] = useState(false);
 
   const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true);
+  const open = (id) => {
+    // setModalOpen(true);
+    console.log(id);
+  };
 
   useEffect(() => {
     const query = '*[_type == "works"]';
@@ -41,6 +45,8 @@ const Work = () => {
       }
     }, 500);
   };
+
+  console.log(modalOpen);
 
   return (
     <>
@@ -80,7 +86,7 @@ const Work = () => {
                     staggerChildren: 0.5,
                   }}
                   className='app__work-hover app__flex'
-                  onClick={() => (modalOpen ? close() : open())}
+                  onClick={open(work._id)}
                 >
                   INFO
                 </motion.div>
@@ -123,6 +129,7 @@ const Work = () => {
             </div>
           ))}
       </motion.div>
+      {modalOpen && <Popup modalOpen={modalOpen} handleClose={close} />}
       <AnimatePresence
         // Disable any initial animations on children that
         // are present when the component is first rendered
@@ -133,9 +140,7 @@ const Work = () => {
         exitBeforeEnter={true}
         // Fires when all exiting nodes have completed animating out
         onExitComplete={() => null}
-      >
-        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
-      </AnimatePresence>{' '}
+      ></AnimatePresence>{' '}
     </>
   );
 };
