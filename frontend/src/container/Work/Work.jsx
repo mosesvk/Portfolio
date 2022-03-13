@@ -18,7 +18,7 @@ const Work = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const close = () => setModalOpen(false);
-  const open = (id) => {
+  const openHandler = (id) => {
     // setModalOpen(true);
     console.log(id);
   };
@@ -29,6 +29,8 @@ const Work = () => {
       setWorks(data);
       setFilterWork(data);
     });
+
+
   }, []);
 
   const handleWorkFilter = (item) => {
@@ -75,7 +77,7 @@ const Work = () => {
         {!filterWork && <h1>No Data pulled</h1>}
         {filterWork &&
           filterWork.map((work, index) => (
-            <div className='app__work-item app__flex' key={index}>
+            <div className='app__work-item app__flex' key={work._id}>
               <div className='app__work-img app__flex'>
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
                 <motion.div
@@ -86,7 +88,6 @@ const Work = () => {
                     staggerChildren: 0.5,
                   }}
                   className='app__work-hover app__flex'
-                  onClick={open(work._id)}
                 >
                   INFO
                 </motion.div>
