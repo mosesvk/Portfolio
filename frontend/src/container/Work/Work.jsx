@@ -127,10 +127,10 @@ const Work = () => {
               </div>
             </div>
           ))}
+        {modalOpen && (
+          <Popup modalOpen={modalOpen} handleClose={close} workId={workId} />
+        )}
       </motion.div>
-      {modalOpen && (
-        <Popup modalOpen={modalOpen} handleClose={close} workId={workId} />
-      )}
       <AnimatePresence
         // Disable any initial animations on children that
         // are present when the component is first rendered
