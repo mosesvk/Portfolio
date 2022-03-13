@@ -18,9 +18,10 @@ const Work = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const close = () => setModalOpen(false);
-  const openHandler = (id) => {
-    // setModalOpen(true);
-    console.log(id);
+  const open = (id) => {
+    setModalOpen(true);
+    setWorkId(id);
+    // console.log(id);
   };
 
   useEffect(() => {
@@ -29,8 +30,6 @@ const Work = () => {
       setWorks(data);
       setFilterWork(data);
     });
-
-
   }, []);
 
   const handleWorkFilter = (item) => {
@@ -47,8 +46,6 @@ const Work = () => {
       }
     }, 500);
   };
-
-  console.log(modalOpen);
 
   return (
     <>
@@ -88,6 +85,7 @@ const Work = () => {
                     staggerChildren: 0.5,
                   }}
                   className='app__work-hover app__flex'
+                  onClick={() => open(work._id)}
                 >
                   INFO
                 </motion.div>
@@ -130,7 +128,9 @@ const Work = () => {
             </div>
           ))}
       </motion.div>
-      {modalOpen && <Popup modalOpen={modalOpen} handleClose={close} />}
+      {modalOpen && (
+        <Popup modalOpen={modalOpen} handleClose={close} workId={workId} />
+      )}
       <AnimatePresence
         // Disable any initial animations on children that
         // are present when the component is first rendered
