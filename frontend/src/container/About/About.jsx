@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper/wrapper';
 import { urlFor, client } from '../../client';
 
+import mountain from '../../assets/mountain-background.png'
 // import decoDiamond from '../../assets/decorations/frame-deco.png'
 // import decoSquare from '../../assets/decorations/square-deco-primary.svg'
 import './About.scss';
@@ -20,10 +21,12 @@ const About = () => {
   }, []);
 
   return (
+    <>
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 1.0, delayChildren: 1.5 }}
       className='app_about-div'
+      id='about-container'
     >
       <div className='app_about-head'>
         {/* <img src={decoDiamond} alt='deco-diamond' className='deco' />
@@ -52,6 +55,8 @@ const About = () => {
         ))}
       </div>
     </motion.div>
+    {/* <img src={mountain} alt='mountain'/> */}
+    </>
   );
 };
 

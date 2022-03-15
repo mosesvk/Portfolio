@@ -1,26 +1,39 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useImperativeHandle, forwardRef } from 'react';
+import { createPortal } from 'react-dom';
 
-import { Modal, Button } from 'react-bootstrap';
+import './Popup.scss'
 
-const Popup = ({ modalOpen, handleClose, workId }) => {
-  console.log(workId);
+const Popup = forwardRef(({ id, children }, ref) => {
+  const [display, setDisplay] = useState(false);
+  console.log(id)
 
-  return (
-    <Modal show={modalOpen} onHide={handleClose}>
-      <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-      <Modal.Footer>
-        <Button variant='secondary' onClick={handleClose}>
-          Close
-        </Button>
-        <Button variant='primary' onClick={handleClose}>
-          Save Changes
-        </Button>
-      </Modal.Footer>
-    </Modal>
-  );
-};
+  useImperativeHandle(ref, () => {
+    return {
+      openModal: () => open(),
+      close: () => close(),
+    };
+  });
+
+  const open = () => {
+    setDisplay(true);
+  };
+
+  const close = () => {
+    setDisplay(false);
+  };
+
+  if (display) {
+    return createPortal(
+      <div className={"modal-wrapper"}>
+        <div onClick={close} className={"modal-backdrop"}/>
+        <div className={"modal-box"}>
+          {children}
+        </div>
+      </div>, document.getElementById("modal-root")
+    )
+  } else {
+    return null;
+  }
+});
 
 export default Popup;

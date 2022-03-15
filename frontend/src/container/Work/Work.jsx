@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AiFillEye, AiFillGithub, AiOutlineConsoleSql } from 'react-icons/ai';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -14,14 +14,17 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
   const [workId, setWorkId] = useState();
   const [activeFilter, setActiveFilter] = useState('All');
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  const [animateCard, setAnimateCard] = useState({ y : 0, opacity: 1 });
   const [modalOpen, setModalOpen] = useState(false);
 
+  const myRefs = useRef([]);
+
   const close = () => setModalOpen(false);
-  const open = (id) => {
-    setModalOpen(true);
+  const open = (id, idx) => {
+    setModalOpen(true)
     setWorkId(id);
-    // console.log(id);
+    console.log(idx)
+    console.log(id)
   };
 
   useEffect(() => {
@@ -48,7 +51,7 @@ const Work = () => {
   };
 
   return (
-    <>
+    <div className='work-container'>
       <h2 className='head-text'>
         My <span>Portfolio</span> Section
       </h2>
@@ -73,7 +76,7 @@ const Work = () => {
       >
         {!filterWork && <h1>No Data pulled</h1>}
         {filterWork &&
-          filterWork.map((work, index) => (
+          filterWork.map((work, idx) => (
             <div className='app__work-item app__flex' key={work._id}>
               <div className='app__work-img app__flex'>
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
@@ -85,7 +88,7 @@ const Work = () => {
                     staggerChildren: 0.5,
                   }}
                   className='app__work-hover app__flex'
-                  onClick={() => open(work._id)}
+                  onClick={() => open(work._id, idx)}
                 >
                   INFO
                 </motion.div>
@@ -126,10 +129,14 @@ const Work = () => {
                 </div>
               </div>
             </div>
-          ))}
-        {modalOpen && (
-          <Popup modalOpen={modalOpen} handleClose={close} workId={workId} />
-        )}
+            
+          ))
+        }
+        {modalOpen && filterWork.map((item, idx) => (
+          <Popup id={workId} ref={(elem) => myRefs.current[idx] = elem} >
+            <h1>Popup</h1>
+          </Popup>
+        ))}
       </motion.div>
       <AnimatePresence
         // Disable any initial animations on children that
@@ -142,7 +149,7 @@ const Work = () => {
         // Fires when all exiting nodes have completed animating out
         onExitComplete={() => null}
       ></AnimatePresence>{' '}
-    </>
+    </div>
   );
 };
 
