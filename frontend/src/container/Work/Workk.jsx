@@ -2,10 +2,15 @@ import React from 'react';
 import { AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 import { Item } from './Item';
 import { List } from './List';
-import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useParams,
+} from 'react-router-dom';
 import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
 
-import './Workk.css'
+import './Workk.css';
 
 function Store() {
   let { id } = useParams();
@@ -13,6 +18,11 @@ function Store() {
 
   return (
     <>
+      <div className='app_about-head'>
+        <h2 className='head-text'>
+          About <span>Me</span>
+        </h2>
+      </div>
       <List selectedId={id} />
       <AnimatePresence>
         {id && imageHasLoaded && <Item id={id} key='item' />}
@@ -27,8 +37,8 @@ const Workk = () => {
       <AnimateSharedLayout type='crossfade'>
         <Router>
           <Routes>
-            <Route path='/' element={<Store />} exact/>
-            <Route path='/:id' element={<Store />} exact/>
+            <Route path='/' element={<Store />} exact />
+            <Route path='/:id' element={<Store />} exact />
           </Routes>
         </Router>
       </AnimateSharedLayout>

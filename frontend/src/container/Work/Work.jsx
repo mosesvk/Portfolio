@@ -72,11 +72,6 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__work-portfolio'
       >
-        <div className='app_about-head'>
-          <h2 className='head-text'>
-            About <span>Me</span>
-          </h2>
-        </div>
         {!filterWork && <h1>No Data pulled</h1>}
         {filterWork &&
           filterWork.map((work, idx) => (

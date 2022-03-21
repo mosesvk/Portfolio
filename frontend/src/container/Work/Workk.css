@@ -138,7 +138,7 @@ li {
 .card-image {
   height: inherit;
   width: inherit;
-  opacity: .5;
+  opacity: .85;
 }
 
 .open .card-image-container,
@@ -179,7 +179,7 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 990px;
+  max-width: 100%;
 }
 
 .overlay a {
