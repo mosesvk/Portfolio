@@ -6,7 +6,8 @@ import {
   Header,
   Skills,
   Testimonial,
-  Work,
+  // Work,
+  Workk,
 } from './container/container';
 import { Navbar } from './components/components';
 import './App.scss'
@@ -18,7 +19,7 @@ const App = () => {
       <Navbar />
       <Header/>
       <About />
-      <Work />
+      <Workk />
       <Skills />
       {/* <Testimonial />  */}
       <Footer />

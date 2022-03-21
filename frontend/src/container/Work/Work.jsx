@@ -17,7 +17,6 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y : 0, opacity: 1 });
   const [modalOpen, setModalOpen] = useState(false);
 
-  const myRefs = useRef([]);
 
   const close = () => setModalOpen(false);
   const open = (id, idx) => {
@@ -132,11 +131,6 @@ const Work = () => {
             
           ))
         }
-        {modalOpen && filterWork.map((item, idx) => (
-          <Popup id={workId} ref={(elem) => myRefs.current[idx] = elem} >
-            <h1>Popup</h1>
-          </Popup>
-        ))}
       </motion.div>
       <AnimatePresence
         // Disable any initial animations on children that
