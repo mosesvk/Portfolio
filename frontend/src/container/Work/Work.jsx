@@ -14,16 +14,15 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
   const [workId, setWorkId] = useState();
   const [activeFilter, setActiveFilter] = useState('All');
-  const [animateCard, setAnimateCard] = useState({ y : 0, opacity: 1 });
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [modalOpen, setModalOpen] = useState(false);
-
 
   const close = () => setModalOpen(false);
   const open = (id, idx) => {
-    setModalOpen(true)
+    setModalOpen(true);
     setWorkId(id);
-    console.log(idx)
-    console.log(id)
+    console.log(idx);
+    console.log(id);
   };
 
   useEffect(() => {
@@ -73,6 +72,11 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__work-portfolio'
       >
+        <div className='app_about-head'>
+          <h2 className='head-text'>
+            About <span>Me</span>
+          </h2>
+        </div>
         {!filterWork && <h1>No Data pulled</h1>}
         {filterWork &&
           filterWork.map((work, idx) => (
@@ -128,9 +132,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            
-          ))
-        }
+          ))}
       </motion.div>
       <AnimatePresence
         // Disable any initial animations on children that
