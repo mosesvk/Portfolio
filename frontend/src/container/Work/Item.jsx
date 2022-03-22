@@ -6,7 +6,7 @@ import { items } from "./data";
 
 export function Item({ id }) {
   const newItems = items.find(item => item.id === id);
-  console.log(newItems)
+  // console.log(newItems)
   const { category, title } = newItems
 
   return (

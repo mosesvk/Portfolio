@@ -32,14 +32,15 @@ function Card({ id, title, category, theme }) {
 }
 
 export function List({ selectedId }) {
-  const [items, setItems] = useState([])
 
-  useEffect(() => {
-    const query = '*[_type == "works"]';
-    client.fetch(query).then((data) => {
-      setItems(data);
-    });
-  }, []);
+  // const [items, setItems] = useState([])
+
+  // useEffect(() => {
+  //   const query = '*[_type == "works"]';
+  //   client.fetch(query).then((data) => {
+  //     setItems(data);
+  //   });
+  // }, []);
 
 
   return (
