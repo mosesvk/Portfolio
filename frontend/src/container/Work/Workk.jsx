@@ -20,7 +20,7 @@ function Store() {
     <>
       <div className='app_about-head'>
         <h2 className='head-text'>
-          About <span>Me</span>
+          My <span>Portfolio</span>
         </h2>
       </div>
       <List selectedId={id} />
