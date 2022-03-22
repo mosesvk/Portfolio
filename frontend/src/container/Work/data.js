@@ -2,36 +2,36 @@ export const items = [
   // Photo by ivan Torres on Unsplash
   {
     id: "c",
-    category: "Pizza",
+    category: "React, NextJS, SQL",
     description: '',
-    title: "5 Food Apps Delivering the Best of Your City",
+    title: "Zillow Clone",
     pointOfInterest: 80,
     backgroundColor: "#814A0E"
   },
   // Photo by Dennis Brendel on Unsplash
   {
     id: "f",
-    category: "How to",
-    title: "Arrange Your Apple Devices for the Gram",
+    category: "React, Express, NodeJS, MongoDB",
+    title: "PureEnviro LLC",
     pointOfInterest: 120,
     backgroundColor: "#959684"
   },
   // Photo by Alessandra Caretto on Unsplash
   {
     id: "a",
-    category: "Pedal Power",
-    title: "Map Apps for the Superior Mode of Transport",
+    category: "React, NextJS, NodeJS, SQL",
+    title: "Powerhouse Training",
     pointOfInterest: 260,
     backgroundColor: "#5DBCD2"
   },
   // // Photo by Taneli Lahtinen on Unsplash
-  // {
-  //   id: "g",
-  //   category: "Holidays",
-  //   title: "Our Pick of Apps to Help You Escape From Apps",
-  //   pointOfInterest: 200,
-  //   backgroundColor: "#8F986D"
-  // },
+  {
+    id: "g",
+    category: "Gatsby, React, NextJS, Sanity",
+    title: "Cheefa's Fried Pies",
+    pointOfInterest: 200,
+    backgroundColor: "#8F986D"
+  },
   // // Photo by Simone Hutsch on Unsplash
   // {
   //   id: "d",
