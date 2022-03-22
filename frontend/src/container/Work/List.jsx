@@ -32,7 +32,16 @@ function Card({ id, title, category, theme }) {
 }
 
 export function List({ selectedId }) {
-  console.log(selectedId)
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+    const query = '*[_type == "works"]';
+    client.fetch(query).then((data) => {
+      setItems(data);
+    });
+  }, []);
+
+
   return (
     <ul className='card-list'>
       {items.map((card) => (

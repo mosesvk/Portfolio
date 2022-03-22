@@ -15,6 +15,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'exerpt', 
+      title: 'Exerpt',
+      type: 'string'
+    },
+    {
       name: 'projectLink',
       title: 'Project Link',
       type: 'string',
