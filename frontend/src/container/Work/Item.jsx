@@ -38,8 +38,8 @@ export function Item({ id }) {
           </motion.div>
           <motion.div className="content-container" animate>
             <LoremIpsum
-              p={2}
-              avgWordsPerSentence={6}
+              p={1}
+              avgWordsPerSentence={3}
               avgSentencesPerParagraph={4}
             />
           </motion.div>
