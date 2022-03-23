@@ -9,6 +9,8 @@ import {
   useParams,
 } from 'react-router-dom';
 import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
+import SocialMedia from '../../components/SocialMedia';
+
 
 import './Workk.css';
 
@@ -18,10 +20,11 @@ function Store() {
 
   return (
     <>
-      <div className='app_about-head'>
+      <div className='app_work-head'>
         <h2 className='head-text'>
           My <span>Portfolio</span>
         </h2>
+        <SocialMedia />
       </div>
       <List selectedId={id} />
       <AnimatePresence>
