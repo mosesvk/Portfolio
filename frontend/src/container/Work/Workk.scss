@@ -117,6 +117,14 @@ li {
     height        : 100%;
     margin        : 0 auto;
     /* z-index    : 10; */
+
+    .card-image-container {
+
+      .card-image {
+
+        border-radius: none;
+      }
+    }
   }
 }
 
