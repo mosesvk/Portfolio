@@ -13,8 +13,8 @@ import { urlFor, client } from '../../client';
 
 function CardItem({ id, title, category, theme }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+    <Card sx={{ maxWidth: 345 }} className={`card ${theme}`}>
+      <CardActionArea >
         <CardMedia
           component='img'
           height='140'
@@ -50,11 +50,11 @@ export function List({ selectedId }) {
   // }, []);
 
   return (
-    <ul className='card-list'>
+    <div className='card-list'>
       {items.map((card) => (
         <CardItem key={card.id} {...card} isSelected={card.id === selectedId} />
       ))}
-    </ul>
+    </div>
   );
 }
 

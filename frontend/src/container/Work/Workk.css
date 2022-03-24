@@ -68,7 +68,7 @@ li {
 .card {
   position : relative;
   padding  : 25px;
-  height   : 460px;
+  height   : 350px;
   flex     : 0 0 50%;
   max-width: 50%;
 }
