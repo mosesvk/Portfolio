@@ -105,19 +105,19 @@ li {
   z-index : 100;
   overflow: hidden;
   padding : 40px 0;
-}
 
-.card-content {
-  pointer-events: auto;
-  position      : relative;
-  top           : 10vh;
-  border-radius : 20px;
-  background    : #1c1c1e;
-  overflow      : hidden;
-  width         : 100%;
-  height        : 100%;
-  margin        : 0 auto;
-  /* z-index    : 10; */
+  .card-content {
+    pointer-events: auto;
+    position      : relative;
+    top           : 10vh;
+    border-radius : 20px;
+    background    : #1c1c1e;
+    overflow      : hidden;
+    width         : 100%;
+    height        : 100%;
+    margin        : 0 auto;
+    /* z-index    : 10; */
+  }
 }
 
 .open .card-content {
@@ -141,7 +141,7 @@ li {
   left    : 0;
   overflow: hidden;
   height  : 300px;
-  width   : inherit;
+  width   : 100%;
 }
 
 .card-image {

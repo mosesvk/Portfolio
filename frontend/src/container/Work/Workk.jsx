@@ -12,7 +12,7 @@ import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
 import SocialMedia from '../../components/SocialMedia';
 
 
-import './Workk.css';
+import './Workk.scss';
 
 function Store() {
   let { id } = useParams();
