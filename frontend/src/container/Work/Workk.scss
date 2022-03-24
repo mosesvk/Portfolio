@@ -142,12 +142,13 @@ li {
   overflow: hidden;
   height  : 300px;
   width   : 100%;
+  border-radius: 25px;
 }
 
 .card-image {
   height : inherit;
   width  : inherit;
-  opacity: .85;
+  // opacity: .85;
 }
 
 .open .card-image-container,

@@ -13,7 +13,7 @@ import { urlFor, client } from '../../client';
 
 function CardItem({ id, title, category, theme }) {
   return (
-    <div className={`card ${theme}`}>
+    <li className={`card ${theme}`}>
       <div className='card-content-container'>
         <motion.div
           whileHover={{ opacity: [0, 1] }}
@@ -36,7 +36,7 @@ function CardItem({ id, title, category, theme }) {
         </motion.div>
       </div>
       <Link to={id} className={`card-open-link`} />
-    </div>
+    </li>
   );
 }
 
@@ -51,11 +51,11 @@ export function List({ selectedId }) {
   // }, []);
 
   return (
-    <div className='card-list'>
+    <ul className='card-list'>
       {items.map((card) => (
         <CardItem key={card.id} {...card} isSelected={card.id === selectedId} />
       ))}
-    </div>
+    </ul>
   );
 }
 
