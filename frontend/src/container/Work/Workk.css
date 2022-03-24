@@ -63,11 +63,13 @@ li {
   display      : flex;
   flex-wrap    : wrap;
   align-content: flex-start;
+  justify-content: center;
 }
 
 .card {
   position : relative;
-  padding  : 25px;
+  /* padding  : 25px 0; */
+  margin   : 20px;
   height   : 350px;
   flex     : 0 0 50%;
   max-width: 50%;
@@ -217,12 +219,6 @@ p {
     flex     : 0 0 50%;
     max-width: 50%;
   }
-
-  .card:nth-child(4n + 1),
-  .card:nth-child(4n + 4) {
-    flex     : 0 0 50%;
-    max-width: 50%;
-  }
 }
 
 @media (max-width: 600px) {
@@ -234,13 +230,4 @@ p {
     padding-right: 0;
   }
 
-  .card:nth-child(4n + 1),
-  .card:nth-child(4n + 4) {
-    flex     : 1 0 100%;
-    max-width: 100%;
-  }
-
-  .card-content-container.open {
-    padding: 0;
-  }
 }
