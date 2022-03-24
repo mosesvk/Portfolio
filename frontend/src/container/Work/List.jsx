@@ -28,6 +28,7 @@ function CardItem({ id, title, category, theme }) {
           <Typography variant='body2' color='text.secondary'>
             {category}
           </Typography>
+          <Link to={id} className={`card-open-link`} />
         </CardContent>
       </CardActionArea>
       <CardActions>
