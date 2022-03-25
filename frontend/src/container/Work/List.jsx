@@ -3,6 +3,8 @@ import { items } from './data';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+import { Grid } from '@mui/material';
+
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
