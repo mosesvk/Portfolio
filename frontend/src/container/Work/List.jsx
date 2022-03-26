@@ -16,10 +16,10 @@ import { urlFor, client } from '../../client';
 function CardItem({ id, title, category, theme }) {
   return (
     <Card sx={{ maxWidth: 345 }} className={`card ${theme}`}>
-      <CardActionArea >
+      <CardActionArea>
         <motion.div
-          whileHover={{ opacity: [0, 1] }}
-          className='card-content'
+          // whileHover={{ opacity: [0, 1] }}
+          // className='card-content'
           layoutId={`card-container-${id}`}
         >
           <CardMedia
@@ -28,22 +28,17 @@ function CardItem({ id, title, category, theme }) {
             image={`images/${id}.jpg`}
             alt={`${title}`}
           />
-          {/* <motion.div
-            className='card-image-container'
-            layoutId={`card-image-container-${id}`}
-          >
-            <img className='card-image' src={`images/${id}.jpg`} alt='' />
-          </motion.div> */}
+          <CardContent>
+            <Typography gutterBottom variant='h5' component='div' color='white'>
+              {title}
+            </Typography>
+            <Typography variant='body2' color='white'>{category}</Typography>
+          </CardContent>
         </motion.div>
         <Link to={id} className={`card-open-link`} />
       </CardActionArea>
-      
-      <CardActions>
-        <Typography gutterBottom variant='h5' component='div'>
-          {title}
-        </Typography>
-        <Typography>{category}</Typography>
-      </CardActions>
+
+      <CardActions></CardActions>
     </Card>
   );
 }
