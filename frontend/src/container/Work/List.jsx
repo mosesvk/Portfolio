@@ -15,7 +15,7 @@ import { urlFor, client } from '../../client';
 
 function CardItem({ id, title, category, theme }) {
   return (
-    <Card sx={{ maxWidth: 345 }} className={`card ${theme} bg-gray-900`}>
+    <Card sx={{ maxWidth: 345 }} style={{backgroundColor:'black'}} className={`card ${theme}`}>
       <CardActionArea>
         <motion.div
           // whileHover={{ opacity: [0, 1] }}
