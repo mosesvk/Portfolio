@@ -10,8 +10,8 @@ export default {
     },
 
     {
-      name: 'description',
-      title: 'Description',
+      name: 'category',
+      title: 'Category',
       type: 'string',
     },
     {

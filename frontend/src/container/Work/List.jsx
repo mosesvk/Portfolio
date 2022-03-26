@@ -15,7 +15,7 @@ import { urlFor, client } from '../../client';
 
 function CardItem({ id, title, category, theme }) {
   return (
-    <Card sx={{ maxWidth: 345 }} className={`card ${theme}`}>
+    <Card sx={{ maxWidth: 345 }} className={`card ${theme} bg-gray-900`}>
       <CardActionArea>
         <motion.div
           // whileHover={{ opacity: [0, 1] }}
@@ -32,7 +32,9 @@ function CardItem({ id, title, category, theme }) {
             <Typography gutterBottom variant='h5' component='div' color='white'>
               {title}
             </Typography>
-            <Typography variant='body2' color='white'>{category}</Typography>
+            <Typography variant='body2' color='white'>
+              {category}
+            </Typography>
           </CardContent>
         </motion.div>
         <Link to={id} className={`card-open-link`} />
@@ -44,7 +46,7 @@ function CardItem({ id, title, category, theme }) {
 }
 
 export function List({ selectedId }) {
-  // const [items, setItems] = useState([])
+  // const [items, setItems] = useState([]);
 
   // useEffect(() => {
   //   const query = '*[_type == "works"]';
@@ -53,40 +55,13 @@ export function List({ selectedId }) {
   //   });
   // }, []);
 
+  // console.log(items);
+
   return (
     <ul className='card-list'>
-      {items.map((card) => (
-        <CardItem key={card.id} {...card} isSelected={card.id === selectedId} />
+      {items.map((card, idx) => (
+        <CardItem key={idx} {...card} isSelected={card.id === selectedId} />
       ))}
     </ul>
   );
-}
-
-{
-  /* 
-      <Card sx={{ maxWidth: 345 }} className={`card ${theme}`}>
-        <CardActionArea>
-          <CardMedia
-            component='img'
-            height='140'
-            src={`images/${id}.jpg`}
-            alt={title}
-          />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='div'>
-              {title}
-            </Typography>
-            <Typography variant='body2' color='text.secondary'>
-              {category}
-            </Typography>
-            <Link to={id} className={`card-open-link`} />
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size='small' color='primary'>
-            Share
-          </Button>
-        </CardActions>
-      </Card>
-*/
 }

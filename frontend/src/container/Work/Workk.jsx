@@ -28,7 +28,7 @@ function Store() {
       </div>
       <List selectedId={id} />
       <AnimatePresence>
-        {id && imageHasLoaded && <Item id={id} key='item' />}
+        {id && imageHasLoaded && <Item id={id} key={id} />}
       </AnimatePresence>
     </>
   );
