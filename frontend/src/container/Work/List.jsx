@@ -35,8 +35,9 @@ function CardItem({ id, title, category, theme }) {
             <img className='card-image' src={`images/${id}.jpg`} alt='' />
           </motion.div> */}
         </motion.div>
+        <Link to={id} className={`card-open-link`} />
       </CardActionArea>
-      <Link to={id} className={`card-open-link`} />
+      
       <CardActions>
         <Typography gutterBottom variant='h5' component='div'>
           {title}
