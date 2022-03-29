@@ -22,14 +22,13 @@ function CardItem({ id, title, category, theme }) {
     >
       <motion.div
         // whileHover={{ opacity: [0, 1] }}
-        // className='card-content'
+        className='card-content'
         layoutId={`card-container-${id}`}
       >
         <CardMedia
           component='img'
-          height='150'
-          image={`images/${id}.jpg`}
-          alt={`${title}`}
+          style={{height: 200}}
+          src={`images/${id}.jpg`} alt={`${title}`}
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component='div' color='white'>
