@@ -3,7 +3,7 @@ export const items = [
   {
     id: "c",
     category: "React, NextJS, SQL",
-    description: '',
+    description: 'Real Estate App that allows you to see all of the available homes in your area',
     title: "Zillow Clone",
     backgroundColor: "#814A0E"
   },
@@ -11,6 +11,7 @@ export const items = [
   {
     id: "f",
     category: "React, Express, NodeJS, MongoDB",
+    description: '',
     title: "PureEnviro LLC",
     backgroundColor: "#959684"
   },

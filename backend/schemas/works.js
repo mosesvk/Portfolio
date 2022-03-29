@@ -15,6 +15,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'description', 
+      title: 'Desctiption',
+      type: 'string'
+    },
+    {
       name: 'exerpt', 
       title: 'Exerpt',
       type: 'string'

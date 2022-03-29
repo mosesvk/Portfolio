@@ -23,7 +23,6 @@ export function Item({ id }) {
             className='title-container'
             layoutId={`title-container-${id}`}
           >
-            <span className='category'>{category}</span>
             <h2>{title}</h2>
           </motion.div>
           <motion.div className='content-container' animate>
