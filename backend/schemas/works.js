@@ -20,6 +20,13 @@ export default {
       type: 'string'
     },
     {
+      title: 'languages',
+      name: 'Languages',
+      type: 'array',
+      of: [{type: 'string'}],
+      validation: Rule => Rule.unique()
+    },
+    {
       name: 'exerpt', 
       title: 'Exerpt',
       type: 'string'
