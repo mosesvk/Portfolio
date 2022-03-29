@@ -15,21 +15,26 @@ export default {
       type: 'string',
     },
     {
-      name: 'description', 
+      name: 'description',
       title: 'Desctiption',
-      type: 'string'
+      type: 'string',
     },
     {
       title: 'languages',
       name: 'Languages',
       type: 'array',
-      of: [{type: 'string'}],
-      validation: Rule => Rule.unique()
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'skills' }],
+        }
+      ],
+      validation: (Rule) => Rule.unique(),
     },
     {
-      name: 'exerpt', 
+      name: 'exerpt',
       title: 'Exerpt',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'projectLink',
