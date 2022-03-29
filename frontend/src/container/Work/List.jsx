@@ -13,7 +13,16 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 import { urlFor, client } from '../../client';
 
+
 function CardItem({ id, title, category, theme }) {
+
+  useEffect(() => {
+    const query = '*[_type == "works"]';
+    client.fetch(query).then((data) => {
+      console.log(data)
+    });
+  }, []);
+
   return (
     <Card
       sx={{ maxWidth: 345 }}

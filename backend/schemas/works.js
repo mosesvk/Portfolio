@@ -20,8 +20,8 @@ export default {
       type: 'string',
     },
     {
-      title: 'languages',
-      name: 'Languages',
+      name: 'languages',
+      title: 'Languages',
       type: 'array',
       of: [
         {
@@ -29,7 +29,6 @@ export default {
           to: [{ type: 'skills' }],
         }
       ],
-      validation: (Rule) => Rule.unique(),
     },
     {
       name: 'exerpt',
