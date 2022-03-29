@@ -15,32 +15,32 @@ import { urlFor, client } from '../../client';
 
 function CardItem({ id, title, category, theme }) {
   return (
-    <Card sx={{ maxWidth: 345 }} style={{backgroundColor:'black'}} className={`card ${theme}`}>
-      <CardActionArea>
-        <motion.div
-          // whileHover={{ opacity: [0, 1] }}
-          // className='card-content'
-          layoutId={`card-container-${id}`}
-        >
-          <CardMedia
-            component='img'
-            height='150'
-            image={`images/${id}.jpg`}
-            alt={`${title}`}
-          />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='div' color='white'>
-              {title}
-            </Typography>
-            <Typography variant='body2' color='white'>
-              {category}
-            </Typography>
-          </CardContent>
-        </motion.div>
-        <Link to={id} className={`card-open-link`} />
-      </CardActionArea>
-
-      <CardActions></CardActions>
+    <Card
+      sx={{ maxWidth: 345 }}
+      style={{ backgroundColor: 'black' }}
+      className={`card ${theme}`}
+    >
+      <motion.div
+        // whileHover={{ opacity: [0, 1] }}
+        // className='card-content'
+        layoutId={`card-container-${id}`}
+      >
+        <CardMedia
+          component='img'
+          height='150'
+          image={`images/${id}.jpg`}
+          alt={`${title}`}
+        />
+        <CardContent>
+          <Typography gutterBottom variant='h5' component='div' color='white'>
+            {title}
+          </Typography>
+          <Typography variant='body2' color='white'>
+            {category}
+          </Typography>
+        </CardContent>
+      </motion.div>
+      <Link to={id} className={`card-open-link`} />
     </Card>
   );
 }
