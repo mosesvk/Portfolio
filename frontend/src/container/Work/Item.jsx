@@ -3,17 +3,15 @@ import { motion } from 'framer-motion';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Link } from 'react-router-dom';
 // import { items } from './data';
+import { urlFor, client } from '../../client';
 
 export function Item({
   id,
-  description,
-  languages,
-  items,
-  image,
+  items
 }) {
   const newItems = items.find((item) => item.id === id);
   // console.log(newItems)
-  const { category, title } = newItems;
+  const { category, title, image } = newItems;
 
   return (
     <>
@@ -23,7 +21,7 @@ export function Item({
             className='card-image-container'
             layoutId={`card-image-container-${id}`}
           >
-            <img className='card-image' src={`images/${id}.jpg`} alt='' />
+            <img className='card-image' src={urlFor(image)} alt='' />
           </motion.div>
           <motion.div
             className='title-container'

@@ -26,7 +26,7 @@ function CardItem({ id, category, title, description, items, image }) {
         layoutId={`card-container-${id}`}
       >
         <CardMedia component='img' style={{ height: 200 }}>
-          <img src={image} alt={`${title}`} />
+          <img src={urlFor(image)} alt={`${title}`} />
         </CardMedia>
         <CardContent>
           <Typography gutterBottom variant='h5' component='div' color='white'>

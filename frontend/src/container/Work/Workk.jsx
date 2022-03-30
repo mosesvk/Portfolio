@@ -44,7 +44,7 @@ function Store() {
         languages={items.languages || null}
         category={items.category}
         items={items}
-        image={urlFor(items.imgUrl)}
+        image={items.imgUrl}
       />
       <AnimatePresence>
         {id && imageHasLoaded && (
@@ -56,7 +56,7 @@ function Store() {
             languages={items.languages || null}
             category={items.category}
             items={items}
-            image={urlFor(items.imgUrl)}
+            image={items.imgUrl}
           />
         )}
       </AnimatePresence>
