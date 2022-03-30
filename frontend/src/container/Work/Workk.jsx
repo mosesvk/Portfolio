@@ -27,7 +27,7 @@ function Store() {
     });
   }, []);
 
-  console.log(items);
+  console.log(items)
 
   return (
     <>
@@ -38,25 +38,13 @@ function Store() {
         <SocialMedia />
       </div>
       <List
-        selectedId={items._id}
-        title={items.title}
-        description={items.description}
-        languages={items.languages || null}
-        category={items.category}
         items={items}
-        image={items.imgUrl}
       />
       <AnimatePresence>
         {id && imageHasLoaded && (
           <Item
-            id={items._id}
-            key={items._id}
-            title={items.title}
-            description={items.description}
-            languages={items.languages || null}
-            category={items.category}
+            id={id}
             items={items}
-            image={items.imgUrl}
           />
         )}
       </AnimatePresence>

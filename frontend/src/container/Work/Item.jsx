@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Link } from 'react-router-dom';
 // import { items } from './data';
-import { urlFor, client } from '../../client';
+import { urlFor } from '../../client';
+
 
 export function Item({
   id,
@@ -11,7 +12,7 @@ export function Item({
 }) {
   const newItems = items.find((item) => item.id === id);
   // console.log(newItems)
-  const { category, title, image } = newItems;
+  const { category, title, imageUrl, description } = newItems;
 
   return (
     <>
@@ -21,7 +22,7 @@ export function Item({
             className='card-image-container'
             layoutId={`card-image-container-${id}`}
           >
-            <img className='card-image' src={urlFor(image)} alt='' />
+            <img className='card-image' src={urlFor(imageUrl)} alt='' />
           </motion.div>
           <motion.div
             className='title-container'
@@ -30,11 +31,7 @@ export function Item({
             <h2>{title}</h2>
           </motion.div>
           <motion.div className='content-container' animate>
-            <LoremIpsum
-              p={1}
-              avgWordsPerSentence={3}
-              avgSentencesPerParagraph={4}
-            />
+            <p>{description}</p>
           </motion.div>
         </motion.div>
       </div>

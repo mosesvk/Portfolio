@@ -13,7 +13,8 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 import { urlFor, client } from '../../client';
 
-function CardItem({ id, category, title, description, items, image }) {
+function CardItem({items}) {
+
   return (
     <Card
       sx={{ maxWidth: 345 }}
@@ -23,39 +24,33 @@ function CardItem({ id, category, title, description, items, image }) {
       <motion.div
         // whileHover={{ opacity: [0, 1] }}
         className='card-content'
-        layoutId={`card-container-${id}`}
+        layoutId={`card-container-${items._id}`}
       >
         <CardMedia component='img' style={{ height: 200 }}>
-          <img src={urlFor(image)} alt={`${title}`} />
+          {items.imgUrl && <img src={urlFor(items.imgUrl)} alt={`${items.title}`} />}
         </CardMedia>
         <CardContent>
           <Typography gutterBottom variant='h5' component='div' color='white'>
-            {title}
+            {items.title}
           </Typography>
           <Typography variant='body2' color='white'>
-            {category}
+            {items.category}
           </Typography>
         </CardContent>
       </motion.div>
-      <Link to={`/${id}`} className={`card-open-link`} />
+      <Link to={`/${items._id}`} className={`card-open-link`} />
     </Card>
   );
 }
 
-export function List({ selectedId, id, category, description, title, items, image }) {
+export function List({
+  items,
+}) {
   return (
     <ul className='card-list'>
       {items.map((card, idx) => (
         <CardItem
-          key={idx}
-          {...card}
-          isSelected={card.id === selectedId}
-          id={id}
-          category={category}
-          description={description}
-          title={title}
           items={items}
-          image={image}
         />
       ))}
     </ul>
