@@ -25,10 +25,27 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'reference',
-          to: [{ type: 'skills' }],
-        }
-      ],
+          title: 'Languages',
+          name: 'languages',
+          type: 'object',
+          fields: [
+            {
+              title: 'Name',
+              name: 'name',
+              type: 'string'
+            },
+            {
+              title: 'Icon',
+              name: 'icon',
+              type: 'image',
+              options: {
+                hotspot: true
+              }
+            }
+          ]
+        }, 
+
+      ]
     },
     {
       name: 'exerpt',
