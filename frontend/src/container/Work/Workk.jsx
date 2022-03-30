@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 import { Item } from './Item';
 import { List } from './List';
@@ -10,13 +10,24 @@ import {
 } from 'react-router-dom';
 import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
 import SocialMedia from '../../components/SocialMedia';
-
+import { urlFor, client } from '../../client';
 
 import './Workk.scss';
 
 function Store() {
   let { id } = useParams();
   const imageHasLoaded = true;
+
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "works"]';
+    client.fetch(query).then((data) => {
+      setItems(data);
+    });
+  }, []);
+
+  console.log(items);
 
   return (
     <>
@@ -26,9 +37,28 @@ function Store() {
         </h2>
         <SocialMedia />
       </div>
-      <List selectedId={id} />
+      <List
+        selectedId={items._id}
+        title={items.title}
+        description={items.description}
+        languages={items.languages || null}
+        category={items.category}
+        items={items}
+        image={urlFor(items.imgUrl)}
+      />
       <AnimatePresence>
-        {id && imageHasLoaded && <Item id={id} key={id} />}
+        {id && imageHasLoaded && (
+          <Item
+            id={items._id}
+            key={items._id}
+            title={items.title}
+            description={items.description}
+            languages={items.languages || null}
+            category={items.category}
+            items={items}
+            image={urlFor(items.imgUrl)}
+          />
+        )}
       </AnimatePresence>
     </>
   );

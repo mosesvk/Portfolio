@@ -2,9 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Link } from 'react-router-dom';
-import { items } from './data';
+// import { items } from './data';
 
-export function Item({ id }) {
+export function Item({
+  id,
+  description,
+  languages,
+  items,
+  image,
+}) {
   const newItems = items.find((item) => item.id === id);
   // console.log(newItems)
   const { category, title } = newItems;
