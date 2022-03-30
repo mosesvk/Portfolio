@@ -27,8 +27,6 @@ function Store() {
     });
   }, []);
 
-  console.log(items)
-
   return (
     <>
       <div className='app_work-head'>
