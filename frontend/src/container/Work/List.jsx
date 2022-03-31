@@ -15,8 +15,6 @@ import { urlFor, client } from '../../client';
 
 function CardItem({ title, description, category, imgUrl, id}) {
 
-  console.log(imgUrl)
-
   return (
     <Card
       sx={{ maxWidth: 345 }}

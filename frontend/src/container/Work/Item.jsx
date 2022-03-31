@@ -10,15 +10,15 @@ export function Item({
   id,
   items
 }) {
-  const selectedItem = items.find((item) => item.id === id);
-  // console.log(newItems)
-  const { category, title, imageUrl, description } = selectedItem;
+  console.log(items.find((item) => item.id === id))
 
-  console.log(selectedItem)
+  // const { title, imageUrl, description } = selectedItem;
+
+
 
   return (
     <>
-      <div className='card-content-container open'>
+      {/* <div className='card-content-container open'>
         <motion.div className='card-content' layoutId={`card-container-${id}`}>
           <motion.div
             className='card-image-container'
@@ -46,7 +46,7 @@ export function Item({
         className='overlay'
       >
         <Link to='/' />
-      </motion.div>
+      </motion.div> */}
     </>
   );
 }
