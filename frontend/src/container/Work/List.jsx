@@ -21,7 +21,7 @@ function CardItem({ title, description, category, imgUrl, id}) {
     <Card
       sx={{ maxWidth: 345 }}
       style={{ backgroundColor: 'black' }}
-      // className={`card ${theme}`}
+      className={`card`}
     >
       <motion.div
         // whileHover={{ opacity: [0, 1] }}
@@ -38,7 +38,7 @@ function CardItem({ title, description, category, imgUrl, id}) {
           </Typography>
         </CardContent>
       </motion.div>
-      <Link to={`/${id}`} className={`card-open-link`} />
+      <Link to={id} className={`card-open-link`} />
     </Card>
   );
 }
