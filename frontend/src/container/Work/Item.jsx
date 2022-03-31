@@ -10,9 +10,11 @@ export function Item({
   id,
   items
 }) {
-  const newItems = items.find((item) => item.id === id);
+  const selectedItem = items.find((item) => item.id === id);
   // console.log(newItems)
-  const { category, title, imageUrl, description } = newItems;
+  const { category, title, imageUrl, description } = selectedItem;
+
+  console.log(selectedItem)
 
   return (
     <>
