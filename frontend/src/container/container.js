@@ -13,7 +13,7 @@ export {
   Header,
   Skills,
   // Testimonial,
-  // Work,
-  Workk,
+  Work,
+  // Workk,
   // WorkThree
 };

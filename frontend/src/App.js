@@ -6,8 +6,8 @@ import {
   Header,
   Skills,
   Testimonial,
-  // Work,
-  Workk,
+  Work,
+  // Workk,
   // WorkThree
 } from './container/container';
 import { Navbar } from './components/components';
@@ -20,7 +20,7 @@ const App = () => {
       <Navbar />
       <Header/>
       <About />
-      <Workk />
+      <Work />
       <Skills />
       {/* <Testimonial />  */}
       <Footer />
