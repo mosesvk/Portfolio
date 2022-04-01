@@ -5,10 +5,7 @@ import {
   Footer,
   Header,
   Skills,
-  Testimonial,
   Work,
-  // Workk,
-  // WorkThree
 } from './container/container';
 import { Navbar } from './components/components';
 import './App.scss'
@@ -22,7 +19,6 @@ const App = () => {
       <About />
       <Work />
       <Skills />
-      {/* <Testimonial />  */}
       <Footer />
     </div>
   );
