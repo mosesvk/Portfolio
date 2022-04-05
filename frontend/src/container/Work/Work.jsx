@@ -51,7 +51,7 @@ const Work = () => {
   return (
     <div className='work-container'>
       <h2 className='head-text'>
-        My <span>Portfolio</span> Section
+        My <span>Portfolio</span>
       </h2>
       <SocialMedia />
       <div className='app__work-filter'>
@@ -88,7 +88,6 @@ const Work = () => {
                   className='app__work-hover app__flex'
                   onClick={() => open(work._id, idx)}
                 >
-                  INFO
                 </motion.div>
               </div>
 
