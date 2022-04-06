@@ -75,7 +75,7 @@ const Navbar = () => {
         {['home', 'work', 'about', 'skills', 'contact'].map((item) => (
           <li className='app__flex p-tex`t' key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href={`#${item} `}>{item}</a>
           </li>
         ))}
       </ul>
@@ -121,7 +121,7 @@ const Navbar = () => {
                       </li>
                     )
                   )}
-                  <Divider variant='middle'/>
+                  <Divider variant='middle' />
                   <li>
                     <motion.a
                       href={`https://www.linkedin.com/in/mosesvk/`}
