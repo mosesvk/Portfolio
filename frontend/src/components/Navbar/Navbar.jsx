@@ -72,7 +72,7 @@ const Navbar = () => {
         </motion.a>
       </div>
       <ul className='app__navbar-links'>
-        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+        {['home', 'work', 'about', 'skills', 'contact'].map((item) => (
           <li className='app__flex p-tex`t' key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
