@@ -42,7 +42,7 @@ const Header = () => {
           }}
           whileTap={{ scale: 0.9 }}
         >
-          <a href='#about' style={{textDecoration: 'none', color: 'black'}}>
+          <a href='#work' style={{textDecoration: 'none', color: 'black'}}>
             <p>SEE MORE</p>
           </a>
         </motion.button>
