@@ -72,7 +72,7 @@ const Navbar = () => {
         </motion.a>
       </div>
       <ul className='app__navbar-links'>
-        {['home', 'work', 'about', 'skills', 'contact'].map((item) => (
+        {['home', 'work', 'skills', 'about', 'contact'].map((item) => (
           <li className='app__flex p-tex`t' key={`link-${item}`}>
             <div />
             <a href={`#${item} `}>{item}</a>
@@ -106,7 +106,7 @@ const Navbar = () => {
                   whileHover={{ scale: 1.1 }}
                 />
                 <ul>
-                  {['home', 'about', 'work', 'skills', 'contact'].map(
+                  {['home', 'work', 'skills', 'about', 'contact'].map(
                     (item) => (
                       <li key={item}>
                         <motion.a
