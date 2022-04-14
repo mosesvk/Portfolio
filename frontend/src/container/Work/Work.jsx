@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper/wrapper';
 import { urlFor, client } from '../../client';
 import SocialMedia from '../../components/SocialMedia';
-import Popup from '../../components/Modal/Popup';
+import Popup from '../../components/Modal/Modal';
 
 import './Work.scss';
 
@@ -77,18 +77,17 @@ const Work = () => {
           filterWork.map((work, idx) => (
             <div className='app__work-item app__flex' key={work._id}>
               <div className='app__work-img app__flex'>
-                <img src={urlFor(work.imgUrl)} alt={work.name} />
-                <motion.div
-                  whileHover={{ opacity: [0, 1] }}
-                  transition={{
-                    duration: 0.25,
-                    ease: 'easeInOut',
-                    staggerChildren: 0.5,
-                  }}
-                  className='app__work-hover app__flex'
-                  onClick={() => open(work._id, idx)}
-                >
-                </motion.div>
+                  <img src={urlFor(work.imgUrl)} alt={work.name} />
+                  <motion.div
+                    whileHover={{ opacity: [0, 1] }}
+                    transition={{
+                      duration: 0.25,
+                      ease: 'easeInOut',
+                      staggerChildren: 0.5,
+                    }}
+                    className='app__work-hover app__flex'
+                    onClick={() => open(work._id, idx)}
+                  ></motion.div>
               </div>
 
               <div className='app__work-content app__flex'>
