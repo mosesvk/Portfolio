@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AiFillEye, AiFillGithub, AiOutlineConsoleSql } from 'react-icons/ai';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -17,10 +18,13 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [modalOpen, setModalOpen] = useState(false);
 
+  const navigate = useNavigate();
+
   const close = () => setModalOpen(false);
   const open = (id, idx) => {
     setModalOpen(true);
     setWorkId(id);
+    navigate(`/modal/${id}`)
     console.log(idx);
     console.log(id);
   };
@@ -77,17 +81,17 @@ const Work = () => {
           filterWork.map((work, idx) => (
             <div className='app__work-item app__flex' key={work._id}>
               <div className='app__work-img app__flex'>
-                  <img src={urlFor(work.imgUrl)} alt={work.name} />
-                  <motion.div
-                    whileHover={{ opacity: [0, 1] }}
-                    transition={{
-                      duration: 0.25,
-                      ease: 'easeInOut',
-                      staggerChildren: 0.5,
-                    }}
-                    className='app__work-hover app__flex'
-                    onClick={() => open(work._id, idx)}
-                  ></motion.div>
+                <img src={urlFor(work.imgUrl)} alt={work.name} />
+                <motion.div
+                  whileHover={{ opacity: [0, 1] }}
+                  transition={{
+                    duration: 0.25,
+                    ease: 'easeInOut',
+                    staggerChildren: 0.5,
+                  }}
+                  className='app__work-hover app__flex'
+                  onClick={() => open(work._id, idx)}
+                ></motion.div>
               </div>
 
               <div className='app__work-content app__flex'>

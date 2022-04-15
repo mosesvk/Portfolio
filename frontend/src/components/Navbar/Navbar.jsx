@@ -75,7 +75,7 @@ const Navbar = () => {
         {['home', 'work', 'skills', 'about', 'contact'].map((item) => (
           <li className='app__flex p-tex`t' key={`link-${item}`}>
             <div />
-            <a href={`#${item} `}>{item}</a>
+            <a href={`#${item}`}>{item}</a>
           </li>
         ))}
       </ul>
