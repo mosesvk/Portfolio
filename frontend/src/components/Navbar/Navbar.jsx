@@ -122,7 +122,7 @@ const Navbar = () => {
                     )
                   )}
                   <Divider variant='middle' />
-                  <li>
+                  <li >
                     <motion.a
                       href={`https://www.linkedin.com/in/mosesvk/`}
                       whileHover={{ scale: 1.1 }}
